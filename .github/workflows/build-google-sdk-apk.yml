@@ -1,0 +1,45 @@
+name: Build Google SDK APK
+
+# Builds the duckduckgo-android fork with the Google SDKs (AdMob, Firebase,
+# Google Sign-In) wired in on the google-sdk branch. Manual trigger only.
+# Deliberately references NO secrets: the upstream debug build needs internal
+# keystore secrets that do not exist in this fork, and this workflow does not
+# need them — the release APK is unsigned, like the upstream F-Droid build.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build_google_sdk_apk:
+    name: Build Google SDK apk
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up JDK version
+        uses: actions/setup-java@v6
+        with:
+          java-version-file: .github/.java-version
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v5
+
+      - name: Assemble Play release apk
+        # Play flavor: the Google SDKs are plain `implementation` dependencies,
+        # so they are present in every flavor; Play is the variant users install.
+        # -PabortOnError=false keeps lint findings from failing the build.
+        run: ./gradlew assemblePlayRelease -PabortOnError=false
+
+      - name: Upload Play release apk
+        uses: actions/upload-artifact@v4
+        with:
+          name: duckduckgo-google-sdk-play-release
+          path: app/build/outputs/apk/play/release/*.apk
+          if-no-files-found: error

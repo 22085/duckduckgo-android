@@ -561,6 +561,21 @@ dependencies {
     implementation AndroidX.appCompat
     implementation AndroidX.activity.compose
     implementation Google.android.material
+
+    // Google SDKs (duckduckgo-android fork). Plain `implementation` so the SDKs are
+    // present in every store flavor, including the Play release built by CI.
+    // AdMob uses Google test IDs only until formal IDs are supplied; Firebase runs
+    // only once a real google-services.json is added; Sign-In needs a real OAuth
+    // client ID. See com.duckduckgo.app.googlesdk.GoogleSdk. The google-services
+    // Gradle plugin is intentionally NOT applied: there is no google-services.json
+    // in this repo and none should be fabricated.
+    implementation "com.google.android.gms:play-services-ads:25.5.0"
+    implementation "com.google.android.gms:play-services-auth:22.0.0"
+    implementation "com.google.android.gms:play-services-base:18.11.1"
+    implementation platform("com.google.firebase:firebase-bom:35.1.0")
+    implementation "com.google.firebase:firebase-analytics"
+    implementation "com.google.firebase:firebase-crashlytics"
+    implementation "com.google.firebase:firebase-messaging"
     implementation AndroidX.constraintLayout
     implementation AndroidX.recyclerView
     implementation AndroidX.swipeRefreshLayout
