@@ -67,6 +67,15 @@ jobs:
         # has none — the fallback placeholder fonts are used instead.
         run: ./gradlew assemblePlayRelease -PabortOnError=false -PuseProprietaryFont=false
 
+      - name: Verify APK signature
+        # Cryptographic proof the APK is signed with the fork's keystore:
+        # prints v1/v2/v3 verification and the signer certificate digests.
+        # Compare the SHA-256 digest with the fork keystore's cert.
+        run: |
+          APK=$(ls app/build/outputs/apk/play/release/*.apk)
+          APKSIGNER=$(find "${ANDROID_HOME:-$ANDROID_SDK_ROOT}" -name apksigner -type f 2>/dev/null | head -n 1)
+          "$APKSIGNER" verify --verbose --print-certs "$APK"
+
       - name: Upload Play release apk
         uses: actions/upload-artifact@v4
         with:
