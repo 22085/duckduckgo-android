@@ -570,7 +570,11 @@ dependencies {
     // Gradle plugin is intentionally NOT applied: there is no google-services.json
     // in this repo and none should be fabricated.
     implementation "com.google.android.gms:play-services-ads:25.5.0"
-    implementation "com.google.android.gms:play-services-auth:22.0.0"
+    // play-services-auth 22.0.0 removed the legacy GoogleSignIn API (verified: its
+    // classes.jar contains no GoogleSignIn/GoogleSignInClient); 20.7.0 is the last
+    // version that still ships them, so pin auth there until Sign-In moves to
+    // Credential Manager.
+    implementation "com.google.android.gms:play-services-auth:20.7.0"
     implementation "com.google.android.gms:play-services-base:18.11.1"
     implementation platform("com.google.firebase:firebase-bom:35.1.0")
     implementation "com.google.firebase:firebase-analytics"
