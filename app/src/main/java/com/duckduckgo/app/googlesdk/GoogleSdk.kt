@@ -26,22 +26,13 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.firebase.FirebaseApp
-import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.crashlytics.FirebaseCrashlytics
-import com.google.firebase.messaging.FirebaseMessaging
 import logcat.logcat
 
 /**
- * Google SDKs (AdMob, Firebase, Google Sign-In) for the duckduckgo-android fork.
+ * Google Ads (AdMob) only for the duckduckgo-android fork.
  *
- * Everything here is fail-safe: any SDK that is not configured yet logs and skips
- * instead of crashing startup. AdMob runs on Google test IDs only; Firebase does
- * nothing until a real google-services.json is added; Sign-In needs a real OAuth
- * client ID for this package before it can return an account.
+ * Everything here is fail-safe: AdMob initialization failure logs and skips
+ * instead of crashing startup. AdMob runs on Google test IDs only.
  */
 object GoogleSdk {
 
@@ -55,40 +46,11 @@ object GoogleSdk {
     const val TEST_INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
 
     fun initialize(context: Context) {
-        initializeAdMob(context)
-        initializeFirebase(context)
-    }
-
-    private fun initializeAdMob(context: Context) {
         try {
             MobileAds.initialize(context)
             logcat { "GoogleSdk: AdMob initialized (test App ID)" }
         } catch (e: Exception) {
             logcat { "GoogleSdk: AdMob initialization failed, ads disabled: ${e.message}" }
-        }
-    }
-
-    private fun initializeFirebase(context: Context) {
-        if (!isFirebaseConfigured()) {
-            logcat { "GoogleSdk: Firebase not configured, skipping. Add a real google-services.json to enable it." }
-            return
-        }
-        try {
-            FirebaseAnalytics.getInstance(context)
-            FirebaseCrashlytics.getInstance()
-            FirebaseMessaging.getInstance()
-            logcat { "GoogleSdk: Firebase initialized" }
-        } catch (e: Exception) {
-            logcat { "GoogleSdk: Firebase initialization failed: ${e.message}" }
-        }
-    }
-
-    fun isFirebaseConfigured(): Boolean {
-        return try {
-            FirebaseApp.getInstance()
-            true
-        } catch (e: IllegalStateException) {
-            false
         }
     }
 
@@ -129,24 +91,6 @@ object GoogleSdk {
         } catch (e: Exception) {
             logcat { "GoogleSdk: test interstitial failed: ${e.message}" }
             onLoaded(null)
-        }
-    }
-
-    /**
-     * Builds a Google Sign-In client requesting the account email. Returns null when
-     * Sign-In cannot be built. Real sign-in also needs an OAuth client ID registered
-     * for this package in the user's Google Cloud project, otherwise sign-in fails
-     * with an API error at runtime.
-     */
-    fun buildSignInClient(context: Context): GoogleSignInClient? {
-        return try {
-            val options = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build()
-            GoogleSignIn.getClient(context, options)
-        } catch (e: Exception) {
-            logcat { "GoogleSdk: Google Sign-In client unavailable: ${e.message}" }
-            null
         }
     }
 }
