@@ -1,0 +1,146 @@
+/*
+ * Copyright (c) 2025 DuckDuckGo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.duckduckgo.pir.impl.dashboard
+
+import android.annotation.SuppressLint
+import androidx.lifecycle.DefaultLifecycleObserver
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.duckduckgo.app.di.AppCoroutineScope
+import com.duckduckgo.appbuildconfig.api.AppBuildConfig
+import com.duckduckgo.appbuildconfig.api.isInternalBuild
+import com.duckduckgo.codegen.annotations.ContributesViewModel
+import com.duckduckgo.di.scopes.ActivityScope
+import com.duckduckgo.js.messaging.api.JsCallbackData
+import com.duckduckgo.js.messaging.api.SubscriptionEventData
+import com.duckduckgo.pir.impl.PirUserUtils
+import com.duckduckgo.pir.impl.dashboard.purchase.PirPurchaseRoute.NativePurchaseFlow
+import com.duckduckgo.pir.impl.pixels.PirInteractionReporter
+import com.duckduckgo.pir.impl.pixels.PirPixelSender
+import com.duckduckgo.pir.impl.store.PirRepository
+import com.duckduckgo.subscriptions.api.SubscriptionStatus.UNKNOWN
+import com.duckduckgo.subscriptions.api.Subscriptions
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.drop
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.launch
+import org.json.JSONObject
+import javax.inject.Inject
+
+@SuppressLint("NoLifecycleObserver") // we don't observe app lifecycle
+@ContributesViewModel(ActivityScope::class)
+class PirDashboardWebViewViewModel @Inject constructor(
+    private val pirPixelSender: PirPixelSender,
+    private val pirInteractionReporter: PirInteractionReporter,
+    private val pirUserUtils: PirUserUtils,
+    private val appBuildConfig: AppBuildConfig,
+    private val pirRepository: PirRepository,
+    private val subscriptions: Subscriptions,
+    @AppCoroutineScope private val appCoroutineScope: CoroutineScope,
+) : ViewModel(), DefaultLifecycleObserver {
+
+    private var purchaseFlowOutstanding = false
+
+    private val command = Channel<Command>(Channel.BUFFERED)
+    internal fun commands(): Flow<Command> = command.receiveAsFlow()
+
+    init {
+        // The dashboard needs to be reloaded on purchase
+        subscriptions.getSubscriptionStatusFlow()
+            .map { it != UNKNOWN }
+            .distinctUntilChanged()
+            .drop(1)
+            .onEach { command.send(Command.ReloadWebView) }
+            .launchIn(viewModelScope)
+    }
+
+    fun handleJsMessage(
+        featureName: String,
+        method: String,
+        id: String?,
+        data: JSONObject?,
+    ) {
+        // TODO Handle any JS messages that requires UI updates or other user actions
+    }
+
+    fun onSubscriptionPurchaseRequested(route: NativePurchaseFlow) {
+        // Prevent duplicate taps on the CTA and navigation
+        if (purchaseFlowOutstanding) {
+            return
+        }
+        purchaseFlowOutstanding = true
+
+        viewModelScope.launch {
+            command.send(
+                Command.LaunchSubscriptionPurchase(
+                    origin = route.origin,
+                    featurePage = route.featurePage,
+                ),
+            )
+        }
+    }
+
+    fun onLaunched(
+        isRestored: Boolean,
+        fromFreemiumScanCompleteNotification: Boolean,
+    ) {
+        // a restored dashboard keeps its launch intent, and the tap was already counted when it was first created
+        if (isRestored || !fromFreemiumScanCompleteNotification) {
+            return
+        }
+
+        pirPixelSender.reportFreemiumScanCompleteNotificationOpened()
+    }
+
+    override fun onStart(owner: LifecycleOwner) {
+        super.onStart(owner)
+        purchaseFlowOutstanding = false
+        appCoroutineScope.launch {
+            // read once so the open count and the interaction pixels never disagree on the user's tier
+            val isAuthenticated = pirUserUtils.hasPirSubscription()
+            pirPixelSender.reportDashboardOpened(isAuthenticated)
+            pirInteractionReporter.attemptFirePixel(isAuthenticated)
+        }
+
+        if (appBuildConfig.isInternalBuild()) {
+            viewModelScope.launch {
+                command.send(
+                    Command.ShowManualConfigWarning(pirRepository.hasBrokerConfigBeenManuallyUpdated()),
+                )
+            }
+        }
+    }
+
+    sealed class Command {
+        data class SendJsEvent(val event: SubscriptionEventData) : Command()
+        data class SendResponseToJs(val data: JsCallbackData) : Command()
+        data class ShowManualConfigWarning(val show: Boolean) : Command()
+        data class LaunchSubscriptionPurchase(
+            val origin: String,
+            val featurePage: String,
+        ) : Command()
+
+        data object ReloadWebView : Command()
+    }
+}
