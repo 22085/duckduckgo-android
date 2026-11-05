@@ -2,9 +2,10 @@ name: Build Google SDK APK
 
 # Builds the duckduckgo-android fork with Google Ads (AdMob) only, on the
 # google-sdk branch. Manual trigger only.
-# Deliberately references NO secrets: the upstream debug build needs internal
-# keystore secrets that do not exist in this fork, and this workflow does not
-# need them — the release APK is unsigned, like the upstream F-Droid build.
+# Release signing uses this fork's own keystore (GitHub Secrets:
+# RELEASE_KEYSTORE base64, RELEASE_STORE_PASSWORD, RELEASE_KEY_ALIAS,
+# RELEASE_KEY_PASSWORD). Upstream's release signingConfig reads the
+# properties file below, so no build.gradle change is needed.
 on:
   workflow_dispatch:
 
@@ -30,6 +31,32 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
+
+      - name: Prepare release signing
+        # Writes the fork's own keystore + properties where upstream's
+        # release signingConfig expects them ($HOME/jenkins_static/...).
+        # If any RELEASE_* secret is missing, the build still runs but the
+        # APK comes out unsigned.
+        env:
+          RELEASE_KEYSTORE: ${{ secrets.RELEASE_KEYSTORE }}
+          RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: |
+          mkdir -p "$HOME/jenkins_static/com.duckduckgo.mobile.android"
+          cd "$HOME/jenkins_static/com.duckduckgo.mobile.android"
+          if [ -n "$RELEASE_KEYSTORE" ]; then
+            echo "$RELEASE_KEYSTORE" | base64 -d > release.keystore
+            cat > ddg_android_build.properties <<EOF
+          key.store=release.keystore
+          key.store.password=$RELEASE_STORE_PASSWORD
+          key.alias=$RELEASE_KEY_ALIAS
+          key.alias.password=$RELEASE_KEY_PASSWORD
+          EOF
+            echo "Release signing configured."
+          else
+            echo "RELEASE_KEYSTORE secret missing, APK will be unsigned."
+          fi
 
       - name: Assemble Play release apk
         # Play flavor: AdMob is a plain `implementation` dependency, so it is
