@@ -18,6 +18,7 @@ package com.duckduckgo.app.googlesdk
 
 import android.os.Bundle
 import android.view.View
+import com.duckduckgo.app.browser.R
 import com.duckduckgo.app.browser.databinding.ActivityGoogleAdsTestBinding
 import com.duckduckgo.codegen.annotations.ContributeToActivityStarter
 import com.duckduckgo.codegen.annotations.InjectWith

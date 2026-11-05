@@ -232,11 +232,12 @@ object GoogleSdk {
     /** Loads a test app open ad. [onLoaded] receives the ad, or null if loading failed. */
     fun loadTestAppOpen(activity: Activity, onLoaded: (AppOpenAd?) -> Unit) {
         try {
+            // play-services-ads 25.x has no orientation parameter on load();
+            // the 4-argument overload is the only one.
             AppOpenAd.load(
                 activity,
                 TEST_APP_OPEN_AD_UNIT_ID,
                 AdRequest.Builder().build(),
-                AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT,
                 object : AppOpenAd.AppOpenAdLoadCallback() {
                     override fun onAdLoaded(ad: AppOpenAd) {
                         onLoaded(ad)

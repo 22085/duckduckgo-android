@@ -52,7 +52,7 @@ enum class AppLanguage(val languageTag: String?) {
 
     fun apply() {
         val locales = if (languageTag == null) {
-            LocaleListCompat.getEmpty()
+            LocaleListCompat.getEmptyLocaleList()
         } else {
             LocaleListCompat.forLanguageTags(languageTag)
         }
