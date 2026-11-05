@@ -1,7 +1,7 @@
 name: Build Google SDK APK
 
-# Builds the duckduckgo-android fork with the Google SDKs (AdMob, Firebase,
-# Google Sign-In) wired in on the google-sdk branch. Manual trigger only.
+# Builds the duckduckgo-android fork with Google Ads (AdMob) only, on the
+# google-sdk branch. Manual trigger only.
 # Deliberately references NO secrets: the upstream debug build needs internal
 # keystore secrets that do not exist in this fork, and this workflow does not
 # need them — the release APK is unsigned, like the upstream F-Droid build.
@@ -32,10 +32,13 @@ jobs:
         uses: gradle/actions/setup-gradle@v5
 
       - name: Assemble Play release apk
-        # Play flavor: the Google SDKs are plain `implementation` dependencies,
-        # so they are present in every flavor; Play is the variant users install.
+        # Play flavor: AdMob is a plain `implementation` dependency, so it is
+        # present in every flavor; Play is the variant users install.
         # -PabortOnError=false keeps lint findings from failing the build.
-        run: ./gradlew assemblePlayRelease -PabortOnError=false
+        # -PuseProprietaryFont=false is required: PlayRelease builds refuse to
+        # run without the proprietary DuckSans font credentials, and this fork
+        # has none — the fallback placeholder fonts are used instead.
+        run: ./gradlew assemblePlayRelease -PabortOnError=false -PuseProprietaryFont=false
 
       - name: Upload Play release apk
         uses: actions/upload-artifact@v4
