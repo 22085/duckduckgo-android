@@ -118,6 +118,17 @@
                 tools:secondaryText="Last Opened Tab" />
 
             <com.duckduckgo.common.ui.view.divider.HorizontalDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.duckduckgo.common.ui.view.listitem.TwoLineListItem
+                android:id="@+id/languageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:primaryText="@string/languageSettingTitle"
+                tools:secondaryText="System default" />
+
+            <com.duckduckgo.common.ui.view.divider.HorizontalDivider
                 android:id="@+id/maliciousSiteDivider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

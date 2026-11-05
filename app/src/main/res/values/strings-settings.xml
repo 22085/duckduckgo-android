@@ -31,4 +31,10 @@
     <string name="afterInactivityTimeoutXHours" instruction="'%1$d' is a placeholder and will be replaced with the number of hours, e.g. '2 hours'">%1$d hours</string>
     <string name="returnToLastTabShortcutSettingTitle">\'Return to\' Shortcut</string>
     <string name="returnToLastTabShortcutSettingSubtitle">Displays a link to return to the last used tab when you launch the app after inactivity.</string>
+
+    <!-- App language (duckduckgo-android fork only) -->
+    <string name="languageSettingTitle">Language</string>
+    <string name="languageSettingSystemDefault">System default</string>
+    <string name="languageSettingEnglish">English</string>
+    <string name="languageSettingChinese">中文（简体）</string>
 </resources>

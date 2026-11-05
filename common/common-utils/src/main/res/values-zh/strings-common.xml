@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="common_Today">今天</string>
+    <string name="common_Yesterday">昨天</string>
+    <string name="common_DaysAgo" instruction="Placeholder is the number of days">%1$d 天前</string>
+    <string name="common_PastWeek">过去一周</string>
+    <string name="common_PastMonth">过去一月</string>
+    <string name="common_MinutesAgo" instruction="Placeholder is the number of minutes">%1$d分钟前</string>
+    <string name="common_HoursAgo" instruction="Placeholder is the number of hours">%1$d小时前</string>
+    <string name="common_JustNow">刚刚</string>
+    <string name="common_hour_abbreviation">小时</string>
+    <string name="common_min_abbreviation">分钟</string>
+    <string name="common_seconds_abbreviation">秒</string>
+</resources>

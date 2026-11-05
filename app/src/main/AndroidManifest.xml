@@ -46,6 +46,7 @@
         android:dataExtractionRules="@xml/backup_rules_android_12_upwards"
         android:fullBackupContent="@xml/backup_rules_android_11_and_older"
         android:theme="@style/Theme.DuckDuckGo.App"
+        android:localeConfig="@xml/locales_config"
         android:requestLegacyExternalStorage="true"
         android:enableOnBackInvokedCallback="false"
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="newTabReturnHatchText">返回…</string>
+    <string name="newTabReturnHatchFireTabTitle">上次使用的火焰标签页</string>
+    <string name="newTabReturnHatchTabClosed">标签页已关闭</string>
+    <string name="newTabReturnHatchUndo">撤销</string>
+    <string name="hatchMenuAfterInactivitySettings">闲置后</string>
+    <string name="hatchMenuAfterInactivityOpenNewTab">打开新标签页</string>
+    <string name="hatchMenuAfterInactivityLastUsedTab">上次使用的标签页</string>
+    <string name="hatchMenuAfterInactivityContentDescription" instruction="'%1$s' is the menu row label ('After Inactivity') and '%2$s' is the current destination, e.g. 'After Inactivity, Open New Tab'">%1$s，%2$s</string>
+    <string name="hatchMenuCloseLastUsedTab">关闭上次使用的标签页</string>
+    <string name="hatchMenuBurnTab">删除标签页</string>
+    <string name="hatchMenuHideReturnToShortcut" instruction="'Return to' refers to this menu's own 'Return to…' label shown above this item">隐藏“返回”快捷方式</string>
+</resources>

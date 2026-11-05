@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2022 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="netpManagementHeadlineStatusOn">DuckDuckGo VPN 已开启</string>
+    <string name="netpManagementHeadlineStatusOff">DuckDuckGo VPN 已关闭</string>
+    <string name="netpManagementDescriptionOff">连接以保护你设备上的全部互联网流量。</string>
+    <string name="netpManagementDescriptionOn">设备上的全部互联网流量正通过 VPN 得到保护。</string>
+    <string name="netpManagementToggleSubtitleConnecting">正在连接…</string>
+    <string name="netpManagementToggleSubtitleConnected" instruction="Placeholder is elapsed time in hh:MM:ss format.">已连接 · %1$s</string>
+    <string name="netpManagementToggleSubtitleDisconnected">未连接</string>
+    <string name="netpManagementBetaDescription">DuckDuckGo VPN 目前处于测试阶段。<annotation type="report_issues_link">分享反馈</annotation>，帮助我们改进！</string>
+    <string name="netpManagementExcludeAppPromptTitle">VPN 是否导致某个应用出现问题？</string>
+    <string name="netpManagementExcludeAppPromptSubtitle">你可以在不关闭 VPN 的情况下将应用排除在 VPN 之外。</string>
+    <string name="netpManagementExcludeAppPromptActionDisableOne">排除某个应用</string>
+    <string name="netpManagementExcludeAppPromptActionDisableAll">关闭 VPN</string>
+    <string name="netpManagementExcludeAppPromptActionDisablePermanent">不再询问</string>
+    <string name="netpManagementLocationHeaderVpnOff">所选位置</string>
+    <string name="netpManagementLocationHeaderVpnOn">已连接位置</string>
+    <string name="netpManagementLocationNearest">（最近）</string>
+    <string name="netpManagementLocationPlaceholder">最近位置</string>
+    <string name="netpManagementLocationCustom">（自定义）</string>
+    <string name="netpManagementConnectionDetailsHeader">连接详情</string>
+    <string name="netpManagementConnectionDetailsIp">IP 地址</string>
+    <string name="netpManagementConnectionDetailsDns">DNS 服务器</string>
+    <string name="netpManagementConnectionDetailsDataVolume">数据用量</string>
+    <string name="netpEnabledNotificationInitialTitle">VPN 已连接。</string>
+    <string name="netpEnabledNotificationTitle" instruction="Placeholder is location of server with format City,Country">VPN 已连接，设备流量正通过 &lt;b>%1$s&lt;/b> 路由。</string>
+    <string name="netpVpnConflictTitle">你的 VPN 应用可能已断开连接</string>
+    <string name="netpVpnConflictMessage">Android 一次只允许一个 VPN 连接处于活动状态。启用 DuckDuckGo VPN 可能会断开你设备上正在活动的 VPN。</string>
+    <string name="netpActionGotIt">知道了</string>
+    <string name="netpAlwaysOnVpnConflictTitle">你的 VPN 应用正在阻止 DuckDuckGo VPN</string>
+    <string name="netpAlwaysOnVpnConflictMessage">Android 一次只允许一个 VPN 连接处于活动状态。打开网络设置 &gt; VPN，找到处于“始终开启”状态的 VPN 应用并将其关闭以继续。</string>
+    <string name="netpActionOpenSettings">打开设置</string>
+    <string name="netpActionCancel">取消</string>
+    <string name="netpActionNotNow">以后再说</string>
+    <string name="netpActionGoToSettings">前往设置</string>
+    <string name="netpAlwaysOnPromotionHeading">设为始终开启</string>
+    <string name="netpAlwaysOnPromotionBody">前往设备上 DuckDuckGo 的 VPN 设置，启用 <b>始终开启 VPN</b>，以防止 Android 关闭防护。\n\n请确保将另一项设置保持关闭。</string>
+    <string name="netpAlwaysOnLockdownBody">为避免应用出现问题，请前往设备的 <b>DuckDuckGo VPN 设置</b>并关闭 <b>无 VPN 时阻止连接</b>。</string>
+    <string name="netpAlwaysOnLockdownHeading">更改 VPN 设置</string>
+    <string name="netpBannerVpnRevoked"><b>VPN 已停用。</b>\n你设备上的某个 VPN 应用可能已将其停用。使用开关重新启用。</string>
+    <string name="netpBannerAlwaysOnLockDownEnabled"><b>需要操作！</b>为避免应用出现问题，你需要更改 Android 设置。<annotation type="open_settings_link">更改设置</annotation></string>
+    <string name="netpReportBreakageCategoryCrashes">应用卡住或崩溃</string>
+    <string name="netpReportBreakageCategoryMessages">消息发送失败</string>
+    <string name="netpReportBreakageCategoryCalls">语音通话无法使用</string>
+    <string name="netpReportBreakageCategoryContent">内容加载缓慢</string>
+    <string name="netpReportBreakageCategoryConnection">应用没有网络连接</string>
+    <string name="netpReportBreakageCategoryIot">无法连接本地设备</string>
+    <string name="netpReportBreakageCategoryFeatureRequest">功能建议</string>
+    <string name="netpReportBreakageCategoryOther">其他问题</string>
+    <string name="netpBetaDisclaimerFooter">DuckDuckGo VPN 在测试期间免费使用。</string>
+    <string name="netpManagementManageHeader">管理</string>
+    <string name="netpManagementManageItemExclusion">已排除的应用</string>
+    <string name="netpManagementManageItemExclusionSubtitleEmpty">无</string>
+    <plurals name="netpManagementManageItemExclusionSubtitleAppCount">
+        <item quantity="one" instruction="Placeholder is a number">%1$d 个应用</item>
+        <item quantity="other" instruction="Placeholder is a number">%1$d 个应用</item>
+    </plurals>
+    <string name="netpManagementVpnSettings">VPN 设置</string>
+    <string name="netpVpnSettingsGeneralHeader">通用</string>
+    <string name="netpVpnSettingsSystemHeader">系统</string>
+    <string name="netpVpnNotificationSettingsTitle">VPN 通知</string>
+    <string name="netpVpnSettingsTitle">VPN 设置</string>
+    <string name="netpVpnSettingKillSwitch">始终开启</string>
+    <string name="netpVpnSettingAlwaysOn">始终开启</string>
+    <string name="netpManageRecentAppsProtectionAllowUnrestrictedBattTitle">允许不受限制地使用应用电池</string>
+    <string name="netpManageRecentAppsProtectionAllowUnrestrictedBattByline">在应用电池设置中允许“不受限制”的用量，以防止 Android 在后台关闭 VPN</string>
+    <string name="netpManageRecentAppsProtectionUnrestrictedBattTitle">应用电池用量不受限制</string>
+    <string name="netpManageRecentAppsProtectionUnrestrictedBattByline">在应用电池设置中，这样可防止 Android 在后台关闭 VPN</string>
+    <string name="netpVpnSettingAlwaysOnByline">中断后自动恢复 VPN 连接</string>
+    <string name="netpVpnSettingExcludeLocalNetworks">排除本地网络</string>
+    <string name="netpVpnSettingExcludeLocalNetworksByline">绕过 VPN 进行本地网络连接，例如连接打印机。</string>
+    <string name="netpVpnSettingDnsLeak">DuckDuckGo VPN 通过 VPN 隧道将 DNS 查询路由到我们自己的解析器，从而防止 DNS 泄露给你的互联网服务提供商。</string>
+    <string name="netpVpnSettingGeoswitching">首选位置</string>
+    <string name="netpVpnSettingGeoswitchingDefault">最近可用</string>
+    <string name="netpVpnNotificationSettings">VPN 通知</string>
+    <string name="netpVpnNotificationSettingsByLine">连接断开或 VPN 状态变化时收到通知</string>
+    <string name="netpVpnSettingExcludeLocalNetworksBatteryUsage">不受限制的电池用量</string>
+    <string name="netpVpnSettingExcludeLocalNetworksBatteryUsageByline">防止 Android 停止 VPN。</string>
+    <string name="netpVpnSettingsPauseDuringCalls">Wi-Fi 通话期间暂停 VPN</string>
+    <string name="netpVpnSettingsPauseDuringCallsByline">在 Wi-Fi 通话进行时暂时暂停 VPN，通话结束后自动重新连接</string>
+    <string name="netpGrantPhonePermissionTitle">需要电话权限</string>
+    <string name="netpGrantPhonePermissionByline">要启用此设置，你需要允许 DuckDuckGo 通过系统设置拨打和管理电话。</string>
+    <string name="netpGrantPhonePermissionActionPositive">设置</string>
+    <string name="netpGrantPhonePermissionActionNegative">取消</string>
+    <string name="netpVpnNotifyMeTitle">通知已关闭</string>
+    <string name="netpVpnNotifyMeByLine">接收 VPN 事件通知</string>
+    <string name="netpExclusionListTitle">管理应用</string>
+    <string name="netpExclusionListHeaderDefault">DuckDuckGo VPN 默认保护所有应用。如果启用 VPN 后某个应用出现问题，请尝试为该应用关闭防护。</string>
+    <string name="netpExclusionListHeaderDisabled">DuckDuckGo VPN 已停用。</string>
+    <string name="netpExclusionListExcludedReasonManuallyDisabled">手动停用</string>
+    <string name="netpExclusionListExcludedReasonManuallyEnabled">手动启用</string>
+    <string name="netpExclusionListExcludedReasonIssuesMayOccur">启用后应用可能出现问题</string>
+    <string name="netpExclusionListFilterMenuProtectedLabel">防护已启用</string>
+    <string name="netpExclusionListFilterMenuUnprotectedLabel">防护已停用</string>
+    <string name="netpExclusionListFilterMenuAllLabel">全部</string>
+    <string name="netpExclusionListManuallyDisableAppDialogTitle">要报告问题吗？</string>
+    <string name="netpExclusionListManuallyDisableAppDialogLabel" instruction="Placeholder is the name of an app">如果你因遇到应用问题而为 %1$s 停用了 VPN，请告诉我们。\n\n我们还会为 %1$s 停用应用追踪防护。</string>
+    <string name="netpExclusionListManuallyCTAReportIssue">报告问题</string>
+    <string name="netpExclusionListManuallyCTANotNow">以后再说</string>
+    <string name="netpExclusionListManuallyCTACancel">取消</string>
+    <string name="netpExclusionListManuallyCTARestore">恢复</string>
+    <string name="netpExclusionListManuallyMenuRestore">恢复所有应用的防护</string>
+    <string name="netpExclusionListManuallyMenuReport">报告某个应用的问题</string>
+    <string name="netpExclusionListRestoreDefaultsTitle">恢复所有应用的防护？</string>
+    <string name="netpExclusionListRestoreDefaultsMessage">这将更新你的自定义防护设置，并为所有应用启用 VPN。你以后随时可以再次更改防护设置。</string>
+    <string name="netpExclusionListRestoreDefaultSnackbar">防护已恢复为默认设置</string>
+    <string name="netpExclusionListRestoreDefaultsDisclaimer">启用防护会将应用名称发送给 DuckDuckGo。</string>
+    <string name="netpExclusionListSystemAppsHeader">Android 系统应用</string>
+    <string name="netpExclusionListWarningTitle">关于系统应用排除</string>
+    <string name="netpExclusionListWarningMessage">这组应用使用的互联网流量（包括后台连接）将不受 VPN 保护。如果这没有解决问题，请考虑重新启用，以防止意外的数据泄露。</string>
+    <string name="netpExclusionListWarningActionPositive">确定</string>
+    <string name="netpManagementAboutHeader">关于</string>
+    <string name="netpManagementAboutItemFaqs">常见问题与支持</string>
+    <string name="netpManagementAboutItemShareFeedback">发送反馈</string>
+    <string name="netpFaqTitle">常见问题与支持</string>
+    <string name="netpFaqQuestionOne">DuckDuckGo VPN 是如何工作的？</string>
+    <string name="netpFaqAnswerOne">VPN 使用开源 WireGuard 协议在你的设备上配置虚拟专用网络（VPN）。启用后，你设备上的全部流量会先加密，然后通过最近的 VPN 服务器路由，以保护你的浏览活动不被互联网服务提供商看到，并向你访问的应用和网站隐藏你的位置。</string>
+    <string name="netpFaqQuestionTwo">只有网页浏览受到保护吗？</string>
+    <string name="netpFaqAnswerTwo">你设备上的全部网络活动都受到保护。</string>
+    <string name="netpFaqQuestionThree">DuckDuckGo 会保存我的数据日志吗？</string>
+    <string name="netpFaqAnswerThree">不，我们不会存储日志。</string>
+    <string name="netpFaqQuestionFour">VPN 服务器位于哪里？</string>
+    <string name="netpFaqAnswerFour">DuckDuckGo VPN 在测试期间提供的服务器数量有限，位于美国、加拿大和欧洲。</string>
+    <string name="netpFaqQuestionSix">为什么 VPN 开启时有些应用无法使用？</string>
+    <string name="netpFaqAnswerSix">一些网站和应用会故意限制 VPN 用户的访问。例如，它们可能会要求你完成 CAPTCHA 验证，以确认你是真人而非机器人。如果某个应用反复出现问题，你可以在 DuckDuckGo VPN 设置中将其排除在 VPN 之外。</string>
+    <string name="netpFaqQuestionSeven">为什么无法关闭 VPN 通知？</string>
+    <string name="netpFaqAnswerSeven">Android 要求 VPN 在启用期间显示持续通知。</string>
+    <string name="netpFaqQuestionEight">VPN 与应用追踪防护兼容吗？</string>
+    <string name="netpFaqAnswerEight">可以，VPN 和应用追踪防护可以同时开启。没有其他 VPN 能与 DuckDuckGo 应用追踪防护兼容。</string>
+    <string name="netpFaqQuestionNine">VPN 免费使用吗？</string>
+    <string name="netpFaqAnswerNine">DuckDuckGo VPN 在测试期间免费使用。之后将作为付费服务提供。</string>
+    <string name="netpNotificationCTAEnableNetp">连接</string>
+    <string name="netpNotificationCTAReportIssue">某个应用有问题？</string>
+    <string name="netpNotificationDisabled">VPN 已断开。点击以继续保护你的设备流量。</string>
+    <string name="netpNotificationDisabledByVpn">你设备上的某个 VPN 应用断开了 DuckDuckGo VPN。点击重新连接。</string>
+    <string name="netpUnsafeWifi">已连接到不安全的 Wi-Fi。</string>
+    <string name="netpNotificationCTAReconnectNow">立即重新连接</string>
+    <string name="netpNotificationSnoozeTitle">VPN 已暂停</string>
+    <string name="netpNotificationSnoozeBody" instruction="Placeholder is time in hh:mm format">VPN 将在 %1$s 重新连接</string>
+    <string name="netpNotificationVpnAccessRevoked">VPN 因订阅过期而断开。订阅 DuckDuckGo 以重新连接 VPN。</string>
+    <string name="netpGeoswitchingTitle">VPN 位置</string>
+    <string name="netpGeoswitchingHeaderRecommended">推荐</string>
+    <string name="netpGeoswitchingDefaultTitle">最近可用</string>
+    <string name="netpGeoswitchingDefaultSubtitle">自动连接到能找到的最近服务器</string>
+    <string name="netpGeoswitchingHeaderCustom">自定义</string>
+    <string name="netpGeoswitchingHeaderCountrySubtitle" instruction="Placeholder is a number greater than 1">%1$d 个城市</string>
+    <string name="netpDialogVpnAccessRevokedTitle">VPN 因订阅过期而断开</string>
+    <string name="netpDialogVpnAccessRevokedBody">订阅 DuckDuckGo 以重新连接 VPN。</string>
+    <string name="netpDialogVpnAccessRevokedPositiveAction">订阅</string>
+    <string name="netpDialogVpnAccessRevokedNegativeAction">关闭</string>
+    <string name="netpVerifySubscriptionLabel">验证订阅</string>
+    <string name="netpVerifySubscriptionInProgress">正在验证你的订阅，请稍候…</string>
+    <string name="netpVerifySubscriptionNoSubscription">哎呀！你没有任何有效的订阅。</string>
+    <string name="netpVerifySubscriptionNoEntitlement">哎呀！你的订阅对 DuckDuckGo VPN 无效。</string>
+    <string name="netpCustomDnsSettingText">DNS 服务器</string>
+    <string name="netpPrivateDns">私密 DNS</string>
+    <string name="netpCustomDnsDefaultBlockMalware">DuckDuckGo（诈骗拦截）</string>
+    <string name="netpCustomDnsDefaultOption">DuckDuckGo（推荐）</string>
+    <string name="netpCustomDnsCustom">自定义</string>
+    <string name="netpCustomDnsInputAddressHint">IPv4 地址</string>
+    <string name="netpCustomDnsApply">应用</string>
+    <string name="netpCustomDnsCustomHeader">DNS 服务器</string>
+    <string name="netpCustomDnsPrivateDnsWarning">系统 DNS 设置中已指定私密 DNS。请关闭私密 DNS，以便为 DuckDuckGo VPN 设置自定义 DNS。<annotation type="open_settings_link">打开系统设置</annotation></string>
+    <string name="netpCustomDnsWarning">使用自定义 DNS 服务器可能会影响浏览速度；如果服务器不安全或不可靠，你的活动可能会暴露给第三方。</string>
+    <string name="netpDdgDnsByLine">DuckDuckGo 通过我们自己的 DNS 服务器路由 DNS 查询，这样你的互联网服务提供商就看不到你访问了哪些网站。</string>
+    <string name="netpDnsBlockMalwareHeader">恶意内容拦截</string>
+    <string name="netpDnsBlockMalwarePrimary">诈骗拦截</string>
+    <string name="netpDnsBlockMalwareByline">通过 DNS 级别的拦截列表，拦截 150,000 多个被标记为托管恶意软件、网络钓鱼攻击和网络诈骗的域名。<annotation type="learn_more_link">了解更多</annotation></string>
+    <string name="netpDnsBlockMalwareFaqsTitle">DNS 拦截列表</string>
+    <string name="netpAutoExcludePromptTitle">要排除与 VPN 不兼容的应用吗？</string>
+    <string name="netpAutoExcludePromptMessage" instruction="Placeholder is a phrase that contains a number">我们在 VPN 连接期间发现了 %1$s。</string>
+    <plurals name="netpAutoExcludeAppLabel">
+        <item quantity="one" instruction="Placeholder is a number">发现 %1$d 个与 VPN 不兼容的新应用。排除该应用即可使用</item>
+        <item quantity="other" instruction="Placeholder is a number">发现 %1$d 个与 VPN 不兼容的新应用。排除这些应用即可使用</item>
+    </plurals>
+    <string name="netpAutoExcludePromptExcludeAllTitle">要排除所有与 VPN 不兼容的应用吗？</string>
+    <plurals name="netpAutoExcludeAllAppLabel">
+        <item quantity="one" instruction="Placeholder is a number">发现另外 %1$d 个与 VPN 不兼容的应用。排除该应用即可使用</item>
+        <item quantity="other" instruction="Placeholder is a number">发现另外 %1$d 个与 VPN 不兼容的应用。排除这些应用即可使用</item>
+    </plurals>
+    <string name="netpAutoExcludePromptOptionEnable">自动排除不兼容的应用</string>
+    <string name="netpAutoExcludePromptActionAdd">排除应用</string>
+    <string name="netpAutoExcludePromptActionCancel">跳过</string>
+    <string name="netpAutoExcludeToggleName">自动排除与 VPN 不兼容的应用</string>
+    <string name="netpExclusionListLabelAutoExclude">与 VPN 不兼容</string>
+    <string name="netpExclusionListAutoExcludeDescription">有些应用（如银行或流媒体应用）与 VPN 配合不佳。启用此设置后，我们会自动排除这些应用。</string>
+    <string name="netpCloseButtonContentDescription">关闭</string>
+    <string name="netpVpnIndicatorContentDescription">VPN 状态指示器</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="sync_simplified_enable_option_favorites_title">在多台设备间共享收藏</string>
+    <string name="sync_simplified_enable_option_favorites_subtitle">在手机和桌面设备上使用相同的收藏书签。</string>
+    <string name="saved_site_limit_warning"><b>同步已暂停</b>\n您已达到书签数量上限。请删除一些书签以恢复同步。\n\n<annotation type="manage_bookmarks">管理书签</annotation></string>
+    <string name="saved_site_limit_warning_notif"><b>书签同步已暂停</b>\n您已达到书签数量上限。请删除一些书签以恢复同步。</string>
+    <string name="saved_site_invalid_warning"><b>同步已暂停</b>\n部分书签格式不正确或过长，未能同步。\n\n<annotation type="manage_bookmarks">管理书签</annotation></string>
+    <string name="saved_site_invalid_warning_notif"><b>书签同步已暂停</b>\n部分书签格式不正确或过长，未能同步。</string>
+    <plurals name="saved_site_invalid_items_warning" instruction="%1$ represents a site name or url, %2$d is the number of other invalid sites">
+        <item quantity="one">您的书签 %1$s 无法同步，因为其中某个字段超出了字符上限。\n\n</item>
+        <item quantity="other">您的书签 %1$s 及其他 %2$d 个网站无法同步，因为其中某些字段超出了字符上限。\n\n</item>
+    </plurals>
+    <string name="bookmarksSearchMenuContentDescription">搜索书签</string>
+    <string name="bookmarksAddFolderMenuContentDescription">添加文件夹</string>
+    <string name="bookmarksMenuContentDescription">更多选项</string>
+    <string name="newTabFavoritesToggleContentDescription">切换收藏可见性</string>
+    <string name="saved_site_invalid_items_warning_link"><annotation type="manage_bookmarks">管理书签</annotation></string>
+    <string name="bookmarksMenuTitle">书签</string>
+    <string name="bookmarksActivityTitle">书签</string>
+    <string name="noBookmarks">尚未添加书签</string>
+    <string name="bookmarkOverflowContentDescription" instruction="Placeholder is the title of the bookmark">书签 %1$s 的更多选项</string>
+    <string name="bookmarkDeleteConfirmationMessage" instruction="Placeholder is the title of the bookmark">已删除 &lt;b>%1$s&lt;/b></string>
+    <string name="exportBookmarksMenu">导出</string>
+    <string name="exportBookmarksEmpty">您还没有书签，没有可导出的内容</string>
+    <string name="exportBookmarksError">无法导出书签，出现了问题</string>
+    <string name="exportBookmarksSuccess">所有书签已成功导出</string>
+    <string name="importBookmarksMenu">导入</string>
+    <string name="importBookmarksFileTitle">选择要导入的书签文件</string>
+    <string name="importBookmarksError">无法导入书签，出现了问题</string>
+    <string name="importBookmarksEmpty">该文件没有可导入的书签</string>
+    <string name="importBookmarksSuccess" instruction="Placeholder is a number">已成功导入 %1$d 个书签</string>
+    <string name="savedSiteDialogTitleHint">标题</string>
+    <string name="savedSiteDialogUrlHint">网址</string>
+    <string name="savedSiteDialogTitleEdit">编辑</string>
+    <string name="bookmarksSectionTitle">书签</string>
+    <string name="favoritesSectionTitle">收藏</string>
+    <string name="bookmarksEmptyHint">尚未添加书签</string>
+    <string name="favoritesEmptyHint">尚未添加收藏</string>
+    <string name="popupBookmarksSortManually">手动排序</string>
+    <string name="popupBookmarksSortByName">按名称排序</string>
+    <string name="popupBookmarksPreventReordering">切换到手动排序以重新排列书签。</string>
+    <string name="bookmarkDialogTitleEdit">编辑书签</string>
+    <string name="favoriteDialogTitleEdit">编辑收藏</string>
+    <string name="locationLabel" instruction="Refers to the folder where a bookmark is saved, not a geographical location">位置</string>
+    <string name="folderLocationTitle" instruction="Refers to the folder where a bookmark is saved, not a geographical location">选择位置</string>
+    <string name="addFolder">添加文件夹</string>
+    <string name="editFolder">编辑文件夹</string>
+    <string name="bookmarkFolderDeleteDialogTitle" instruction="Dialog title for deleting a folder with bookmarks">“删除文件夹及其内容？”</string>
+    <string name="bookmarkFolderDeleteDialogMessage">“确定要删除 ”</string>
+    <string name="bookmarkFolderEmpty">空</string>
+    <plurals name="bookmarkFolderDeleteDialogMessage">
+        <item quantity="one" instruction="%1$s is the text from bookmarkFolderDeleteDialogMessage, %2$s is the name of the folder and %3$d is the number of items inside the folder">%1$s%2$s 及 %3$d 个项目？</item>
+        <item quantity="other" instruction="%1$s is the text from bookmarkFolderDeleteDialogMessage, %2$s is the name of the folder and %3$d is the number of items inside the folder">%1$s%2$s 及 %3$d 个项目？</item>
+    </plurals>
+    <plurals name="bookmarkFolderItems">
+        <item quantity="one" instruction="Placeholder is the number of items">%1$d 个项目</item>
+        <item quantity="other" instruction="Placeholder is the number of items">%1$d 个项目</item>
+    </plurals>
+    <string name="searchBookmarks">搜索书签</string>
+    <string name="deleteFolder" instruction="%1$s is the folder name">“删除 %1$s？”</string>
+    <string name="deleteBookmark" instruction="%1$s is the bookmark name">“删除 %1$s 书签？”</string>
+    <string name="addToFavorites">添加到收藏</string>
+    <string name="editBookmark">编辑书签</string>
+    <string name="importBookmarksDescription">如果您的书签保存在其他浏览器中，您\n可以将其导入 DuckDuckGo。</string>
+    <string name="importBookmarks">导入书签</string>
+    <string name="noResultsFor" instruction="%1$s is the search term">没有与 \'%1$s\' 相关的结果</string>
+    <string name="removeFromFavorites">从收藏中移除</string>
+    <string name="addToFavoritesMenu">添加到收藏</string>
+    <plurals name="bookmarkFolderDeleteMessage">
+        <item quantity="one" instruction="%1$d is the number of items inside the folder">确定要删除此文件夹及其中 %1$d 个项目吗？</item>
+        <item quantity="other" instruction="%1$d is the number of items inside the folder">确定要删除此文件夹及其中 %1$d 个项目吗？</item>
+    </plurals>
+    <string name="deleteBookmarkConfirmationDescription" instruction="Placeholder is the name of the bookmark">确定要删除书签 &lt;b>%1$s&lt;/b> 吗？</string>
+    <string name="sync_simplified_fetch_icons_title">加载书签图标</string>
+    <string name="sync_simplified_fetch_icons_subtitle">加载您已收藏网站的图标。图标下载会暴露给您的网络。</string>
+    <string name="faviconsPromptTitle">下载缺失的图标？</string>
+    <string name="faviconsPromptMessage">是否希望此设备自动从已收藏的网站下载同步书签的图标？</string>
+    <string name="faviconsPromptPrimaryCta">保持书签图标更新</string>
+    <string name="faviconsPromptSecondaryCta">暂不</string>
+    <string name="deleteBookmarkConfirmationDialogTitle" instruction="Dialog title for deleting a bookmark">删除此书签？</string>
+    <string name="deleteBookmarkConfirmationDialogDescription" instruction="Placeholder is the name of the bookmark">这将删除您的书签 &lt;b>%1$s&lt;/b>。</string>
+    <string name="deleteFavoriteConfirmationDialogTitle" instruction="Dialog title for deleting a favorite site">删除此收藏？</string>
+    <string name="deleteFavoriteConfirmationDialogDescription" instruction="Placeholder is the name of the favorite site">这将删除您的收藏 &lt;b>%1$s&lt;/b>。</string>
+    <string name="deleteBookmarkFolderConfirmationDialogTitle" instruction="Dialog title for deleting a bookmark folder">删除此书签文件夹？</string>
+    <string name="deleteBookmarkFolderConfirmationDialogDescription" instruction="Placeholder is the name of the favorite site">这将删除您的书签文件夹 &lt;b>%1$s&lt;/b>。</string>
+    <string name="deleteSavedSiteConfirmationDialogCancel">取消</string>
+    <string name="deleteSavedSiteConfirmationDialogDelete">删除</string>
+    <string name="importBookmarksFromGooglePreImportDialogTitle">从 Google 导入书签</string>
+    <string name="importBookmarksFromGooglePreImportDialogInstruction">Google 可能会要求您登录或输入密码以确认。</string>
+    <string name="importBookmarksFromGooglePreImportDialogImportButton">从 Google 导入</string>
+    <string name="importBookmarksFromGooglePreImportDialogSelectFileButton">选择书签文件…</string>
+    <string name="bookmarksImportDialogClose">关闭</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="duck_player_save">保存</string>
+    <string name="duck_player_cancel">取消</string>
+    <string name="duck_player_setting_title">Duck Player</string>
+    <string name="duck_player_settings_activity_title">Duck Player</string>
+    <string name="duck_player_settings_activity_description">Duck Player 让您可以在 DuckDuckGo 中观看 YouTube，且没有定向广告，您观看的内容也不会影响推荐。\n<annotation type="learn_more_link">了解详情</annotation></string>
+    <string name="duck_player_settings_video_preferences_header">视频偏好设置</string>
+    <string name="duck_player_settings_unavailable_description">Duck Player 让您可以在 DuckDuckGo 中观看 YouTube，且没有定向广告，您观看的内容也不会影响推荐。</string>
+    <string name="duck_player_mode_always">始终</string>
+    <string name="duck_player_mode_never">从不</string>
+    <string name="duck_player_mode_always_ask">每次询问</string>
+    <string name="duck_player_mode_dialog_title">在 Duck Player 中打开 YouTube 视频？</string>
+    <string name="duck_player_close_modal_content_description">关闭</string>
+    <string name="duck_player_info_modal_title_from_duck_player_page">在 YouTube 上被广告淹没？使用 Duck Player 就不会！</string>
+    <string name="duck_player_info_modal_title_from_overlay">在 YouTube 上被广告淹没？试试 Duck Player！</string>
+    <string name="duck_player_info_modal_text">Duck Player 让您可以在 DuckDuckGo 中观看 YouTube，且没有定向广告，您观看的内容也不会影响推荐。</string>
+    <string name="duck_player_info_modal_button">知道了！</string>
+    <string name="duck_player_unavailable">Duck Player 不可用</string>
+    <string name="duck_player_unavailable_learn_more">了解详情</string>
+    <string name="duck_player_open_videos_setting">在 Duck Player 中打开 YouTube 视频</string>
+    <string name="duck_player_open_in_a_new_tab_setting">在新标签页中打开 Duck Player</string>
+</resources>

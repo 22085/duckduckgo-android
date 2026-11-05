@@ -41,6 +41,7 @@ import com.duckduckgo.codegen.annotations.InjectWith
 import com.duckduckgo.common.ui.DuckDuckGoActivity
 import com.duckduckgo.common.ui.spans.DuckDuckGoClickableSpan
 import com.duckduckgo.common.ui.view.addClickableSpan
+import com.duckduckgo.common.ui.view.dialog.RadioListAlertDialogBuilder
 import com.duckduckgo.common.ui.view.fadeTransitionConfig
 import com.duckduckgo.common.ui.view.setEnabledOpacity
 import com.duckduckgo.common.ui.viewbinding.viewBinding
@@ -49,6 +50,7 @@ import com.duckduckgo.di.scopes.ActivityScope
 import com.duckduckgo.navigation.api.GlobalActivityStarter
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+import java.util.Locale
 import javax.inject.Inject
 
 @InjectWith(ActivityScope::class)
@@ -88,6 +90,10 @@ class GeneralSettingsActivity : DuckDuckGoActivity() {
         viewModel.onShowOnAppLaunchButtonClick()
     }
 
+    private val languageClickListener = OnClickListener {
+        launchLanguageSelector(viewModel.viewState.value?.selectedLanguage ?: AppLanguage.SYSTEM)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -115,6 +121,7 @@ class GeneralSettingsActivity : DuckDuckGoActivity() {
 
     private fun configureUiEventHandlers() {
         binding.showOnAppLaunchButton.setOnClickListener(showOnAppLaunchClickListener)
+        binding.languageButton.setOnClickListener(languageClickListener)
     }
 
     private fun configureEdgeToEdgeInsets() {
@@ -177,6 +184,7 @@ class GeneralSettingsActivity : DuckDuckGoActivity() {
                     }
 
                     binding.showOnAppLaunchButton.isVisible = it.isShowOnAppLaunchOptionVisible
+                    binding.languageButton.setSecondaryText(languageDisplayText(it.selectedLanguageTag))
                     setShowOnAppLaunchOptionSecondaryText(viewState.showOnAppLaunchSelectedOption)
                     if (it.showNTPAfterIdleReturn) {
                         binding.showOnAppLaunchButton.setPrimaryText(resources.getText(R.string.afterInactivityOptionTitle))
@@ -190,6 +198,40 @@ class GeneralSettingsActivity : DuckDuckGoActivity() {
             .flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
             .onEach { processCommand(it) }
             .launchIn(lifecycleScope)
+    }
+
+    private fun launchLanguageSelector(current: AppLanguage) {
+        RadioListAlertDialogBuilder(this)
+            .setTitle(R.string.languageSettingTitle)
+            .setOptions(
+                listOf(
+                    R.string.languageSettingSystemDefault,
+                    R.string.languageSettingEnglish,
+                    R.string.languageSettingChinese,
+                ),
+                current.ordinal + 1,
+            ).setPositiveButton(com.duckduckgo.mobile.android.R.string.dialogSave)
+            .setNegativeButton(R.string.cancel)
+            .addEventListener(
+                object : RadioListAlertDialogBuilder.EventListener() {
+                    override fun onPositiveButtonClicked(selectedItem: Int) {
+                        val selectedLanguage = when (selectedItem) {
+                            2 -> AppLanguage.ENGLISH
+                            3 -> AppLanguage.CHINESE
+                            else -> AppLanguage.SYSTEM
+                        }
+                        viewModel.onLanguageSelected(selectedLanguage)
+                    }
+                },
+            ).show()
+    }
+
+    private fun languageDisplayText(languageTag: String?): String {
+        if (languageTag.isNullOrBlank()) {
+            return getString(R.string.languageSettingSystemDefault)
+        }
+        val locale = Locale.forLanguageTag(languageTag)
+        return locale.getDisplayLanguage(locale)
     }
 
     private fun setShowOnAppLaunchOptionSecondaryText(showOnAppLaunchOption: ShowOnAppLaunchOption) {

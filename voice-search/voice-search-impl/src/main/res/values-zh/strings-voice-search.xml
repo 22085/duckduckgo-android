@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="voiceSearchError">出错了。请稍后再试。</string>
+    <string name="voiceSearchIconContentDescription">语音搜索</string>
+    <string name="voiceSearchListening">请说话</string>
+    <string name="voiceSearchListeningFooter">音频在设备上处理。不会被存储或共享给任何人，包括 DuckDuckGo。</string>
+    <string name="voiceSearchNegativeAction">取消</string>
+    <string name="voiceSearchMicAccessDeniedDialogTitle">DuckDuckGo 需要访问您的麦克风</string>
+    <string name="voiceSearchMicAccessDeniedDialogMessage">如需使用我们的私密语音搜索，需要麦克风权限。</string>
+    <string name="voiceSearchMicAccessDeniedDialogMessageDuckAi">如需使用我们的私密语音功能，需要麦克风权限。</string>
+    <string name="voiceSearchMicAccessDeniedDialogChangePermissions">更改权限</string>
+    <string name="voiceSearchMicAccessDeniedDialogHideVoiceSearch">隐藏语音搜索</string>
+    <string name="voiceSearchMicPermissionDeniedSnackbarMessage">语音功能需要麦克风权限</string>
+    <string name="voiceSearchMicPermissionDeniedSnackbarAction">允许</string>
+    <string name="voiceSearchTitle">语音搜索</string>
+</resources>

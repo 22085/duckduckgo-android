@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2022 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="managementDisabledModeCta"><b>在设置中设置</b></string>
+    <string name="saveLoginDialogButtonSave">保存密码</string>
+    <string name="saveLoginMissingUsernameDialogButtonSave">保存密码</string>
+    <string name="saveLoginDialogNotNow">不保存</string>
+    <string name="saveLoginDialogTitle">保存密码？</string>
+    <string name="saveLoginDialogMoreOptionsButtonLabel">更多选项</string>
+    <string name="useSavedLoginDialogTitle">使用已保存的密码？</string>
+    <string name="useSavedLoginDialogMissingUsernameButtonText" instruction="Placeholder is the name of a website">%1$s 的密码</string>
+    <string name="useSavedLoginDialogMissingUsernameMissingDomainButtonText">该网站的密码</string>
+    <string name="useSavedLoginDialogGroupThisWebsite">来自此网站</string>
+    <string name="useSavedLoginDialogFromDomainLabel" instruction="Placeholder is the URL of a website">来自 %1$s</string>
+    <string name="updateLoginDialogButtonUpdatePassword">更新密码</string>
+    <string name="updateLoginDialogButtonNotNow">不保存</string>
+    <string name="updateLoginDialogTitleUpdateUsername">更新用户名？</string>
+    <string name="updateLoginDialogButtonUpdateUsername">更新用户名</string>
+    <string name="updateLoginDialogTitleLine" instruction="Placeholder is the user's username for this site">更新 \n%1$s 的密码？</string>
+    <string name="updateLoginUpdatePasswordExplanation">DuckDuckGo 将更新存储在你设备上的这个密码。</string>
+    <string name="autofillDialogCloseButtonContentDescription">关闭自动填充对话框</string>
+    <string name="credentialManagementEditUsernameHint">用户名</string>
+    <string name="credentialManagementEditPasswordHint">密码</string>
+    <string name="credentialManagementEditWebsiteHint">网站地址</string>
+    <string name="credentialManagementEditNotesHint">备注</string>
+    <string name="credentialManagementEditButtonDelete">删除</string>
+    <string name="credentialManagementEditButtonSaveChanges">保存更改</string>
+    <string name="credentialManagementEditButtonCopyUsername">复制用户名</string>
+    <string name="credentialManagementEditButtonCopyPassword">复制密码</string>
+    <string name="credentialManagementViewMenuEdit">编辑</string>
+    <string name="credentialManagementViewMenuDelete">删除</string>
+    <string name="credentialManagementSuggestionsLabel">推荐</string>
+    <string name="credentialManagementWebViewIncompatibleErrorMessage">由于你的 Android WebView 版本过旧或不兼容，密码自动填充不可用。</string>
+    <string name="autofillManagementSearchClearDescription">清除搜索输入</string>
+    <string name="autofillManagementNoSearchResults" instruction="Placeholder is the query the user has searched for. e.g., No results for 'kittens'">未找到与“%1$s”相关的结果</string>
+    <string name="autofillDeleteLoginDialogCancel">取消</string>
+    <string name="autofillDeleteLoginDialogDelete">删除</string>
+    <string name="autofillManagementUsernameCopied">用户名已复制</string>
+    <string name="autofillManagementPasswordCopied">密码已复制</string>
+    <string name="autofill_password_generation_offer_title">使用 DuckDuckGo 提供的强密码？</string>
+    <string name="autofill_password_generation_offer_accept">使用强密码</string>
+    <string name="autofill_password_generation_offer_decline">自己创建</string>
+    <string name="deviceNotSupportedTitle">设备不受支持</string>
+    <string name="autofillManagementUndoDeletion">撤销</string>
+    <string name="credentialManagementLinkButtonContentDescription" instruction="Accessibility text for a button that will show next to a text field containing a website address; it will launch the website when tapped">打开网站</string>
+    <string name="credentialManagementDeactivateDuckAddressDialogTitle" instruction="'Duck Address' is the feature name, and should not be translated. We are confirming with the user that they are about to deactivate their private 'Duck Address'">停用私密 Duck Address？</string>
+    <string name="credentialManagementDeactivateDuckAddressDialogMessage" instruction="Placeholder is an email address">发送到 %1$s 的邮件将不再转发到你的收件箱。</string>
+    <string name="credentialManagementDeactivateDuckAddressPositiveButton" instruction="This is the text shown on a button. When pressed, it will deactivate their email address, meaning emails sent there will no longer be forwarded to their inbox">停用</string>
+    <string name="credentialManagementActivateDuckAddressDialogTitle" instruction="'Duck Address' is the feature name, and should not be translated. We are confirming with the user that they are about to reactivate their private 'Duck Address'">重新启用私密 Duck Address？</string>
+    <string name="credentialManagementActivateDuckAddressDialogMessage" instruction="Placeholder is an email address">发送到 %1$s 的邮件将再次转发到你的收件箱。</string>
+    <string name="credentialManagementActivateDuckAddressPositiveButton" instruction="This is the text shown on a button. When pressed, it will reactivate their email address, meaning emails sent there will again be forwarded to their inbox">重新启用</string>
+    <string name="credentialManagementDuckAddressActivatedLabel" instruction="This indicates that the 'status' of their private 'Duck Address' is active">已启用</string>
+    <string name="credentialManagementDuckAddressActivatingLabel" instruction="This is text shown briefly while changing the status of their 'Duck Address', going from deactivated to active">正在启用…</string>
+    <string name="credentialManagementDuckAddressDeactivatedLabel" instruction="This indicates that the 'status' of their private 'Duck Address' is deactivated">已停用</string>
+    <string name="credentialManagementDuckAddressDeactivatingLabel" instruction="This is text shown briefly while changing the status of their 'Duck Address', going from active to deactivated">正在停用…</string>
+    <string name="credentialManagementDuckAddressManagementTemporarilyUnavailable" instruction="Error message shown when unable to manage this 'Duck Address' right now">目前暂时无法管理此地址。</string>
+    <string name="credentialManagementEnableEmailProtectionPrompt" instruction="'Duck Addresses' is the feature name, and should not be translated."><annotation type="enable_duck_address">启用邮件防护</annotation>以在此设备上管理 Duck Address。</string>
+    <string name="autofill_email_protection_choose_email_dialog_title">选择邮箱地址</string>
+    <string name="autofillTooltipUseYourAliasDescription">拦截邮件追踪器</string>
+    <string name="autofillTooltipGenerateAddress" instruction="'Duck Address' is the feature name, and should not be translated.">生成私密 Duck Address</string>
+    <string name="autofillTooltipGenerateAddressDescription" instruction="'hide address' refers to using an alias so your real email address is not used">拦截邮件追踪器并隐藏地址</string>
+    <string name="autofillDisableAutofillPromptMessage">你可以随时在设置中关闭此功能。</string>
+    <string name="autofillDisableAutofillPromptPositiveButton">继续保存</string>
+    <string name="autofillDisableAutofillPromptNegativeButton">关闭</string>
+    <string name="autofillEmailProtectionInContextSignUpDialogTitle">隐藏你的邮箱并拦截追踪器</string>
+    <string name="autofillEmailProtectionInContextSignUpDialogFeatureName">邮件防护</string>
+    <string name="autofillEmailProtectionInContextSignUpDialogExplanation">创建一个唯一的随机地址，同时清除隐藏追踪器并将邮件转发到你的收件箱。</string>
+    <string name="autofillEmailProtectionInContextSignUpDialogProtectEmailButtonText">保护我的邮箱</string>
+    <string name="autofillEmailProtectionInContextSignUpDialogDoNotShowAgainButtonText">不再显示</string>
+    <string name="autofillEmailProtectionInContextSignUpConfirmExitDialogTitle">如果现在退出，你的 Duck Address 将不会被保存</string>
+    <string name="autofillEmailProtectionInContextSignUpConfirmExitDialogPositiveButton">继续设置</string>
+    <string name="autofillEmailProtectionInContextSignUpConfirmExitDialogNegativeButton">退出设置</string>
+    <string name="autofillManagementScreenTitle">密码</string>
+    <string name="autofillManagementScreenTitleNew">密码与自动填充</string>
+    <string name="credentialManagementNoLoginsSavedTitle">尚未保存密码</string>
+    <string name="credentialManagementAutofillToggleLabel">保存并自动填充密码</string>
+    <string name="credentialManagementAutofillSubtitle">密码已加密。只有你能看到它们，连我们也看不到。<annotation type="learn_more_link">了解更多</annotation></string>
+    <string name="credentialManagementAutofillHelpPageTitle">密码管理器安全</string>
+    <string name="saveLoginDialogSubtitle">使用 DuckDuckGo 密码与自动填充功能，在设备上安全存储密码。</string>
+    <string name="autofillManagementAddLogin">添加密码</string>
+    <string name="credentialManagementEditLoginTitleHint">标题</string>
+    <string name="autofillManagementDeletedConfirmation">密码已删除</string>
+    <string name="credentialManagementEditLastUpdated" instruction="Placeholder is a date">上次更新于 %1$s</string>
+    <string name="autofillDisableAutofillPromptTitle">要继续保存密码吗？</string>
+    <string name="deviceNotSupportedSubtitle">为了安全存储密码，我们需要在你的设备上加密并存储它们。由于你的设备不支持加密存储，保存和自动填充密码功能不可用。</string>
+    <string name="autofill_password_generation_offer_message">密码安全地存储在你的设备上。</string>
+    <string name="autofillManagementSearchLogins">搜索密码</string>
+    <string name="biometric_prompt_title">密码已锁定</string>
+    <string name="autofill_auth_text_for_access">解锁设备以访问密码</string>
+    <string name="managementDisabledModeTitle">锁定设备以保存密码</string>
+    <string name="managementDisabledModeSubtitle">需要设置设备锁屏图案、PIN 或生物识别来保护你的密码。</string>
+    <string name="credentialManagementEditTitle">编辑密码</string>
+    <string name="credentials_limit_warning"><b>同步已暂停</b>\n已达到密码数量上限。请删除一些密码以恢复同步。\n\n<annotation type="manage_logins">管理密码</annotation></string>
+    <string name="credentials_limit_warning_notif"><b>密码同步已暂停</b>\n已达到密码数量上限。请删除一些密码以恢复同步。</string>
+    <string name="credentials_invalid_request_warning"><b>同步已暂停</b>\n部分密码格式不正确或过长，未同步。\n\n<annotation type="manage_logins">管理密码</annotation></string>
+    <string name="credentials_invalid_request_warning_notif"><b>密码同步已暂停</b>\n部分密码格式不正确或过长，未同步。</string>
+    <string name="saveLoginDialogNeverForThisSite">此网站不再询问</string>
+    <string name="saveOnboardingLoginDialogSecondaryButton">不用了，谢谢</string>
+    <string name="credentialManagementInstructionNeverForThisSite">如果你重置已排除的网站，下次登录这些网站时，系统会再次提示你保存密码。</string>
+    <string name="credentialManagementClearNeverForThisSiteList">重置已排除的网站</string>
+    <string name="credentialManagementClearNeverForThisSiteDialogTitle">重置已排除的网站？</string>
+    <string name="credentialManagementClearNeverForThisSiteDialogPositiveButton">重置</string>
+    <string name="credentialManagementClearNeverForThisSiteDialogNegativeButton">取消</string>
+    <string name="credentialManagementDeleteAllPasswordsMenu">删除全部密码</string>
+    <plurals name="credentialManagementDeleteAllPasswordsSnackbarConfirmation" instruction="Placeholder is a number representing how many passwords were deleted">
+        <item quantity="one">已删除 %1$d 个密码</item>
+        <item quantity="other">已删除 %1$d 个密码</item>
+    </plurals>
+    <string name="autofill_auth_text_for_delete_all">进行身份验证以确认你要删除全部密码</string>
+    <string name="autofill_title_text_for_delete_all">删除全部密码</string>
+    <plurals name="syncCredentialInvalidItemsWarning" instruction="%1$ represents a site name or url, %2$d is the number of other invalid sites">
+        <item quantity="one">你的 %1$s 密码无法同步，因为其中某个字段超出了字符限制。\n\n</item>
+        <item quantity="other">你的 %1$s 及其他 %2$d 个网站的密码无法同步，因为其中一些字段超出了字符限制。\n\n</item>
+    </plurals>
+    <string name="syncCredentialInvalidItemsWarningLink"><annotation type="manage_passwords">管理密码</annotation></string>
+    <string name="credentialManagementDeleteAllPasswordsDialogFirstInstructionNotSyncedSingular">你的密码将从此设备中删除。</string>
+    <plurals name="credentialManagementDeleteAllPasswordsDialogFirstInstructionNotSyncedPlural" tools:ignore="ImpliedQuantity">
+        <item quantity="other">你的密码将从此设备中删除。</item>
+    </plurals>
+    <string name="credentialManagementDeleteAllPasswordsFirstInstructionSyncedSingular">你的密码将从所有已同步的设备中删除。</string>
+    <plurals name="credentialManagementDeleteAllPasswordsFirstInstructionSyncedPlural" tools:ignore="ImpliedQuantity">
+        <item quantity="other">你的密码将从所有已同步的设备中删除。</item>
+    </plurals>
+    <string name="credentialManagementDeleteAllPasswordsDialogConfirmationTitleSingular">确定要删除此密码吗？</string>
+    <plurals name="credentialManagementDeleteAllPasswordsDialogConfirmationTitlePlural" tools:ignore="ImpliedQuantity" instruction="Placeholder is a number representing how many passwords will be deleted">
+        <item quantity="other">确定要删除 %1$d 个密码吗？</item>
+    </plurals>
+    <string name="credentialManagementDeleteAllSecondInstructionSingular">请确保你仍有办法访问自己的账号。</string>
+    <plurals name="credentialManagementDeleteAllSecondInstructionPlural" tools:ignore="ImpliedQuantity">
+        <item quantity="other">请确保你仍有办法访问自己的账号。</item>
+    </plurals>
+    <string name="credentialManagementNoLoginsSavedSubtitle">你可以从其他浏览器导入已保存的密码到 DuckDuckGo。</string>
+    <string name="autofillManagementImportPasswords">导入密码</string>
+    <string name="autofillManagementHowToSyncDesktopPasswords">同步桌面端密码</string>
+    <string name="autofillManagementImportPasswordsHowToTitle">如何导入密码</string>
+    <string name="autofillManagementHowToSyncDesktopPasswordsTitle">如何同步桌面端密码</string>
+    <string name="autofillManagementImportPasswordsHowToInstruction">在桌面版 DuckDuckGo 浏览器中导入密码，然后跨设备同步。</string>
+    <string name="autofillManagementImportPasswordsGetDesktopBrowserButtonText">获取桌面版浏览器</string>
+    <string name="autofillManagementImportPasswordsGetDesktopBrowserIntentTitle">获取适用于 Mac 或 Windows 的 DuckDuckGo 浏览器</string>
+    <string name="autofillManagementImportPasswordsGetDesktopBrowserIntentMessage" instruction="Placeholder is a URL">使用 DuckDuckGo 桌面浏览器私密搜索并拦截追踪器。请在电脑上访问此链接立即下载。\n\n%1$s</string>
+    <string name="autofillManagementImportPasswordsSyncWithDesktopButtonText">与桌面端同步</string>
+    <string name="autofillManagementImportPasswordsImportFromDesktopTitle">从桌面浏览器导入：</string>
+    <string name="autofillManagementImportPasswordsImportFromDesktopInstructionOne">在 Mac 或 Windows 上打开 DuckDuckGo</string>
+    <string name="autofillManagementImportPasswordsImportFromDesktopInstructionTwo">"<![CDATA[前往 <b>设置</b> > <b>密码</b>]]>"</string>
+    <string name="autofillManagementImportPasswordsImportFromDesktopInstructionThree">选择 <![CDATA[<b>导入密码</b>]]>…并按步骤导入</string>
+    <string name="autofillManagementImportPasswordsImportFromDesktopInstructionFour">在电脑上导入后，即可在本设备上设置同步</string>
+    <string name="autofillManagementImportPasswordsGetDesktopAppTitle">获取桌面应用</string>
+    <string name="autofillManagementImportPasswordsGetDesktopAppSubtitle">获取适用于 Mac 或 Windows 的 DuckDuckGo</string>
+    <string name="autofillManagementImportPasswordsGetDesktopAppInstruction">在电脑上前往：</string>
+    <string name="autofillManagementReportBreakagePromptTitle">报告自动填充问题</string>
+    <string name="autofillManagementReportBreakagePromptSubtitle">匿名报告此网站上自动填充无法使用的问题。密码绝不会被分享。</string>
+    <string name="autofillManagementReportBreakageDialogTitle" instruction="Placeholder is a website URL">要报告 %1$s 上自动填充无法使用吗？</string>
+    <string name="autofillManagementReportBreakageDialogMessage">发送给 DuckDuckGo 的报告是匿名的，不包含你的用户名、密码或任何其他个人身份信息。\n\n报告仅包含网站地址和部分自动填充设置的状态。</string>
+    <string name="autofillManagementReportBreakageDialogPositiveButton">发送报告</string>
+    <string name="autofillManagementReportBreakageDialogNegativeButton">取消</string>
+    <string name="autofillManagementReportBreakageSuccessMessage">谢谢！你的报告将帮助我们让 DuckDuckGo 变得更好。</string>
+    <string name="onboardingSaveDialogKeyFeatureTitle">主要功能</string>
+    <string name="onboardingSaveDialogFeature1Title">无缝登录</string>
+    <string name="onboardingSaveDialogFeature1Subtitle">无需记住登录信息。</string>
+    <string name="onboardingSaveDialogFeature2Title">安全存储</string>
+    <string name="onboardingSaveDialogFeature2Subtitle">密码已加密，存储在设备上，并通过你的 Android 图案或 PIN 锁定。</string>
+    <string name="onboardingSaveDialogFeature3Title">设备间同步</string>
+    <string name="onboardingSaveDialogFeature3Subtitle">端到端加密，准备好后即可轻松设置。</string>
+    <string name="autofillDisableInSettingsSnackbarText">你可以随时关闭密码保存功能。</string>
+    <string name="autofillDisableInSettingsSnackbarAction">打开设置</string>
+    <string name="newTabPageShortcutPasswords">密码</string>
+    <string name="autofillImportGooglePasswordsWebFlowTitle">导入密码</string>
+    <string name="autofillImportGooglePasswordsSuccessMessage" instruction="Placeholder is the number of passwords imported">已从 Google 导入 %1$d 个密码</string>
+    <string name="autofillImportCsvPasswordsSuccessMessage" instruction="Placeholder is the number of passwords imported">已从 CSV 导入 %1$d 个密码</string>
+    <string name="autofillImportGooglePasswordEmptyStateButtonTitle">从 Google 导入密码</string>
+    <string name="autofillImportGooglePasswordsPasswordsMenuTitle">从 Google 导入密码</string>
+    <string name="autofillSyncDesktopPasswordEmptyStateButtonTitle">同步桌面端密码</string>
+    <string name="autofillSyncDesktopPasswordsMenuTitle">同步桌面端密码</string>
+    <string name="importPasswordsChooseMethodDialogTitle">从 Google 导入密码</string>
+    <string name="importPasswordsChooseMethodDialogSubtitle">Google 可能会要求你登录或输入密码以确认。</string>
+    <string name="importPasswordsChooseMethodDialogSubtitleDeviceAuth">你的设备可能会要求你输入 PIN、密码或图案以确认。</string>
+    <string name="importPasswordsChooseMethodDialogGpmButton">从 Google 导入</string>
+    <string name="importPasswordsChooseMethodDialogCsvButton">选择 CSV 文件</string>
+    <string name="importPasswordsChooseMethodDialogDesktopSyncButton">从桌面浏览器导入</string>
+    <string name="importPasswordsProcessingResultDialogTitleBeforeSuccess">导入到 DuckDuckGo</string>
+    <string name="importPasswordsProcessingResultDialogTitleUponSuccess">导入完成</string>
+    <string name="importPasswordsProcessingResultDialogDoneButtonText">知道了</string>
+    <string name="importPasswordsProcessingResultDialogResultImportFailed">密码导入失败</string>
+    <string name="importPasswordsProcessingResultDialogResultDuplicatesSkipped">已跳过（重复或无效）：<![CDATA[<b>%d</b>]]></string>
+    <string name="importPasswordsProcessingResultDialogResultPasswordsImported">已导入的密码：<![CDATA[<b>%d</b>]]></string>
+    <string name="autofill_service_suggestion_open_passwords">打开密码</string>
+    <string name="autofill_service_select_password_activity">选择已保存的密码</string>
+    <string name="autofillSettingsActivityTitle">密码与自动填充</string>
+    <string name="autofillSettingsClearNeverForThisSiteDialogTitle">重置已排除的网站？</string>
+    <string name="autofillSettingsInstructionNeverForThisSite">如果你重置已排除的网站，下次登录这些网站时，系统会再次提示你保存密码。</string>
+    <string name="autofillSettingsClearNeverForThisSiteDialogPositiveButton">重置</string>
+    <string name="autofillSettingsClearNeverForThisSiteDialogNegativeButton">取消</string>
+    <string name="autofillSettingsPasswordsEntry">密码</string>
+    <string name="autofillSettingsAutofillToggleLabel">询问是否保存并自动填充</string>
+    <string name="autofillSettingsAutofillSubtitle">密码已加密。只有你能看到它们，连我们也看不到。<annotation type="learn_more_link">了解更多</annotation></string>
+    <string name="autofillSettingsImportSectionLabel">导入密码</string>
+    <string name="autofillSettingsImportFromGoogleLabel">从 Google 导入密码</string>
+    <string name="autofillSettingsImportFromDesktopSync">同步桌面端密码</string>
+    <string name="autofillSettingsResetExcludedSitesTitle">重置已排除的网站</string>
+    <string name="passwords_import_promo_title" instruction="The 'br' is a forced line break for English. It does not need to be included in translations.">把密码从 Google 带到 DuckDuckGo</string>
+    <string name="passwords_import_promo_subtitle">快速、安全地将密码导入 DuckDuckGo。Google 可能会要求你输入密码。</string>
+    <string name="passwords_import_promo_subtitle_device_auth">快速、安全地将密码导入 DuckDuckGo。你的设备可能会要求你输入 PIN、密码或图案以确认。</string>
+    <string name="passwords_import_promo_action">从 Google 导入</string>
+    <string name="passwords_import_promo_in_browser_title">把密码从 Google 带到 DuckDuckGo</string>
+    <string name="passwords_import_promo_in_browser_title_device_auth">从 Google 导入密码到 DuckDuckGo</string>
+    <string name="passwords_import_promo_in_browser_secondary_action_button">不再询问</string>
+    <string name="passwords_import_promo_in_settings_title">从 Google 导入密码</string>
+    <string name="passwords_import_promo_in_settings_dismiss_text">隐藏</string>
+    <string name="importToDuckDuckGo">导入到 DuckDuckGo</string>
+    <string name="importBookmarksFromGoogleChromeFolderName">从 Chrome 导入</string>
+    <string name="importBookmarksFromGooglePreImportDialogTitle">从 Google 导入书签</string>
+    <string name="importBookmarksFromGooglePreImportDialogInstruction">Google 可能会要求你登录或输入密码以确认。</string>
+    <string name="importBookmarksFromGooglePreImportDialogImportButton">从 Google 导入</string>
+    <string name="importBookmarksFromGooglePreImportDialogSelectFileButton">选择书签文件…</string>
+    <string name="importBookmarksFromGoogleWebFlowTitle">导入书签</string>
+    <string name="importBookmarksProgressTitle">正在从 Google 导入…</string>
+    <string name="importBookmarksProgressSubtitle">请保持此屏幕打开并稍等——应该不会超过一两分钟。</string>
+    <string name="importBookmarksProgressInfoMessage1">Google 可能会要求你登录或输入密码以确认。</string>
+    <string name="importBookmarksProgressInfoMessage2">Google 可能会发送一封邮件，确认你的书签正在导出。</string>
+    <string name="importBookmarksFromGoogleCancelConfirmationDialogTitle">取消导入？</string>
+    <string name="importBookmarksFromGoogleCancelConfirmationDialogMessage">如果现在取消，你的书签将不会被导入。</string>
+    <string name="importBookmarksFromGoogleCancelConfirmationDialogCancelImport">取消导入</string>
+    <string name="importBookmarksFromGoogleCancelConfirmationDialogContinue">继续</string>
+    <string name="importBookmarksFromGoogleSuccessBookmarksCount" instruction="Placeholder is the number of bookmarks that were imported">书签：%1$d</string>
+    <string name="importBookmarksSuccessTitle">@string/importToDuckDuckGo</string>
+    <string name="importBookmarksFinalDoneButton">关闭</string>
+    <string name="importBookmarksErrorTitle">@string/importToDuckDuckGo</string>
+    <string name="importBookmarksErrorGenericMessage">出了点问题</string>
+    <string name="importBookmarksErrorGenericMessageSecondary">请确保你已连接互联网，然后重试。</string>
+    <string name="importPasswordsRedesignResultTitle">导入完成！</string>
+    <string name="importBookmarksRedesignImportingSubtitle">请稍等——保持此窗口打开。应该不会超过一两分钟。</string>
+    <string name="importBookmarksRedesignImportingFirstInfoRow">Google 可能会要求你输入密码。</string>
+    <string name="importBookmarksRedesignImportingSecondInfoRow">Google 会发送邮件确认你的数据已导出。你无需做任何操作。</string>
+    <string name="importBookmarksRedesignResultTitle">导入完成！</string>
+    <string name="importBookmarksRedesignSuccessImportedRow" instruction="Placeholder is the number of bookmarks that were imported">已导入的书签：<![CDATA[<b>%1$d</b>]]></string>
+</resources>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="atp_name">应用追踪防护</string>
+    <string name="refresh">刷新</string>
+
+    <string name="atp_DiagnosticsMenuLabel">诊断</string>
+    <string name="atp_DataMenuLabel">数据统计</string>
+    <string name="atp_MeteredConnection" instruction="Placeholder is true or false">"按流量计费：%1$s"</string>
+    <string name="atp_ConnectionStatus" instruction="Placeholder is true or false">"VPN 已连接：%1$s"</string>
+    <string name="atp_NetworkAvailable" instruction="Placeholder is true or false">"已连接互联网：%1$s"</string>
+    <string name="atp_DnsServers" instruction="Placeholder is a list of dns addresses">"当前网络 DNS：%1$s"</string>
+    <string name="atp_AppExitsReasonsTitle">应用退出原因</string>
+    <string name="atp_AppRestartsTitle">应用重启</string>
+
+    <string name="vpnTimeRunning" instruction="Placeholder is the time expressed as a String that the vpn has been running">运行时长：%1$s</string>
+    <string name="vpnTrackerCompaniesBlockedToday" instruction="Placeholder is a number">今日已拦截的追踪公司：%1$d</string>
+    <string name="vpnTrackerCompaniesBlockedThisWeek" instruction="Placeholder is a number">本周已拦截的追踪公司：%1$d</string>
+    <string name="vpnTrackerCompaniesNone">"尚未拦截任何追踪公司"</string>
+    <string name="vpnTrackersBlockedToday" instruction="Placeholder is a number">今日已拦截的追踪器：%1$d</string>
+    <string name="vpnTrackersBlockedThisWeek" instruction="Placeholder is a number">本周已拦截的追踪器：%1$d</string>
+    <string name="vpnTrackersNone">"尚未拦截任何追踪器"</string>
+    <string name="vpnNotRunYet">"VPN 尚未运行"</string>
+    <string name="vpnDataTransferred" instruction="%1$s is the size of data transferred, i.e. 340MB. %2$s is the amount of packets, i.e. 123 packets ">"%1$s\n%2$s 个数据包"</string>
+
+    <string name="atp_ReportIssue">某个应用出现问题？</string>
+    <string name="atp_OnInitialNotification">"应用追踪防护已启用，正在拦截各应用的追踪尝试"</string>
+    <string name="atp_OnNoTrackersNotificationHeader">"正在扫描追踪活动…哔…啵"</string>
+    <plurals name="atp_OnNotification">
+        <item quantity="one" instruction="Placeholder is a number"><![CDATA[已在 <b>%1$d 个应用</b>中拦截追踪尝试（过去 1 小时）。]]></item>
+        <item quantity="other" instruction="Placeholder is a number"><![CDATA[已在 <b>%1$d 个应用</b>中拦截追踪尝试（过去 1 小时）。]]></item>
+    </plurals>
+    <string name="atp_DisabledNotification">应用追踪防护已停用。点按以继续拦截追踪尝试。</string>
+    <string name="atp_RevokedNotification">设备上的某个 VPN 应用停用了应用追踪防护。点按以重新启用。</string>
+
+    <string name="atp_DailyTrackersNotificationOneTrackingZeroApps" instruction="Placeholder is a number"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试</b>（过去 1 天）。]]></string>
+    <string name="atp_DailyTrackersNotificationOneTrackingOneApps" instruction="%1$d is the number of tracking attempts and %2$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 1 个应用：%2$s</b>（过去 1 天）。]]></string>
+    <string name="atp_DailyTrackersNotificationOtherTrackingZeroApps" instruction="Placeholder is a number"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试</b>（过去 1 天）。]]></string>
+    <string name="atp_DailyTrackersNotificationOtherTrackingOtherApps" instruction="%1$d is the number of tracking attempts, %2$d is the number of apps where the tracking took place, %3$s is the name of one of the apps where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$d 个应用，包括 %3$s</b>（过去 1 天）。]]></string>
+
+    <plurals name="atp_DailyTopCompanyNotification">
+        <item quantity="one" instruction="%1$s is the name of a company, %2$d is the number of apps the company tried to track the user"><![CDATA[%1$s 曾尝试在 <b>%2$d 个应用</b>中追踪你（过去 1 天）。<b>查看更多</b>]]></item>
+        <item quantity="other" instruction="%1$s is the name of a company, %2$d is the number of apps the company tried to track the user"><![CDATA[%1$s 曾尝试在 <b>%2$d 个应用</b>中追踪你（过去 1 天）。<b>查看更多</b>]]></item>
+    </plurals>
+
+    <plurals name="atp_DailyCompanyBlockedNotification">
+        <item quantity="one" instruction="Placeholder is the name of an app"><![CDATA[应用追踪防护在 <b>%1$s</b> 中拦截的追踪尝试最多（过去 1 天）。]]></item>
+        <item quantity="other" instruction="Both placeholders are the name of an app"><![CDATA[应用追踪防护在 <b>%1$s</b> 和 <b>%2$s</b> 中拦截的追踪尝试最多（过去 1 天）。]]></item>
+    </plurals>
+
+    <string name="atp_DailyLastCompanyBlockedNotificationOneTimeZeroOtherApps" instruction="%1$s is name of the tracking company, i.e. Facebook. %2$d is the number of times we blocked their tracking attempts. %3$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$s 在 %3$s 中的 %2$d 次追踪尝试</b>（过去 1 天）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedNotificationOneTimeOneOtherApp" instruction="%1$s is name of the tracking company, i.e. Facebook. %2$d is the number of times we blocked their tracking attempts. %3$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$s 在 %3$s 中的 %2$d 次追踪尝试，另有 1 个应用</b>（过去 1 天）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedNotificationOneTimeMoreOtherApps" instruction="%1$s is name of the tracking company, i.e. Facebook. %2$d is the number of times we blocked their tracking attempts. %3$s is the name of the app where it happened, %4$d is the number of apps this the tracking also happened"><![CDATA[应用追踪防护已拦截 <b>%1$s 在 %3$s 中的 %2$d 次追踪尝试，另有 %4$d 个应用</b>（过去 1 天）。]]></string>
+
+    <string name="atp_DailyLastCompanyBlockedNotificationOtherTimesZeroOtherApps" instruction="%1$s is name of the tracking company, i.e. Facebook. %2$d is the number of times we blocked their tracking attempts. %3$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$s 在 %3$s 中的 %2$d 次追踪尝试</b>（过去 1 天）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedNotificationOtherTimesOneOtherApp" instruction="%1$s is name of the tracking company, i.e. Facebook. %2$d is the number of times we blocked their tracking attempts. %3$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$s 在 %3$s 中的 %2$d 次追踪尝试，另有 1 个应用</b>（过去 1 天）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedNotificationOtherTimesMoreOtherApps" instruction="%1$s is name of the tracking company, i.e. Facebook. %2$d is the number of times we blocked their tracking attempts. %3$s is the name of the app where it happened, %4$d is the number of apps this the tracking also happened"><![CDATA[应用追踪防护已拦截 <b>%1$s 在 %3$s 中的 %2$d 次追踪尝试，另有 %4$d 个应用</b>（过去 1 天）。]]></string>
+
+    <string name="atp_WeeklyCompanyTrackersBlockedNotificationOneTimeZeroOtherApps" instruction="%1$d is the number of the tracking attempts, %2$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s</b>（过去 1 周）。]]></string>
+    <string name="atp_WeeklyCompanyTrackersBlockedNotificationOneTimeOneOtherApp" instruction="%1$d is the number of the tracking attempts, %2$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s</b>，另有 1 个应用（过去 1 周）。]]></string>
+    <string name="atp_WeeklyCompanyTrackersBlockedNotificationOneTimeMoreOtherApps" instruction="%1$d is the number of the tracking attempts, %2$s is the name of the app where it happened, %3$d is the number of other apps where this also happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s</b>，另有 %3$d 个应用（过去 1 周）。]]></string>
+    <string name="atp_WeeklyCompanyTrackersBlockedNotificationOtherTimesZeroOtherApps" instruction="%1$d is the number of the tracking attempts, %2$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s</b>（过去 1 周）。]]></string>
+    <string name="atp_WeeklyCompanyTrackersBlockedNotificationOtherTimesOneOtherApp" instruction="%1$d is the number of the tracking attempts, %2$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s</b>，另有 1 个应用（过去 1 周）。]]></string>
+    <string name="atp_WeeklyCompanyTrackersBlockedNotificationOtherTimesMoreOtherApps" instruction="%1$d is the number of the tracking attempts, %2$s is the name of the app where it happened, %3$d is the number of other apps where this also happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s</b>，另有 %3$d 个应用（过去 1 周）。]]></string>
+
+    <plurals name="atp_WeeklyCompanyTeaserNotification">
+        <item quantity="one" instruction="%1$s is name of the tracking company, i.e. Facebook. %2$d is the number of apps where blocked their tracking attempts. %3$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$s，涉及 %2$d 个应用：%3$s</b>（过去 1 周）。]]></item>
+        <item quantity="other" instruction="%1$s is name of the tracking company, i.e. Facebook. %2$d is the number of apps where blocked their tracking attempts. %3$s is the name of one of the apps where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$s，涉及 %2$d 个应用，包括 %3$s</b>（过去 1 周）。]]></item>
+    </plurals>
+
+    <string name="atp_EnableCTA">启用应用追踪防护</string>
+
+    <string name="atp_DailyLastCompanyBlockedHomeTabOneTimeZeroOtherApps" instruction="%1$d is the number of tracking attempts, %2$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s</b>（过去 1 小时）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedHomeTabOneTimeOneOtherApp" instruction="%1$d is the number of tracking attempts, %2$s is the name of an app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s，另有 1 个应用</b>（过去 1 小时）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedHomeTabOneTimeMoreOtherApps" instruction="%1$d is the number of tracking attempts, %2$s is the name of an app where it happened, %3$d is the number of other apps where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s，另有 %3$d 个应用</b>（过去 1 小时）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedHomeTabOtherTimesZeroOtherApps" instruction="%1$d is the number of tracking attempts, %2$s is the name of the app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s</b>（过去 1 小时）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedHomeTabOtherTimesOneOtherApp" instruction="%1$d is the number of tracking attempts, %2$s is the name of an app where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s，另有 1 个应用</b>（过去 1 小时）。]]></string>
+    <string name="atp_DailyLastCompanyBlockedHomeTabOtherTimesMoreOtherApps" instruction="%1$d is the number of tracking attempts, %2$s is the name of an app where it happened, %3$d is the number of other apps where it happened"><![CDATA[应用追踪防护已拦截 <b>%1$d 次追踪尝试，涉及 %2$s，另有 %3$d 个应用</b>（过去 1 小时）。]]></string>
+
+    <string name="atp_PrivacyReportEnabledTooltip">应用追踪防护已启用，正在拦截整个设备上的追踪器</string>
+
+    <string name="atp_OnboardingLogoDescription">启用应用追踪防护</string>
+    <string name="atp_OnboardingLastPageOneTitle">只需一步，应用隐私更安全！</string>
+    <string name="atp_OnboardingLatsPageOneSubtitle" formatted="false">我们发现，<b>超过 96% 的热门免费应用</b>会允许其他公司追踪你的个人信息，即使你在睡觉时也是如此。\n\n看看我们发现了哪些应用<b>让其他公司追踪你</b>，夺回控制权！</string>
+    <string name="atp_OnboardingLastPageTwoTitle">它是如何工作的？</string>
+    <string name="atp_OnboardingLastPageTwoSubTitle">应用追踪防护<b>会检测并拦截来自其他公司的应用追踪器</b>，例如 Facebook 尝试在健康应用中追踪你时。\n\n<b>它是免费的</b>，你可以像往常一样使用应用。它在后台运行，<b>昼夜保护你。</b></string>
+    <string name="atp_OnboardingLastPageThreeTitle">谁能看到你的数据？</string>
+    <string name="atp_OnboardingLastPageThreeSubTitle"><b>应用追踪防护不是 VPN。</b>不过，你的设备会将其识别为 VPN。这是因为它使用本地 VPN 连接来工作。\n\n应用追踪防护与众不同。<b>它绝不会将应用数据经由外部服务器传输。</b>\n\n<annotation type="learn_more_link"><b>了解更多</b></annotation></string>
+    <string name="atp_FAQCta">应用追踪防护常见问题</string>
+    <string name="atp_OnboardingContinue">继续</string>
+    <string name="atp_OnboardingMaybeLater">稍后再说</string>
+
+    <string name="atp_daxOnboardingIntroTitle">应用追踪防护</string>
+    <string name="atp_daxOnboardingIntroMessage" formatted="false">超过 96% 的热门免费应用会允许其他公司追踪你，即使你没有在使用手机时也是如此。应用追踪防护会检测并拦截这些追踪尝试。</string>
+    <string name="atp_daxOnboardingPermissionTitle">它是如何工作的？</string>
+    <string name="atp_daxOnboardingPermissionMessage">应用追踪防护不是 VPN。不过，你的设备会将其识别为 VPN。这是因为它使用本地 VPN 连接来工作。它绝不会将应用数据经由外部服务器传输。<annotation type="learn_more_link">了解更多</annotation></string>
+
+    <string name="atp_EnabledTitle">太棒了！已全部设置好。</string>
+    <string name="atp_EnabledMessage">应用追踪防护会显示<b>设备上应用的实时列表</b>，列出我们发现试图追踪你的应用。</string>
+    <string name="atp_EnabledActivityCTA">查看应用追踪摘要</string>
+    <string name="atp_EnabledSettings">你可以在<annotation type="settings_link">设置</annotation>中访问应用追踪防护。</string>
+
+    <string name="atp_NewTabDisabled"><b>应用追踪防护已停用。</b>\n点按以继续拦截各应用的追踪尝试。</string>
+    <string name="atp_NewTabRevoked"><b>设备上的某个 VPN 应用停用了应用追踪防护。</b>\n点按以重新启用。</string>
+    <string name="atp_NewTabEnabled"><b>应用追踪防护已启用</b>，正在拦截各应用的追踪尝试。</string>
+
+    <string name="atp_ExclusionListActivityTitle">所有应用</string>
+    <string name="atp_ExcludedAppsFeature">应用追踪防护会检测并拦截来自其他公司的应用追踪器，例如 Facebook 尝试在健康应用中追踪你时。公司仍可能在它们自己的应用中追踪你。\n\n如果某个应用未按预期工作，请尝试为该应用关闭防护。</string>
+    <string name="atp_ExcludedAppsEnabledLabel">DuckDuckGo 可能会为某些应用关闭防护，以解决已知的内容加载问题。除非你恢复默认设置，否则你的自定义设置不会改变。</string>
+    <string name="atp_ExcludedAppsDisabledLabel"><b>应用追踪防护已停用</b> 应用追踪防护是否给你的应用带来了问题？<annotation type="report_issues_link">报告问题</annotation></string>
+    <string name="atp_ExcludedAppsReport">报告其他应用的问题</string>
+    <string name="atp_ExcludedReasonManuallyDisabled">已手动停用</string>
+    <string name="atp_ExcludedReasonManuallyEnabled">已手动启用</string>
+    <string name="atp_ExcludeAppsManuallyCTACancel">取消</string>
+    <string name="atp_ExcludeAppsManuallyCTARestore">恢复</string>
+    <string name="atp_ExcludeAppsManuallyEnableFooter">启用防护会将该应用的名称发送给 DuckDuckGo。</string>
+    <string name="atp_ExcludeAppsManuallyDisableAnswerOne">它未按预期工作</string>
+    <string name="atp_ExcludeAppsManuallyDisableAnswerTwo">我不介意在此应用中被追踪</string>
+    <string name="atp_ExcludeAppsManuallyDisableAnswerThree">其他原因</string>
+    <string name="atp_ExcludeAppsManuallyMenuRestore">恢复默认受保护应用</string>
+    <string name="atp_ExcludeAppsManuallyMenuReport">报告某个应用的问题</string>
+    <string name="atp_ExcludeAppsRestoreDefaultsTitle">恢复默认防护？</string>
+    <string name="atp_ExcludeAppsRestoreDefaultsMessage">你的自定义防护设置将更新为我们最新的默认防护设置。你之后随时可以再次更改防护设置。</string>
+    <string name="atp_ExcludeAppsRestoreDefaultSnackbar">防护已恢复为默认设置</string>
+    <string name="atp_ExcludeAppsRestoreDefaultsDisclaimer">启用防护会将该应用的名称发送给 DuckDuckGo。</string>
+
+    <string name="atp_ReportBreakageAppListActivityTitle">报告问题</string>
+    <string name="atp_ReportBreakageAppFeature"><b>选择遇到问题的应用</b>。你的反馈对我们改进非常有帮助！\n\n对应用追踪防护有一般性反馈？请改用<annotation type="use_this_form_link">此表单</annotation>。</string>
+    <string name="atp_ReportBreakageAppEntry" instruction="Placeholder is the name of an app">%1$s 应用</string>
+    <string name="atp_ReportBreakageAppSubmitCta">提交</string>
+    <string name="atp_ReportBreakageAppNextCta">下一步</string>
+    <string name="atp_ReportBreakageFormWhatHappenedText">请描述发生了什么、你期望发生什么，以及导致该问题的步骤。</string>
+    <string name="atp_ReportBreakageFormInputHint">请告诉我们你遇到的问题的更多详情</string>
+    <string name="atp_ReportBreakageFormCheckboxText">点击“提交”即表示我同意 DuckDuckGo 可以将此报告中的信息用于改进应用功能。
+    </string>
+    <string name="atp_ReportBreakageFormDisclaimerText">
+        <![CDATA[除了你在表单中输入的详情外，你的应用问题报告还将包含：<br/>&#8226; 应用包名<br/>&#8226; 在该应用中被拦截的追踪器列表<br/>&#8226; 是否启用了特定的 DuckDuckGo 功能<br/>&#8226; DuckDuckGo 应用诊断汇总<br/>]]>
+    </string>
+    <string name="atp_ReportBreakageSent">报告已发送，谢谢！你的反馈有助于我们为所有人改进应用追踪防护。</string>
+    <string name="atp_ThanksForTheFeedback">感谢你的反馈！</string>
+    <string name="atp_ReportBreakageCategoriesTitle">发生了什么？</string>
+    <string name="atp_ReportBreakageCategoriesHint">发生了什么？</string>
+    <string name="atp_ReportBreakageCategoryCrashes">应用卡住或崩溃</string>
+    <string name="atp_ReportBreakageCategoryMessages">消息发送失败</string>
+    <string name="atp_ReportBreakageCategoryCalls">语音通话无法使用</string>
+    <string name="atp_ReportBreakageCategoryUploads">无法上传或分享文件</string>
+    <string name="atp_ReportBreakageCategoryDownloads">无法下载文件</string>
+    <string name="atp_ReportBreakageCategoryContent">内容加载缓慢</string>
+    <string name="atp_ReportBreakageCategoryConnection">应用没有网络连接</string>
+    <string name="atp_ReportBreakageCategoryIot">无法连接本地设备</string>
+    <string name="atp_ReportBreakageCategoryOther">其他问题</string>
+
+    <string name="atp_ProfilingActivityTitle">关于应用追踪器</string>
+    <string name="atp_ProfilingInfoTitle">什么是应用追踪器？</string>
+    <string name="atp_ProfilingInfoFirstParagraph" formatted="false">你可能听说过 Google 和 Facebook 等公司会在第三方网站上于幕后追踪你。但你知道吗，它们还会通过你设备上的应用追踪你的个人信息？\n\n<b>在我们测试的 100 款热门免费 Android 应用中，超过 96\%</b>含有隐藏的第三方追踪器。其中，87\% 会向 Google 发送数据，68\% 会向 Facebook 发送数据。即使你没有在使用设备时，也会发生这种情况。\n\n<b>应用中的追踪器可能获取的信息</b>比网站追踪器多得多，例如你所在位置精确到哪栋楼的哪一层、你在工作时玩游戏的频率，以及你每天何时睡觉、睡多久。<b>即使你没有 Google 或 Facebook 账号，它们仍可通过你的应用收集关于你的数据。</b>\n\nFacebook 和 Google 等追踪网络会利用这些零散信息<b>为你建立数字画像。</b>凭借画像，追踪网络可以操纵你在网上看到的内容，并允许广告商根据你的数据竞价获取接触你的机会。\n\n应用中的追踪器是隐私的一大问题。<b>但 DuckDuckGo 有可以帮忙的解决方案。</b>\n\n在 DuckDuckGo 隐私浏览器应用中启用后，应用追踪防护会在你浏览时拦截其他应用中的许多追踪器，同时 DuckDuckGo 应用也会拦截在网站上发现的追踪器。<b>这两层防护减少了追踪公司对你的了解</b>，让你使用应用时更安心，知道自己受到了更好的保护。</string>
+
+    <string name="atp_ActivityPastWeek">过去 7 天</string>
+    <string name="atp_ActivityTitle">应用追踪防护</string>
+    <string name="atp_MostRecentActivityTitle">所有最近活动</string>
+    <string name="atp_ActivityRecentActivity">活动</string>
+    <string name="atp_ActivityCtaShowAll">查看所有最近活动</string>
+    <string name="atp_ActivityAppTrackersFAQ">什么是应用追踪器？</string>
+    <string name="atp_ActivityReportProblem">报告某个应用的问题</string>
+    <string name="atp_ActivityBetaInstructions">Beta 版说明</string>
+    <string name="atp_ActivityManageProtection">遇到问题？</string>
+    <string name="atp_RecentAppActivity">最近应用活动</string>
+
+    <string name="atp_ActivityTrackersCompanyBlockedOnetimeOneCompany"
+        instruction="Placeholder %1$s is the name of the app doing the tracking. Example: 1 tracking attempt blocked from 1 company in Venmo app.">
+        <![CDATA[在 <b>%1$s</b> 应用中拦截了 1 次追踪尝试，涉及 1 家公司]]>
+    </string>
+    <string name="atp_ActivityTrackersCompanyBlockedOnetimeOtherCompanies"
+        instruction="Placeholder %1$d is the number of companies doing the tracking. Placeholder %2$s is the name of the app doing the tracking. Example: 1 tracking attempt blocked from 5 companies in Venmo app.">
+        <![CDATA[在 <b>%2$s</b> 应用中拦截了 1 次追踪尝试，涉及 %1$d 家公司]]>
+    </string>
+    <string name="atp_ActivityTrackersCompanyBlockedOtherTimesOneCompany"
+        instruction="Placeholder %1$d is the number of tracking attempts blocked. Placeholder %2$s is the name of the app doing the tracking. Example: 5 tracking attempts blocked from 1 company in Venmo app.">
+        <![CDATA[在 <b>%2$s</b> 应用中拦截了 %1$d 次追踪尝试，涉及 1 家公司]]>
+    </string>
+    <string name="atp_ActivityTrackersCompanyBlockedOtherTimesOtherCompanies"
+        instruction="Placeholder %1$d is the number of tracking attempts blocked. Placeholder %2$d is the number of companies doing the tracking. Placeholder %3$s is the name of the app doing the tracking. Example: 10 tracking attempts blocked from 5 companies in Venmo app.">
+        <![CDATA[在 <b>%3$s</b> 应用中拦截了 %1$d 次追踪尝试，涉及 %2$d 家公司]]>
+    </string>
+
+    <string name="atp_ActivityPastWeekBlocked">已拦截</string>
+    <string name="atp_ActivityPastWeekAcross">涉及</string>
+
+    <plurals name="atp_ActivityPastWeekTrackerCount" tools:ignore="ImpliedQuantity">
+        <item quantity="one">追踪尝试</item>
+        <item quantity="other">追踪尝试</item>
+    </plurals>
+    <plurals name="atp_ActivityPastWeekAppCount" tools:ignore="ImpliedQuantity">
+        <item quantity="one">应用</item>
+        <item quantity="other">应用</item>
+    </plurals>
+    <string name="atp_ActivityDisabledLabel"><b>应用追踪防护已停用</b>\n应用追踪防护是否给你的应用带来了问题？<annotation type="report_issues_link">报告问题</annotation></string>
+    <string name="atp_ActivityDisabledBySystemLabel"><b>Android 已停用应用追踪防护</b>。想防止再次发生？<annotation type="re_enable_link">重新启用</annotation></string>
+    <string name="atp_ActivityRevokedLabel"><b>应用追踪防护已停用。</b>\n设备上的某个 VPN 应用可能已将其停用。使用上方的开关重新启用。</string>
+    <string name="atp_ActivityAbout">关于</string>
+    <string name="atp_ActivityManage">管理</string>
+    <string name="atp_ActivityRemoveFeature">停用并删除数据</string>
+    <string name="atp_ActivityBlockingTrackersEnabledDescription">DuckDuckGo 正在拦截各应用中的隐藏追踪器。</string>
+    <string name="atp_ActivityBlockingTrackersDisabledDescription">重新启用应用追踪防护，继续拦截各应用中的追踪器。</string>
+    <string name="atp_ActivityBlockedByHeaderText" instruction="Placeholder %1$s is a text containing either Today or Yesterday. Example: Blocked by DuckDuckGo Today">DuckDuckGo %1$s已拦截</string>
+    <string name="atp_ActivityBlockedByOnDateHeaderText" instruction="Placeholder %1$s is a text containing a formatted date like Feb 05. Example: Blocked by DuckDuckGo on Feb 05">DuckDuckGo 已于 %1$s 拦截</string>
+
+    <string name="atp_FAQActivityTitle">常见问题</string>
+    <string name="atp_FAQFirstHeader">应用追踪防护是如何工作的？</string>
+    <string name="atp_FAQFirstText"><b>应用追踪防护会拦截来自其他公司的已知应用追踪器，例如 Facebook 尝试在健康应用中追踪你时。</b>公司仍可能在它们自己的应用中追踪你。</string>
+    <string name="atp_FAQSecondHeader">应用追踪防护会拦截我所有应用中的追踪器吗？</string>
+    <string name="atp_FAQSecondText"><b>为使内容正常显示，某些应用（例如加载网站的应用）的防护可能会自动停用</b>。对于存在已知问题的应用，这大多是暂时的，我们正在努力改进应用追踪防护。你可以在设置中管理设备上每个应用的防护。\n\n此外，某些追踪器可能未被拦截，因为我们尚未检测到它们并将其加入拦截名单。我们一直在努力识别和防范新的追踪器，因此你可以放心，你获得的是最新防护。\n\n你可以期待每隔几个月更新一次追踪器名单。这些更新将自动应用到你的设备上</string>
+    <string name="atp_FAQThirdHeader">为什么应用追踪防护使用 VPN 连接？</string>
+    <string name="atp_FAQThirdText">系统会要求你设置虚拟专用网络（VPN）连接，<b>但应用追踪防护无需安装 VPN 应用即可工作。</b>\n\n此权限允许在你的设备上本地运行的应用追踪防护监控网络流量，<b>以便拦截已知的追踪器。</b></string>
+    <string name="atp_FAQFourthHeader">如果我同时使用 VPN 应用，应用追踪防护还能工作吗？</string>
+    <string name="atp_FAQFourthText"><b>Android 一次只允许一个处于活动状态的 VPN 连接。</b>这意味着，当设备上的 VPN 应用正在运行或设为“始终开启”时，你无法使用应用追踪防护。\n\n<b>我们建议你在不使用 VPN 应用时启用应用追踪防护</b><![CDATA[ 请确保你的 VPN 应用未设为“始终开启”。前往 Android 网络设置 > VPN。然后，查看所列 VPN 应用的齿轮图标，并关闭“始终开启”。某些 VPN 应用可能还有自动连接设置，也必须关闭。]]></string>
+    <string name="atp_FAQFifthHeader">应用追踪防护与 VPN 有何不同？</string>
+    <string name="atp_FAQFifthText">VPN 会将你的数据从设备发送到其自己的服务器，在那里保护你的数据并使其匿名，免受窥探。但这也意味着 VPN 公司可以看到你的网络流量。\n\n<b>应用追踪防护与众不同。</b>它不会将你的数据发送到 VPN 服务器，而是<b>在你的设备上本地运行</b>，位于你的应用与它们通信的服务器之间。\n\n每当应用追踪防护识别出已知追踪器时，<b>它会阻止该追踪器将个人信息（例如你的 IP 地址、活动和设备详情）发送出你的设备。</b>其他流量仍会到达目的地，因此你的应用可以正常工作。</string>
+    <string name="atp_FAQSixthHeader">我的数据是私密的吗？</string>
+    <string name="atp_FAQSixthText">应用追踪防护在你的设备上运行，不会将你的个人数据发送出设备给 DuckDuckGo。</string>
+
+    <string name="atp_WaitlistNotificationTitle">你的应用追踪防护邀请已送达！</string>
+    <string name="atp_WaitlistNotificationDescription">你加入了候补名单，并要求我们在轮到你试用应用追踪防护功能时通知你。点按查看你的邀请。</string>
+    <string name="atp_WaitlistStatusNotJoined">只需一步，应用隐私更安全！</string>
+    <string name="atp_WaitlistStatusJoined">你已在名单上！</string>
+    <string name="atp_WaitlistStatusInBeta">你已获邀！</string>
+    <string name="atp_WaitlistDescription">拦截我们在你其他应用中发现的隐藏追踪器，看看是谁试图追踪你。\n<annotation type="beta_link">了解更多</annotation></string>
+    <string name="atp_WaitlistInBetaDescription">拦截我们在你其他应用中发现的隐藏追踪器，看看是谁试图追踪你。\n\n<annotation type="beta_link">了解更多 Beta 版信息</annotation></string>
+    <string name="atp_WaitlistJoin">加入私密候补名单</string>
+    <string name="atp_WaitlistCodeCta">我有邀请码</string>
+    <string name="atp_WaitlistGetStartedCta">开始使用</string>
+    <string name="atp_WaitlistRedeemCodeCta">继续</string>
+    <string name="atp_WaitlistRedeemCodeLabel">邀请码</string>
+    <string name="atp_WaitlistRedeemCodeTitle">快完成了…</string>
+    <string name="atp_WaitlistRedeemCodeError">我们无法识别此邀请码。</string>
+    <string name="atp_WaitlistFooterDescription">加入候补名单无需分享任何个人信息。你将使用仅存在于你设备上的时间戳来锁定排队位置，以便轮到你时我们通知你。</string>
+    <string name="atp_WaitlistErrorJoining">加入候补名单时出错，请稍后再试</string>
+    <string name="atp_WaitlistJoinedWithNotification">应用追踪防护准备就绪时，我们会发送通知给你。\n\n<annotation type="beta_link">了解更多 Beta 版信息</annotation></string>
+    <string name="atp_WaitlistJoinedWithoutNotification">试用应用追踪防护的邀请将出现在这里。请稍后再回来查看，或在轮到你时让我们发送通知给你\n\n<annotation type="notify_me_link">通知我</annotation>\n\n<annotation type="beta_link">了解更多 Beta 版信息</annotation></string>
+    <string name="atp_WaitlistRedeemedCodeStatus">成功！你已加入。</string>
+    <string name="atp_WaitlistBetaBlogPost">https://spreadprivacy.com/introducing-app-tracking-protection</string>
+
+    <plurals name="atp_CompanyDetailsTrackingAttempts">
+        <item quantity="one" instruction="Placeholder is a number">"%1$d 次尝试。已知会收集："</item>
+        <item quantity="other" instruction="Placeholder is a number">%1$d 次尝试。已知会收集：</item>
+    </plurals>
+    <plurals name="atp_CompanyDetailsTrackingAttemptsTitle">
+        <item quantity="one" instruction="Placeholder is a number">"DuckDuckGo 已拦截 %1$d 次追踪尝试"</item>
+        <item quantity="other" instruction="Placeholder is a number">"DuckDuckGo 已拦截 %1$d 次追踪尝试"</item>
+    </plurals>
+    <string name="atp_CompanyDetailsTrackingMenuReport">报告此应用的问题</string>
+    <string name="atp_CompanyDetailsTrackingShowMore" instruction="Placeholder is a number">显示另外 %1$d 项</string>
+    <string name="atp_CompanyDetailsTrackingLearnMore">应用可能包含来自其他公司的追踪器，用于分析与营销等用途。如果我们不拦截它们，这些追踪器可能会为你建立更详细的数字画像。<annotation type="learn_more_link">了解更多。</annotation></string>
+    <string name="atp_CompanyDetailsTrackingShowLess">收起</string>
+    <string name="atp_CompanyDetailsAppInfoPanel">目前已为此应用停用防护。如果应用追踪防护导致了问题，请<annotation type="report_issues_link">报告问题</annotation></string>
+    <string name="atp_CompanyDetailsNotAvailableForUninstalledApps" instruction="Toast shown when users tap on item that corresponds to an already uninstalled application">已卸载应用的追踪器详情不可用</string>
+
+    <string name="atp_TrackingSignalAAID">Android 广告 ID</string>
+    <string name="atp_TrackingSignalUniqueIdentifier">唯一标识符</string>
+    <string name="atp_TrackingSignalCookies">Cookie</string>
+    <string name="atp_TrackingSignalOsVersion">操作系统版本</string>
+    <string name="atp_TrackingSignalOsBuildNumber">操作系统内部版本号</string>
+    <string name="atp_TrackingSignalPlatform">设备平台</string>
+    <string name="atp_TrackingSignalDeviceBrand">设备品牌</string>
+    <string name="atp_TrackingSignalDeviceLanguage">设备语言</string>
+    <string name="atp_TrackingSignalDeviceModel">设备型号</string>
+    <string name="atp_TrackingSignalCPUData">CPU 数据</string>
+    <string name="atp_TrackingSignalScreenResolution">屏幕分辨率</string>
+    <string name="atp_TrackingSignalInternalStorage">内部存储空间</string>
+    <string name="atp_TrackingSignalExternalStorage">外部存储空间</string>
+    <string name="atp_TrackingSignalDeviceMemory">设备内存</string>
+    <string name="atp_TrackingSignalDeviceName">设备名称</string>
+    <string name="atp_TrackingSignalWifiNetworkName">Wi-Fi 网络名称</string>
+    <string name="atp_TrackingSignalAppName">应用名称</string>
+    <string name="atp_TrackingSignalAppVersion">应用版本</string>
+    <string name="atp_TrackingSignalLocalIPAddress">本地 IP 地址</string>
+    <string name="atp_TrackingSignalISP">互联网服务提供商</string>
+    <string name="atp_TrackingSignalDeviceBootTime">设备启动时间</string>
+    <string name="atp_TrackingSignalNetworkConnectionType">网络连接类型</string>
+    <string name="atp_TrackingSignalSystemVolume">系统音量</string>
+    <string name="atp_TrackingSignalBatteryLevel">电量</string>
+    <string name="atp_TrackingSignalChargingStatus">充电状态</string>
+    <string name="atp_TrackingSignalBrightness">亮度</string>
+    <string name="atp_TrackingSignalHeadphoneStatus">耳机状态</string>
+    <string name="atp_TrackingSignalAccelerometerData">加速度计数据</string>
+    <string name="atp_TrackingSignalRotationData">旋转数据</string>
+    <string name="atp_TrackingSignalDeviceOrientation">设备方向</string>
+    <string name="atp_TrackingSignalMagnetometerData">磁力计数据</string>
+    <string name="atp_TrackingSignalAvailableInternalStorage">可用内部存储空间</string>
+    <string name="atp_TrackingSignalAvailableExternalStorage">可用外部存储空间</string>
+    <string name="atp_TrackingSignalDeviceTotalMemory">设备总内存</string>
+    <string name="atp_TrackingSignalAvailableDeviceMemory">可用设备内存</string>
+    <string name="atp_TrackingSignalScreenMargins">屏幕边距</string>
+    <string name="atp_TrackingSignalScreenDensity">屏幕密度</string>
+    <string name="atp_TrackingSignalFontSize">字体大小</string>
+    <string name="atp_TrackingSignalNetworkCarrier">网络运营商</string>
+    <string name="atp_TrackingSignalAppInstallDate">应用安装日期</string>
+    <string name="atp_TrackingSignalFirstAppLaunchDate">首次启动应用日期</string>
+    <string name="atp_TrackingSignalGPSCoordinates">GPS 坐标</string>
+    <string name="atp_TrackingSignalPostalCode">邮政编码</string>
+    <string name="atp_TrackingSignalNeighbourhood">街区</string>
+    <string name="atp_TrackingSignalCity">城市</string>
+    <string name="atp_TrackingSignalState">州/省</string>
+    <string name="atp_TrackingSignalCountry">国家/地区</string>
+    <string name="atp_TrackingSignalTimezone">时区</string>
+    <string name="atp_TrackingSignalEmailAddress">电子邮件地址</string>
+    <string name="atp_TrackingSignalBirthday">生日</string>
+    <string name="atp_TrackingSignalGender">性别</string>
+    <string name="atp_TrackingSignalFirstName">名</string>
+    <string name="atp_TrackingSignalLastName">姓</string>
+
+    <string name="atp_DisableConfirmationDialogTitle">停用应用追踪防护？</string>
+    <string name="atp_DisableConfirmationDialogMessage">如果你发现某个特定应用有问题，可以改为管理该应用的防护。</string>
+    <string name="atp_DisableConfirmationDisableApp">仅为一个应用停用</string>
+    <string name="atp_DisableConfirmationDisableAllApps">为所有应用停用</string>
+    <string name="atp_DisableConfirmationCancel">取消</string>
+
+    <string name="atp_VpnConflictDialogTitle">你的 VPN 应用可能已断开连接</string>
+    <string name="atp_VpnConflictAlwaysOnDialogTitle">你的 VPN 应用正在阻止应用追踪防护</string>
+    <string name="atp_VpnConflictDialogMessage">Android 一次只允许一个处于活动状态的 VPN 连接。启用应用追踪防护可能会断开设备上任何处于活动状态的 VPN。</string>
+    <string name="atp_VpnConflictDialogAlwaysOnMessage">Android 一次只允许一个处于活动状态的 VPN 连接。打开网络设置 > VPN。找到设为“始终开启”的 VPN 应用并将其关闭以继续。</string>
+    <string name="atp_VpnConflictDialogCancel">取消</string>
+    <string name="atp_VpnConflictDialogOpenSettings">打开设置</string>
+    <string name="atp_VpnConflictDialogGotIt">知道了</string>
+
+    <string name="atp_ManageRecentAppsProtectionReportIssues">如果某个特定应用仍有问题，请为该应用关闭防护并<annotation type="report_issues_link">提交报告。</annotation></string>
+    <string name="atp_ManageRecentAppsProtectionActivityTitle">遇到问题？</string>
+    <string name="atp_ManageRecentAppsProtectionShowAll">显示所有应用</string>
+    <string name="atp_ManageRecentAppsProtectionEmpty">最近被拦截追踪尝试的应用将显示在这里</string>
+    <string name="atp_ManageRecentAppsProtectionSectionTitle">推荐的系统设置</string>
+    <string name="atp_ManageRecentAppsProtectionAlwaysOnTitle">确保 VPN 始终开启</string>
+    <string name="atp_ManageRecentAppsProtectionAlwaysOnByline">在 Android 设置中，允许“始终开启”，以便在 VPN 连接中断后自动重新启用应用追踪防护</string>
+    <string name="atp_ManageRecentAppsProtectionAllowUnrestrictedBattTitle">允许不受限制的应用电池用量</string>
+    <string name="atp_ManageRecentAppsProtectionAllowUnrestrictedBattByline">在应用电池设置中，允许“不受限制”用量，以防止 Android 在后台停用应用追踪防护</string>
+    <string name="atp_ManageRecentAppsProtectionUnrestrictedBattTitle">应用电池用量不受限制</string>
+    <string name="atp_ManageRecentAppsProtectionUnrestrictedBattByline">在应用电池设置中，这可防止 Android 在后台停用应用追踪防护</string>
+
+    <string name="atp_RemoveFeatureDialogTitle">停用并删除数据？</string>
+    <string name="atp_RemoveFeatureDialogMessage">应用追踪防护将被停用，追踪尝试的任何设置和历史记录都将被删除。你可以随时在设置中重新启用它。</string>
+    <string name="atp_RemoveFeatureDialogCancel">取消</string>
+    <string name="atp_RemoveFeatureDialogRemove">停用</string>
+
+    <string name="atp_PromoteAlwaysOnDialogSettings">前往设置</string>
+    <string name="atp_PromoteAlwaysOnDialogNotNow">暂不</string>
+    <string name="atp_AlwaysOnModalBody"><![CDATA[前往设备的 DuckDuckGo VPN 设置，启用 <b>始终开启</b> VPN，以防止 Android 停用防护。\n\n请确保将其他设置保持关闭。]]></string>
+    <string name="atp_AlwaysOnLockdownModalBody"><![CDATA[为避免应用出现问题，请前往设备的 <b>DuckDuckGo VPN 设置</b>，关闭 <b>无 VPN 时阻止连接</b>]]></string>
+    <string name="atp_AlwaysOnModalHeading">设为始终开启</string>
+    <string name="atp_AlwaysOnLockdownModalHeading">更改 VPN 设置</string>
+    <string name="atp_AlwaysOnLockDownEnabled"><b>需要处理！</b>为避免应用出现问题，你需要更改 Android 设置。<annotation type="open_settings_link">更改设置</annotation></string>
+    <string name="atp_AlwaysOnLockDownNotificationTitle">需要处理！需要更改一项 Android 设置，应用追踪防护才能正常工作。</string>
+
+    <string name="atp_TrackingProtectionExclusionListActivityTitle">我的应用</string>
+    <string name="atp_ExcludedReasonIssuesMayOccur">如果启用，可能会出现应用问题</string>
+    <string name="atp_ExcludeAppsManuallyCTAEnableAnyway">仍要启用</string>
+    <string name="atp_ExcludeAppsManuallyEnableAnywayLabel" instruction="Placeholder is the name of an app">如果启用应用追踪防护，%1$s 可能会出现问题</string>
+    <string name="atp_ExcludeAppsManuallyDisableAppDialogTitle">要报告问题吗？</string>
+    <string name="atp_ExcludeAppsManuallyDisableAppDialogLabel" instruction="Placeholder is the name of an app">如果你因为遇到应用问题而为 %1$s 停用了应用追踪防护，请告诉我们。</string>
+    <string name="atp_ExcludeAppsManuallyCTAReportIssue">报告问题</string>
+    <string name="atp_ExcludeAppsManuallyCTANotNow">暂不</string>
+    <string name="atp_ActivityRecentActivityHeader">活动</string>
+    <string name="atp_ActivityManageProtectionLabel">遇到问题？</string>
+    <string name="atp_ActivityEnabledBannerLabel">某些应用的防护已自动停用。<annotation type="app_settings_link">查看应用</annotation></string>
+    <string name="atp_ActivityDescription">被拦截的追踪尝试将显示在这里</string>
+    <plurals name="atp_ActivityProtectedApps" instruction="Placeholder is the number of apps that are protected">
+        <item quantity="one">你的应用中有 %1$s 个已受到保护，免受我们发现试图访问你个人信息的隐藏追踪器侵害</item>
+        <item quantity="other">你的应用中有 %1$s 个已受到保护，免受我们发现试图访问你个人信息的隐藏追踪器侵害</item>
+    </plurals>
+    <plurals name="atp_ActivityUnprotectedApps" instruction="Placeholder is the number of apps that are not protected">
+        <item quantity="one">你的应用中有 %1$s 个已停用防护</item>
+        <item quantity="other">你的应用中有 %1$s 个已停用防护</item>
+    </plurals>
+    <string name="atp_ActivityAppTpEnabledCtaText"><![CDATA[好消息！应用追踪防护现已启用。<br/><br/>👍我会向你展示设备上应用的实时列表，列出我发现试图追踪你的应用。]]></string>
+    <string name="atp_ActivityAppTpEnabledCtaButtonLabel">知道了！</string>
+    <string name="atp_ExcludedAppsFilterProtectedLabel" instruction="Placeholder is the number of apps where protection is enabled">防护已启用（%1$s）</string>
+    <string name="atp_ExcludedAppsFilterUnprotectedLabel" instruction="Placeholder is the number of apps where protection is disabled">防护已停用（%1$s）</string>
+    <string name="atp_ExcludedAppsFilterAllLabel">全部</string>
+    <string name="atp_ExcludedAppsFilterMenuProtectedLabel">防护已启用</string>
+    <string name="atp_ExcludedAppsFilterMenuUnprotectedLabel">防护已停用</string>
+    <string name="atp_ExcludedAppsFilterMenuAllLabel">全部</string>
+    <string name="atp_ActivityViewAppsLabel">查看应用</string>
+    <string name="atp_ActivityEnabledMoreThanADayLabel">某个应用有问题？<annotation type="app_settings_link">帮助我们改进</annotation></string>
+    <string name="atp_ExcludedAppsEnabledLearnWhyLabel">启用应用追踪防护时，某些应用可能会出现问题。<annotation type="learn_why_link">了解原因</annotation></string>
+    <string name="atp_ExcludedAppsDisabledLearnWhyLabel">已为存在已知问题的应用停用防护。你可以启用这些应用，但它们可能无法按预期工作。<annotation type="learn_why_link">了解原因</annotation></string>
+
+    <string name="appTrackingProtectionNotifyMeTitle">关注被拦截的追踪器</string>
+    <string name="appTrackingProtectionNotifyMeSubtitle">在通知栏中获取有关被拦截追踪尝试的更新。</string>
+
+    <string name="apptp_PproUpsellInfoDisabled">由于你的 VPN，无法使用应用追踪防护？改用 DuckDuckGo VPN——唯一兼容的 VPN。<annotation type="ppro_upsell_link">了解更多</annotation>。</string>
+    <string name="apptp_PproUpsellInfoDisabled_freeTrial">由于你的 VPN，无法使用应用追踪防护？改用 DuckDuckGo VPN——唯一兼容的 VPN。<annotation type="ppro_upsell_link">免费试用！</annotation>。</string>
+    <string name="apptp_PproUpsellInfoRevoked"><b>应用追踪防护已停用</b>\n你的 VPN 是否停用了应用追踪防护？使用上方的开关重新启用。\n\n使用 DuckDuckGo VPN——唯一与应用追踪防护兼容的 VPN。<annotation type="ppro_upsell_link">了解更多</annotation>。</string>
+    <string name="apptp_PproUpsellInfoRevoked_freeTrial"><b>应用追踪防护已停用</b>\n你的 VPN 是否停用了应用追踪防护？使用上方的开关重新启用。\n\n改用 DuckDuckGo VPN——唯一与应用追踪防护兼容的 VPN。<annotation type="ppro_upsell_link">免费试用！</annotation>。</string>
+    <string name="apptp_PproUpsellBannerTitle">将你的隐私提升到新水平</string>
+    <string name="apptp_PproUpsellBannerMessage">DuckDuckGo 拥有唯一与应用追踪防护兼容的 VPN。使用付费 Privacy Pro 订阅激活。</string>
+    <string name="apptp_PproUpsellBannerAction">了解更多</string>
+    <string name="apptp_PproUpsellBannerMessage_freeTrial">订阅 DuckDuckGo，即可获得唯一与应用追踪防护兼容的 VPN。</string>
+    <string name="apptp_PproUpsellBannerAction_freeTrial">免费试用！</string>
+
+    <string name="atp_onboarding_close_button_content_description">关闭</string>
+    <string name="atp_close_button_content_description">关闭</string>
+
+</resources>

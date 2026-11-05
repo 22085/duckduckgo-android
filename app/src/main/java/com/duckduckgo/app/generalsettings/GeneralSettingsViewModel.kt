@@ -89,6 +89,8 @@ class GeneralSettingsViewModel @Inject constructor(
         val showChatSuggestionsToggle: Boolean = false,
         val chatSuggestionsEnabled: Boolean = true,
         val showNTPAfterIdleReturn: Boolean = false,
+        val selectedLanguage: AppLanguage = AppLanguage.SYSTEM,
+        val selectedLanguageTag: String? = null,
     )
 
     sealed class Command {
@@ -126,6 +128,8 @@ class GeneralSettingsViewModel @Inject constructor(
                     duckChat.observeInputScreenUserSettingEnabled().firstOrNull() == true,
                 chatSuggestionsEnabled = duckChat.observeChatSuggestionsUserSettingEnabled().firstOrNull() ?: true,
                 showNTPAfterIdleReturn = androidBrowserConfigFeature.showNTPAfterIdleReturn().isEnabled(),
+                selectedLanguage = AppLanguage.current(),
+                selectedLanguageTag = AppLanguage.currentTag(),
             )
         }
 
@@ -197,6 +201,15 @@ class GeneralSettingsViewModel @Inject constructor(
 
     fun maliciousSiteLearnMoreClicked() {
         sendCommand(Command.OpenMaliciousLearnMore)
+    }
+
+    fun onLanguageSelected(language: AppLanguage) {
+        logcat(INFO) { "User changed app language to ${language.name}" }
+        language.apply()
+        _viewState.value = _viewState.value?.copy(
+            selectedLanguage = language,
+            selectedLanguageTag = language.languageTag,
+        )
     }
 
     fun onChatSuggestionsSettingChanged(enabled: Boolean) {

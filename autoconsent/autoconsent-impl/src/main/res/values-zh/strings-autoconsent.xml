@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="autoconsentTitle">Cookie 弹窗防护</string>
+    <string name="autoconsentDescription"><![CDATA[DuckDuckGo 会尽量为您选择最注重隐私的设置，并为您隐藏这些弹窗。\n<a href="">了解详情</a>]]></string>
+    <string name="autoconsentToggle">让 DuckDuckGo 处理 Cookie 弹窗</string>
+    <string name="autoconsentAutoManageToggle">拒绝可选 Cookie</string>
+    <string name="autoconsentAutoManageDescription">我们会尽量为您拒绝更多 Cookie，然后关闭弹窗。</string>
+    <string name="autoconsentCookiePopUpPreferenceHeaderDescription"><![CDATA[DuckDuckGo 可以自动管理 Cookie 弹窗，在您看到之前最大程度保护隐私并减少 Cookie。\n<a href="">了解详情</a>]]></string>
+    <string name="autoconsentPopUpsWithoutOptOutsToggle">接受无法拒绝的 Cookie</string>
+    <string name="autoconsentPopUpsWithoutOptOutsDescription">如果没有拒绝选项，我们会帮您接受这些 Cookie 并关闭弹窗，省去一次点击。</string>
+    <string name="autoconsentPromptTitle">厌倦了 Cookie 弹窗？</string>
+    <string name="autoconsentPromptFootnote">您随时可以在设置中调整。</string>
+    <string name="autoconsentPromptCpmOnMessage">部分 Cookie 无法拒绝。我们可以代您接受。</string>
+    <string name="autoconsentPromptCpmOnPrimaryButton">代我接受 Cookie</string>
+    <string name="autoconsentPromptCpmOnPrimaryButtonV2">尽量拒绝，否则代我接受</string>
+    <string name="autoconsentPromptCpmOnSecondaryButton">我自己接受</string>
+    <string name="autoconsentPromptCpmOffMessage">交给我们处理。我们会在可能时拒绝 Cookie，并接受无法拒绝的 Cookie。</string>
+    <string name="autoconsentPromptCpmOffPrimaryButton">尽量拒绝，否则代我接受</string>
+    <string name="autoconsentPromptCpmOffSecondaryButton">我自己处理</string>
+</resources>

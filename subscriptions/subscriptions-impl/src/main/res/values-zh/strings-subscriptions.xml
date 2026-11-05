@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="ddg_subscription">DuckDuckGo 订阅</string>
+    <string name="manageEmail">管理邮箱</string>
+    <string name="backToSettings">返回设置</string>
+    <string name="somethingWentWrong">出错了</string>
+    <string name="somethingWentWrongDescription">Google Play 无法处理您的购买。请稍后再试。</string>
+    <string name="youAreSet">一切就绪。</string>
+    <string name="viewPlans">查看套餐</string>
+    <string name="subscriptionNotFound">未找到订阅</string>
+    <string name="subscriptionNotFoundDescription">与此 Google Play 账号关联的订阅已不再有效。</string>
+    <string name="purchaseRestored">您的购买已恢复。</string>
+    <string name="restoreSubscriptionTitle">将订阅添加到此设备</string>
+    <string name="restoreSubscriptionGooglePlayTitle">通过 Google Play 账号添加</string>
+    <string name="restoreSubscriptionGooglePlayDescription">使用您的 Google Play 账号在 Android 设备上恢复订阅。</string>
+    <string name="restoreSubscriptionGooglePlayGetStarted">恢复购买</string>
+    <string name="restoreSubscriptionEmailTitle">通过邮箱添加</string>
+    <string name="restoreSubscriptionEmailDescription">将邮箱地址关联到订阅，即可将其添加到此设备。</string>
+    <string name="restoreSubscriptionEmailGetStarted">开始</string>
+    <string name="removeSubscription">移除订阅</string>
+    <string name="subscriptionRemoved">您的订阅已从此设备移除</string>
+    <string name="removeFromDevice">从此设备移除？</string>
+    <string name="removeFromDeviceDescription">您将无法再在此设备上使用订阅。这不会取消订阅，订阅在您的其他设备上仍有效。</string>
+    <string name="subscriptionsDataMonthly" instruction="First placeholder is renews or expires, second is a date in format MMMM dd, yyyy">您的月度订阅%1$s于%2$s。</string>
+    <string name="subscriptionsDataYearly" instruction="First placeholder is renews or expires, second is a date in format MMMM dd, yyyy">您的年度订阅%1$s于%2$s。</string>
+    <string name="subscriptionsExpiredData" instruction="The placeholder is a date in format MMMM dd, yyyy">您的订阅已于%1$s到期。</string>
+    <string name="monthlySubscription">月度订阅</string>
+    <string name="yearlySubscription">年度订阅</string>
+    <string name="renews">续订</string>
+    <string name="expires">到期</string>
+    <string name="activateOnOtherDevices">将订阅添加到其他设备</string>
+    <string name="addToDevicePrimaryText">添加到设备</string>
+    <string name="addToDeviceSecondaryTextWithoutEmail">通过 Google Play 或关联邮箱地址，将订阅添加到您的其他设备。</string>
+    <string name="addToDeviceSecondaryTextWithEmail">使用上方的邮箱，在 DuckDuckGo 应用中将订阅添加到您的其他设备。前往“设置”&gt;“订阅设置”&gt;“我已有订阅”。</string>
+    <string name="editEmailPrimaryText">编辑邮箱</string>
+    <string name="learnMore">了解详情</string>
+    <string name="privacyProFaq">订阅需要帮助？</string>
+    <string name="privacyProFaqSecondary">请访问我们的帮助页面，查看常见问题解答或联系订阅支持。功能可用性因国家/地区而异。</string>
+    <string name="subscriptionStatusSubscribed">已订阅</string>
+    <string name="privacyPolicyAndTermsOfService">隐私政策与服务条款</string>
+    <string name="subscriptionStatusFreeTrial">免费试用进行中</string>
+    <string name="freeTrialMonthlyActiveSubscriptionsData" instruction="Placeholder is a date in format MMMM dd, yyyy">您的免费试用将于%1$s结束，并于当天自动转为月度付费订阅。</string>
+    <string name="freeTrialYearlyActiveSubscriptionsData" instruction="Placeholder is a date in format MMMM dd, yyyy">您的免费试用将于%1$s结束，并于当天自动转为年度付费订阅。</string>
+    <string name="freeTrialCancelledSubscriptionsData" instruction="Placeholder is a date in format MMMM dd, yyyy">您的免费试用将于%1$s结束，不会转为付费订阅。</string>
+    <string name="subscriptionSetting">订阅设置</string>
+    <string name="subscriptionSettingSubscribe">用一个订阅保护您的连接与身份。</string>
+    <string name="subscriptionSettingSubscribeSubtitle">订阅用户可使用我们的 VPN、个人信息删除和身份盗用恢复服务。</string>
+    <string name="subscriptionSettingSubscribeSubtitleRow">订阅用户可使用我们的 VPN 和身份盗用恢复服务。</string>
+    <string name="subscriptionSettingGet">订阅 DuckDuckGo</string>
+    <string name="subscriptionSettingTryFreeTrial">免费试用</string>
+    <string name="subscriptionSettingRestore">我已有订阅</string>
+    <string name="subscriptionSettingExpired">您的 DuckDuckGo 订阅已过期</string>
+    <string name="subscriptionSettingExpiredViewPlans">查看套餐</string>
+    <string name="subscriptionSettingSectionSubscription">订阅</string>
+    <string name="subscriptionSettingRemoveFromDevice">从此设备移除</string>
+    <string name="subscriptionSettingSectionHelpAndSupport">帮助与支持</string>
+    <string name="subscriptionSettingSendFeedback">发送反馈</string>
+    <string name="subscriptionSettingActivating">正在激活</string>
+    <string name="subscriptionSettingManagePlan">管理付款</string>
+    <string name="purchaseCompletedTitle">一切就绪。</string>
+    <string name="purchaseCompletedText">购买成功。</string>
+    <string name="purchaseRecoveredText">您已有订阅，我们已为您恢复。</string>
+    <string name="purchaseErrorTitle">出错了</string>
+    <string name="purchaseError">连接出现问题。请稍后再试。</string>
+    <string name="changePlanTitle">更新套餐或取消</string>
+    <string name="changePlanDescription">您的订阅是通过 Apple App Store 购买的。如需更改套餐或账单设置，请在使用同一 Apple 账号登录的设备上，前往“设置”&gt;“Apple 账号”&gt;“订阅”。</string>
+    <string name="downloadsDownloadFinishedActionName">打开</string>
+    <string name="downloadsCannotOpenFileErrorMessage">无法打开文件。请检查是否有兼容的应用。</string>
+    <string name="feedbackTitle">发送反馈</string>
+    <string name="feedbackActionHeader">选择类别</string>
+    <string name="feedbackActionReportIssue">报告问题</string>
+    <string name="feedbackActionGeneralFeedback">一般反馈</string>
+    <string name="feedbackActionFeatureRequest">请求新功能</string>
+    <string name="feedbackGeneralHeader">选择类别</string>
+    <string name="feedbackGeneralBrowser">浏览器反馈</string>
+    <string name="feedbackGeneralPpro">Privacy Pro</string>
+    <string name="feedbackCategoryHeader">选择类别</string>
+    <string name="feedbackCategorySubscription">订阅与付款</string>
+    <string name="feedbackCategoryVpn">VPN</string>
+    <string name="feedbackSubCategoryHeader">选择类别</string>
+    <string name="feedbackSubCategoryVpnConnection">VPN 无法连接</string>
+    <string name="feedbackSubCategoryVpnSlow">VPN 连接速度太慢</string>
+    <string name="feedbackSubCategoryVpnOtherApps">VPN 导致其他应用或网站出现问题</string>
+    <string name="feedbackSubCategoryVpnIot">VPN 无法连接本地设备</string>
+    <string name="feedbackSubCategoryVpnCrash">VPN 导致浏览器崩溃或卡死</string>
+    <string name="feedbackSubCategoryVpnOther">其他</string>
+    <string name="feedbackSubCategoryPirNothingOnSpecificSite">特定网站上没有相关信息</string>
+    <string name="feedbackSubCategoryPirNotMe">记录不属于用户本人</string>
+    <string name="feedbackSubCategoryPirScanStuck">扫描卡住</string>
+    <string name="feedbackSubCategoryPirRemovalStuck">删除卡住</string>
+    <string name="feedbackSubCategoryPirOther">其他</string>
+    <string name="feedbackSubCategoryItrAccessCode">访问代码出现问题</string>
+    <string name="feedbackSubCategoryItrCantContactAdvisor">无法联系顾问</string>
+    <string name="feedbackSubCategoryItrAdvisorUnhelpful">与顾问通话没有帮助</string>
+    <string name="feedbackSubCategoryItrOther">其他</string>
+    <string name="feedbackSubCategorySubsOtp">一次性密码出现问题</string>
+    <string name="feedbackSubCategorySubsOther">其他问题</string>
+    <string name="feedbackSubmitVpnHeader">在我们的<annotation type="faqs_link">帮助中心</annotation>中没有找到相关问题？我们很想了解。</string>
+    <string name="feedbackSubmitVpnDescriptionHint">请告诉我们发生了什么……</string>
+    <string name="feedbackSubmitVpnDisclaimer">除了您在上方输入的详情外，我们还会随反馈发送一些匿名信息：\n\n• 某些浏览器功能是否处于活动状态\n• 汇总的应用诊断信息（例如错误代码）\n\n点击“提交”即表示您同意 DuckDuckGo 使用您提交的信息来改进应用。</string>
+    <string name="feedbackSubmitVpnSubmit">提交</string>
+    <string name="feedbackSubmitCompletedMessage">谢谢！反馈已提交。</string>
+    <string name="feedbackSubmitGeneralDescriptionHint">请告诉我们您的反馈……</string>
+    <string name="feedbackSubmitFeatureRequestDescriptionHint">您希望增加什么功能？</string>
+    <string name="feedbackSubmitContactSupport">需要帮助？<annotation type="support_link">联系支持</annotation>。</string>
+    <string name="activitySubscriptions">订阅</string>
+    <string name="activitySubscriptionSettings">订阅设置</string>
+    <string name="activityActivateSubscription">我已有订阅</string>
+    <string name="activitySendFeedback">发送反馈</string>
+    <string name="subscriptionSettingSubscribeWithDuckAiSubtitle">订阅用户可使用我们的 VPN、Duck.ai 中的高级 AI 模型、个人信息删除和身份盗用恢复服务。</string>
+    <string name="subscriptionSettingSubscribeWithDuckAiSubtitleRow">订阅用户可使用我们的 VPN、Duck.ai 中的高级 AI 模型和身份盗用恢复服务。</string>
+    <string name="feedbackCategoryDuckAi">Duck.ai</string>
+    <string name="feedbackSubCategoryDuckAiSubscriberModels">无法访问仅限订阅用户的 Duck.ai 模型</string>
+    <string name="feedbackSubCategoryDuckAiLoginThirdPartyBrowser">无法在其他浏览器中使用订阅访问 Duck.ai</string>
+    <string name="feedbackSubCategoryDuckAiOther">其他 Duck.ai 反馈</string>
+    <string name="subscriptionSettingSectionTitle">DuckDuckGo 订阅</string>
+    <string name="subscriptionSettingSubscribeSecure">保护您的 Wi-Fi 安全，并使用高级 AI 模型进行私密聊天</string>
+    <string name="feedbackGeneralSubscription">订阅</string>
+    <string name="feedbackSubCategorySubsUnableToAccessProFeatures">无法访问 Plus 或 Pro 套餐功能</string>
+    <string name="subscriptionsProUpgradeTitle">升级到 Pro</string>
+    <string name="subscriptionsProUpgradeMessage">解锁更强大的 AI</string>
+    <string name="subscriptionSettingSectionManageSubscription">管理订阅</string>
+    <string name="subscriptionSettingViewAllPlans">查看全部套餐</string>
+    <string name="subscriptionSettingManagePaymentOrCancel">管理付款或取消</string>
+    <string name="subscriptionPendingPlanChangeDowngradePanel" instruction="First placeholder is the Tier name (e.g. Plus, Pro), second is date in short format (month day)">您的套餐将于%2$s降级为%1$s。</string>
+    <string name="subscriptionPendingPlanChangeUpgrade" instruction="First placeholder is the plan name (e.g. Plus Yearly), third is a date">您的套餐将于%2$s升级为%1$s。</string>
+    <string name="subscriptionPendingPlanChangeDowngrade" instruction="First placeholder is the plan name (e.g. Plus Yearly), third is a date">您的套餐将于%2$s降级为%1$s。</string>
+    <string name="planNamePlusMonthly">Plus 月度版</string>
+    <string name="planNamePlusYearly">Plus 年度版</string>
+    <string name="planNameProMonthly">Pro 月度版</string>
+    <string name="planNameProYearly">Pro 年度版</string>
+    <string name="subscriptionExpiredStatusIconContentDescription">订阅已过期</string>
+    <string name="subscriptionActiveStatusIconContentDescription">订阅有效</string>
+    <string name="subscriptionSettingWithdraw" instruction="Subscription settings option to use the legal right of withdrawal: cancel the subscription within 14 days of purchase and get a full refund">退出合同</string>
+    <string name="subscriptionSettingWithdrawDeadline" instruction="Placeholder is the last date the user can withdraw, e.g. October 15, 2026">您可以在%1$s之前退出并获得全额退款</string>
+    <string name="subscriptionWithdrawDialogTitle">要退出订阅吗？</string>
+    <string name="subscriptionWithdrawDialogMessage" instruction="First placeholder is the subscription tier name, e.g. Plus or Pro. Second placeholder is the refund amount with currency, e.g. €9.99">您的%1$s订阅将立即结束，您将在 14 天内收到退款%2$s，退回原支付方式。\n\n确认后，VPN、个人信息删除和高级 Duck.ai 模型将停止工作。</string>
+    <string name="subscriptionWithdrawDialogConfirm">确认退出</string>
+    <string name="subscriptionWithdrawDialogKeep">保留订阅</string>
+    <string name="subscriptionStatusNotSubscribed">未订阅</string>
+    <string name="subscriptionWithdrawnTitle" instruction="Placeholder is the date the user withdrew from their subscription, e.g. October 6, 2026">您已于%1$s退出。</string>
+    <string name="subscriptionWithdrawnRefund" instruction="Placeholder is the refund amount with currency, e.g. €9.99">您的%1$s退款正在处理中。</string>
+    <string name="subscriptionWithdrawnRefundWithoutAmount">您的退款正在处理中。</string>
+    <string name="subscriptionWithdrawErrorAlert" instruction="Error shown when the withdrawal request fails. The text inside the annotation is a link to a help page">我们无法自动处理您的退出请求。请访问<annotation type="withdrawal_help_link">此页面</annotation>完成退出。</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2022 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="macos_app">DuckDuckGo Mac 版应用</string>
+    <string name="macos_title">获取 DuckDuckGo Mac 版！</string>
+
+    <string name="macos_share_title">分享链接</string>
+    <string name="macos_description_text">DuckDuckGo Mac 版速度快、功能全，还内置了我们一流的隐私保护功能。\n\n在 Mac 上访问：</string>
+    <string name="macos_description_link">duckduckgo.com/mac</string>
+    <string name="macos_share_text">准备好在 Mac 上开始私密浏览了吗？\n\n请在 Mac 上访问以下网址下载：\nhttps://duckduckgo.com/mac?origin=funnel_browser_android_settings</string>
+
+    <string name="macos_waitlist_windows_link">在找 Windows 版？</string>
+    <string name="macos_waitlist_footer">加入等候名单无需分享任何个人信息。您的排队位置将以仅保存在您设备上的时间戳为准，以便在轮到您时通知您。</string>
+</resources>

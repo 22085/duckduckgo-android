@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="drmSitePermissionDialogTitle" instruction="Placeholder is the name of a website">“%1$s”希望打开您的数字版权管理 (DRM) 软件</string>
+    <string name="drmSitePermissionDialogSubtitle" instruction="Placeholder is the name of a website">如果您选择“拒绝”，该网站上的视频可能无法播放，但 %1$s 将无法访问 DRM 软件提供的设备标识符。您可以随时在设置中管理权限。<annotation type="drm_learn_more_link">了解详情</annotation></string>
+    <string name="drmSiteDialogAllowAlways">始终允许</string>
+    <string name="drmSiteDialogAllowOnce">仅本次会话</string>
+    <string name="drmSiteDialogDenyAlways">始终拒绝</string>
+    <string name="drmSiteDialogDenyOnce">本次会话拒绝</string>
+    <string name="sitePermissionsLocationDialogTitle" instruction="Placeholder is a website">“%1$s”希望访问您的位置</string>
+    <string name="sitePermissionsDialogRememberMeCheckBox">记住我的选择</string>
+    <string name="preciseLocationDDGDialogSubtitle">我们仅使用您的匿名位置来提供更贴近您的优质结果。您可以在设置中管理已授予各个网站的位置访问权限。</string>
+    <string name="preciseLocationSiteDialogSubtitle">您可以在设置中管理已授予各个网站的位置访问权限。</string>
+    <string name="systemPermissionDialogLocationDeniedTitle">允许 DuckDuckGo 在此设备上请求位置访问权限</string>
+    <string name="systemPermissionDialogLocationDeniedContent">只有允许 DuckDuckGo 请求访问权限，网站才能使用您的位置。</string>
+    <string name="sitePermissionsLocationDeniedSnackBarMessage">允许 DuckDuckGo 请求位置访问权限</string>
+    <string name="settingsSitePermissions">网站权限</string>
+    <string name="sitePermissionsMicAndCameraDialogSubtitle">您可以在设置中管理已授予各个网站的麦克风和摄像头访问权限。</string>
+    <string name="sitePermissionsMicDialogSubtitle">您可以在设置中管理已授予各个网站的麦克风访问权限。</string>
+    <string name="sitePermissionsCameraDialogSubtitle">您可以在设置中管理已授予各个网站的摄像头访问权限。</string>
+    <string name="sitePermissionsMicAndCameraDialogTitle" instruction="Placeholder is a website">“%1$s”希望访问摄像头和麦克风</string>
+    <string name="sitePermissionsMicDialogTitle" instruction="Placeholder is a website">“%1$s”希望访问麦克风</string>
+    <string name="sitePermissionsCameraDialogTitle" instruction="Placeholder is a website">“%1$s”希望访问摄像头</string>
+    <string name="sitePermissionsDialogContent">在设置中管理已授予的权限</string>
+    <string name="sitePermissionsDialogDenyButton">拒绝</string>
+    <string name="sitePermissionsDialogAllowButton">允许</string>
+    <string name="sitePermissionsCameraAndMicDeniedSnackBarMessage">允许 DuckDuckGo 请求摄像头和麦克风访问权限</string>
+    <string name="sitePermissionsCameraDeniedSnackBarMessage">允许 DuckDuckGo 请求摄像头访问权限</string>
+    <string name="sitePermissionsMicDeniedSnackBarMessage">允许 DuckDuckGo 请求麦克风访问权限</string>
+    <string name="sitePermissionsDeniedSnackBarAction">允许</string>
+    <string name="systemPermissionDialogCameraDeniedTitle">允许 DuckDuckGo 在此设备上请求摄像头访问权限</string>
+    <string name="systemPermissionDialogCameraDeniedContent">只有允许 DuckDuckGo 请求访问权限，网站才能使用您的摄像头。</string>
+    <string name="systemPermissionDialogAudioDeniedTitle">允许 DuckDuckGo 在此设备上请求麦克风访问权限</string>
+    <string name="systemPermissionDialogAudioDeniedContent">只有允许 DuckDuckGo 请求访问权限，网站才能使用您的麦克风。</string>
+    <string name="systemPermissionDialogCameraAndAudioDeniedTitle">允许 DuckDuckGo 在此设备上请求摄像头和麦克风访问权限</string>
+    <string name="systemPermissionDialogCameraAndAudioDeniedContent">只有允许 DuckDuckGo 请求访问权限，网站才能使用您的摄像头和麦克风。</string>
+    <string name="systemPermissionsDeniedDialogPositiveButton">打开设置</string>
+    <string name="systemPermissionsDeniedDialogNegativeButton">取消</string>
+    <string name="duckAiMicPermissionDeniedSnackBarMessage">语音功能需要麦克风权限</string>
+    <string name="duckAiMicPermissionDeniedDialogTitle">DuckDuckGo 需要访问您的麦克风</string>
+    <string name="duckAiMicPermissionDeniedDialogContent">如需在 Duck.ai 中使用语音聊天，需要麦克风权限</string>
+    <string name="sitePermissionsSettingsDescription">您访问的网站可能会请求访问您设备的位置、摄像头、麦克风或 DRM（数字版权管理）软件。除非您明确授予权限，否则它们无法访问这些内容。</string>
+    <string name="sitePermissionsSettingsEnablePermissionTitle">允许所有网站请求：</string>
+    <string name="sitePermissionsSettingsLocation">位置</string>
+    <string name="sitePermissionsSettingsCamera">摄像头</string>
+    <string name="sitePermissionsSettingsMicrophone">麦克风</string>
+    <string name="sitePermissionsSettingsAllowedSitesTitle">管理网站</string>
+    <string name="sitePermissionsSettingsEmptyText">暂无网站</string>
+    <string name="sitePermissionsRemoveAllWebsitesSnackbarText">已移除所有网站的权限</string>
+    <string name="permissionPerWebsiteText" instruction="Placeholder is the name of a website">“%1$s”的权限 </string>
+    <string name="permissionsPerWebsiteAskSetting">每次询问</string>
+    <string name="permissionsPerWebsiteDenySetting">拒绝</string>
+    <string name="permissionsPerWebsiteAllowSetting">允许</string>
+    <string name="permissionsPerWebsiteAskDisabledSetting">已对所有网站禁用</string>
+    <string name="permissionsPerWebsiteSelectorDialogTitle" instruction="%1$s is the name of a permissions and %2$s is the name of a website, i.e. Camera permission for example.com">%2$s的%1$s权限</string>
+    <string name="sitePermissionsDialogAllowWhileUsingSiteButton" instruction="Button granting a website a permission for every visit, until the user changes it">使用网站时允许</string>
+    <string name="sitePermissionsDialogAllowThisTimeButton" instruction="Button granting a website a permission for the current visit only">仅本次允许</string>
+    <string name="sitePermissionsDialogNeverAllowButton" instruction="Button refusing a website a permission for every visit, until the user changes it">始终不允许</string>
+    <string name="sitePermissionsTieredLocationDialogTitle" instruction="Placeholder is a website">“%1$s”网站希望访问您的位置</string>
+    <string name="sitePermissionsTieredDdgLocationDialogTitle" instruction="Placeholder is a website">“%1$s”希望访问您的位置</string>
+    <string name="sitePermissionsTieredDdgLocationDialogSubtitle">我们会匿名化您的位置，并用它来提供更贴近您的优质结果。</string>
+    <string name="sitePermissionsTieredCameraDialogTitle" instruction="Placeholder is a website">“%1$s”网站希望访问您的摄像头</string>
+    <string name="sitePermissionsTieredMicDialogTitle" instruction="Placeholder is a website">“%1$s”网站希望访问您的麦克风</string>
+    <string name="sitePermissionsTieredMicAndCameraDialogTitle" instruction="Placeholder is a website">“%1$s”网站希望访问您的摄像头和麦克风</string>
+    <string name="sitePermissionsTieredThirdPartyLocationDialogTitle" instruction="Placeholder is a third-party website embedded in the website the user is visiting">“%1$s”希望在此网站上访问您的位置</string>
+    <string name="sitePermissionsTieredThirdPartyCameraDialogTitle" instruction="Placeholder is a third-party website embedded in the website the user is visiting">“%1$s”希望在此网站上访问您的摄像头</string>
+    <string name="sitePermissionsTieredThirdPartyMicDialogTitle" instruction="Placeholder is a third-party website embedded in the website the user is visiting">“%1$s”希望在此网站上访问您的麦克风</string>
+    <string name="sitePermissionsTieredThirdPartyMicAndCameraDialogTitle" instruction="Placeholder is a third-party website embedded in the website the user is visiting">“%1$s”希望在此网站上访问您的摄像头和麦克风</string>
+    <string name="sitePermissionsTieredThirdPartyDrmDialogTitle" instruction="Placeholder is a third-party website embedded in the website the user is visiting">“%1$s”希望在此网站上访问您的数字版权管理 (DRM) 软件</string>
+    <string name="sitePermissionsTieredDrmDialogSubtitle">如果您不允许，该网站上的视频可能无法播放，但该网站将无法访问 DRM 软件提供的设备标识符。</string>
+    <string name="sitePermissionsDialogChangePermissionsButton" instruction="Button opening the DuckDuckGo permission settings in the Android system settings app">更改权限</string>
+    <string name="sitePermissionsTieredSystemDeniedLocationTitle">DuckDuckGo 需要访问您的位置</string>
+    <string name="sitePermissionsTieredSystemDeniedLocationContent">如需在此网站上使用位置功能，需要位置权限。</string>
+    <string name="sitePermissionsTieredSystemDeniedCameraTitle">DuckDuckGo 需要访问您的摄像头</string>
+    <string name="sitePermissionsTieredSystemDeniedCameraContent">如需在此网站上使用摄像头功能，需要摄像头权限。</string>
+    <string name="sitePermissionsTieredSystemDeniedMicTitle">DuckDuckGo 需要访问您的麦克风</string>
+    <string name="sitePermissionsTieredSystemDeniedMicContent">如需在此网站上使用麦克风功能，需要麦克风权限。</string>
+    <string name="sitePermissionsTieredSystemDeniedCameraAndMicTitle">DuckDuckGo 需要访问您的摄像头和麦克风</string>
+    <string name="sitePermissionsTieredSystemDeniedCameraAndMicContent">如需在此网站上使用摄像头和麦克风功能，需要摄像头和麦克风权限。</string>
+    <string name="sitePermissionsTieredLocationDeniedSnackBarMessage">DuckDuckGo 无法与此网站共享位置</string>
+    <string name="sitePermissionsTieredCameraDeniedSnackBarMessage">DuckDuckGo 无法向此网站授予摄像头访问权限</string>
+    <string name="sitePermissionsTieredMicDeniedSnackBarMessage">DuckDuckGo 无法向此网站授予麦克风访问权限</string>
+    <string name="sitePermissionsTieredCameraAndMicDeniedSnackBarMessage">DuckDuckGo 无法向此网站授予摄像头和麦克风访问权限</string>
+    <string name="permissionSettingsAlwaysAllow" instruction="Permission setting option: the site gets the permission without asking">始终允许</string>
+    <string name="permissionSettingsAskEachTime" instruction="Permission setting option: the site has to ask for the permission every time">每次询问</string>
+    <string name="permissionSettingsLocationDialogTitle">允许网站请求位置权限</string>
+    <string name="permissionSettingsLocationDialogMessage">如果您选择“始终不允许”，将无法使用网站上的某些功能，例如地图导航或附近商店。</string>
+    <string name="permissionSettingsCameraDialogTitle">允许网站请求摄像头权限</string>
+    <string name="permissionSettingsCameraDialogMessage">如果您选择“始终不允许”，将无法使用网站上的视频聊天等功能。</string>
+    <string name="permissionSettingsMicrophoneDialogTitle">允许网站请求麦克风权限</string>
+    <string name="permissionSettingsMicrophoneDialogMessage">如果您选择“始终不允许”，将无法使用网站上的语音聊天等功能。</string>
+    <string name="permissionSettingsDrmDialogTitle">允许网站请求数字版权管理 (DRM) 权限</string>
+    <string name="permissionSettingsDrmTitle" instruction="Name of a permission setting for playing protected video content">数字版权管理 (DRM)</string>
+    <string name="permissionsPerWebsiteRedesignHeader" instruction="Placeholder is the name of a website">%1$s 的权限</string>
+    <string name="permissionsPerWebsiteRemovePermissions" instruction="Button that removes all saved permissions for the website shown on the screen">移除权限</string>
+    <string name="permissionsRemovedForSiteSnackbar" instruction="Placeholder is the name of a website">已移除 &lt;b&gt;%1$s&lt;/b&gt; 的权限</string>
+    <string name="permissionsRemovedForAllSitesSnackbar">已移除所有网站的权限</string>
+    <string name="permissionSettingsDrmDialogMessage">如果您选择“始终不允许”，该网站上的视频可能无法播放。</string>
+</resources>

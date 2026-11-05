@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources>
+    <string name="browserMenuRemoveFireproofing">取消免清除</string>
+    <string name="browserMenuBookmarks">书签</string>
+    <string name="browserMenuAddBookmark">添加书签</string>
+    <string name="browserMenuEditBookmark">编辑书签</string>
+    <string name="browserMenuFireproofSite">将此网站设为免清除</string>
+    <string name="browserMenuMobileSite">移动版网站</string>
+    <string name="browserMenuDesktopSite">桌面版网站</string>
+    <string name="browserMenuEnablePrivacyProtection">启用隐私保护</string>
+    <string name="browserMenuDisablePrivacyProtection">停用隐私保护</string>
+    <string name="browserMenuNewTab">新标签页</string>
+    <string name="browserMenuDuckChat">Duck.ai</string>
+    <string name="browserMenuShare">分享</string>
+    <string name="browserMenuEmailAlias">生成 Duck 地址</string>
+    <string name="browserMenuFindInPage">在页面中查找</string>
+    <string name="browserMenuPrint">打印页面</string>
+    <string name="browserMenuPrintSite">打印</string>
+    <string name="browserMenuOpenAppLink">在应用中打开</string>
+    <string name="browserMenuAddToHome">添加到主屏幕</string>
+    <string name="browserMenuDownloadPdf">下载 PDF</string>
+    <string name="browserMenuReportBrokenSite">报告网站问题</string>
+    <string name="browserMenuAutofill">密码</string>
+    <string name="browserMenuDownloads">下载</string>
+    <string name="browserMenuSettings">设置</string>
+    <string name="browserMenuOpenInDDG">在 DuckDuckGo 中打开</string>
+    <string name="browserMenuRunningInDDG">正在 DuckDuckGo 中运行</string>
+    <string name="browserMenuSetAsDefaultBrowser">设为默认浏览器</string>
+    <string name="browserMenuNewChat">新对话</string>
+    <string name="browserMenuNewAIChat">新 AI 对话</string>
+    <string name="browserMenuChatHistory">对话记录</string>
+    <string name="browserMenuDuckChatHistory">Duck.ai 对话</string>
+    <string name="browserMenuChatSettings">Duck.ai 设置</string>
+    <string name="browserMenuVPN">VPN</string>
+    <string name="browserMenuVpnTryForFree">免费试用</string>
+    <string name="browserMenuBack">返回</string>
+    <string name="browserMenuForward">前进</string>
+    <string name="browserMenuRefresh">刷新</string>
+    <string name="browserMenuFireTabsData">删除标签页和数据</string>
+    <string name="chatMenuPopupNewVoiceChat">新语音对话</string>
+    <string name="chatMenuPopupNewImage">新图片</string>
+    <string name="chatMenuPopupNewTab">新标签页</string>
+    <string name="chatMenuPopupNewFireTab">新火焰标签页</string>
+</resources>

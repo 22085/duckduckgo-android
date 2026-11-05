@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="sync_flows_disabled"><b>同步与备份不可用</b>\n抱歉，同步与备份目前不可用。请稍后再试。</string>
+    <string name="sync_flows_disabled_new_version"><b>同步与备份不可用</b>\n抱歉，此应用版本已不再提供同步与备份。请将 DuckDuckGo 更新到最新版本以继续使用。</string>
+    <string name="sync_create_account_disabled"><b>同步与备份不可用</b>\n抱歉，同步与备份目前不可用。请稍后再试。</string>
+    <string name="sync_create_account_disabled_new_version"><b>同步与备份不可用</b>\n抱歉，此应用版本已不再提供同步与备份。请将 DuckDuckGo 更新到最新版本以继续使用。</string>
+    <string name="sync_disabled_authenticated_user"><b>同步与备份已暂停</b>\n抱歉，同步与备份目前不可用。请稍后再试。</string>
+    <string name="sync_disabled_authenticated_user_new_version"><b>同步与备份已暂停</b>\n抱歉，此应用版本已不再提供同步与备份。请将 DuckDuckGo 更新到最新版本以继续使用。</string>
+    <string name="sync_paused_notification"><b>同步与备份已暂停</b>\n抱歉，同步与备份目前不可用。请稍后再试。</string>
+    <string name="sync_error_notification"><b>同步出错</b>\n同步与备份暂时不可用。</string>
+    <string name="sync_error_warning"><b>同步出错</b>\n同步与备份暂时不可用。</string>
+    <string name="sync_signed_out_notification"><b>同步已暂停</b>\n同步已暂停。如需继续同步此设备，请使用另一台设备或恢复代码重新连接。</string>
+
+    <string name="sync_screen_title">同步与备份</string>
+    <string name="sync_setup_begin_syncing">开始同步</string>
+    <string name="sync_setup_with_another_device_cta_title">与另一台设备同步</string>
+    <string name="sync_setup_with_another_device_cta_subtitle">在设备之间安全同步书签和密码。</string>
+    <string name="sync_setup_with_another_device_cta_subtitle_with_ai_chat">在设备之间安全同步书签、密码和 Duck.ai 聊天记录。</string>
+    <string name="sync_off_hint">您的数据已端到端加密，DuckDuckGo 无法访问加密密钥。</string>
+    <string name="sync_setup_single_device_title">单设备设置</string>
+    <string name="sync_setup_other_options_title">其他选项</string>
+    <string name="sync_setup_single_recover_data_cta_title">恢复已同步数据</string>
+    <string name="sync_setup_single_sync_this_device_cta_title">同步并备份此设备</string>
+
+    <string name="sync_off_encrypted_hint">您的数据已端到端加密，DuckDuckGo 无法访问解密密钥。</string>
+
+    <string name="sync_enable_sync_title">正在设置同步与备份！</string>
+    <string name="sync_enable_sync_content">正在准备同步您的书签和密码，稍等片刻即可完成。</string>
+    <string name="sync_enable_sync_content_with_ai_chat">正在准备同步您的书签、密码和 Duck.ai 聊天记录，稍等片刻即可完成。</string>
+    <string name="sync_enable_options">选项</string>
+    <string name="sync_enable_option_favicons_title">获取书签图标</string>
+    <string name="sync_enable_option_favicons_subtitle">自动下载已同步书签的图标。</string>
+    <string name="sync_enable_connecting">正在连接…</string>
+    <string name="sync_intro_enable_title">同步并备份此设备</string>
+    <string name="sync_intro_enable_content">这会在 DuckDuckGo 的安全服务器上为您的书签和密码创建加密备份，并可与您的其他设备同步。\n\n加密密钥仅存储在您的设备上，DuckDuckGo 无法访问。</string>
+    <string name="sync_intro_enable_content_with_ai_chat">这会在 DuckDuckGo 的安全服务器上为您的书签、密码和 Duck.ai 聊天记录创建加密备份，并可与您的其他设备同步。\n\n加密密钥仅存储在您的设备上，DuckDuckGo 无法访问。</string>
+    <string name="sync_intro_enable_footer">您可以稍后与其他设备同步。</string>
+    <string name="sync_intro_enable_cta">开启同步与备份</string>
+    <string name="sync_recover_synced_data_title">恢复已同步数据</string>
+    <string name="sync_recover_synced_data_content">您需要设置同步与备份时获得的恢复代码。您可能已将其保存为 PDF，存在当时使用的设备上。</string>
+    <string name="sync_recover_synced_data_cta">恢复已同步数据</string>
+
+    <string name="login_screen_title">扫描二维码</string>
+    <string name="login_screen_enter_code_cta">手动输入代码</string>
+    <string name="login_screen_barcode_hint">将相机对准二维码进行同步</string>
+    <string name="login_screen_cant_scan_label">无法扫描？</string>
+    <string name="login_screen_cant_scan_button_text">复制文本代码</string>
+
+    <string name="connect_screen_title">扫描二维码</string>
+    <string name="connect_screen_scan_qr_hint">在另一台设备上打开 DuckDuckGo 应用，前往<b>设置 > 同步与备份 > 与另一台设备同步</b>。</string>
+    <string name="connect_screen_enter_code_cta">手动输入代码</string>
+    <string name="connect_screen_connect_qr_hint_title">或使用另一台设备上的 DuckDuckGo 扫描</string>
+    <string name="connect_screen_connect_qr_hint_content">在另一台设备上打开 DuckDuckGo 并扫描此代码进行同步。</string>
+    <string name="connect_screen_share_code">复制代码</string>
+
+    <string name="enter_code_screen_title">手动输入代码</string>
+    <string name="sync_enter_code_hint">前往<b>设置 > 同步与备份 > 与另一台设备同步</b>，在另一台已同步设备上的 DuckDuckGo 应用中选择<b>查看文本代码</b>，然后将代码粘贴到此处以同步此设备。</string>
+    <string name="sync_enter_code_verifying">正在验证代码</string>
+    <string name="sync_enter_code_invalid">⚠️ 代码无效</string>
+    <string name="sync_enter_code_paste">粘贴代码</string>
+
+    <string name="sync_recovery_code_title">保存恢复代码</string>
+    <string name="sync_save_recovery_code_item_hint">如果您无法访问自己的设备，将需要此代码来恢复已同步数据。</string>
+    <string name="sync_recovery_code_skip_button">下一步</string>
+    <string name="sync_recovery_code_primary_button">保存为 PDF</string>
+    <string name="sync_recovery_code_secondary_button">复制代码</string>
+    <string name="sync_code_box_description">任何获得此代码的人都可以访问您已同步的数据，请妥善保管。</string>
+
+    <string name="sync_connected_device_title">您的数据已同步！</string>
+    <string name="sync_connected_device_primary_button">完成</string>
+
+    <string name="show_qr_screen_title">显示二维码</string>
+
+    <string name="show_code_screen_title">代码</string>
+    <string name="enter_code_screen_cta">输入文本代码</string>
+    <string name="sync_login_device_hint">扫描恢复 PDF 上的二维码，或扫描另一台已同步设备上的二维码，以恢复您的数据。</string>
+
+    <string name="synced_devices_section_title">已同步设备</string>
+    <string name="sync_new_device_section_title">同步新设备</string>
+    <string name="sync_new_device_hint">前往另一台设备上 DuckDuckGo 应用中的“设置 &gt; 同步与备份”，扫描即可立即连接。</string>
+    <string name="sync_show_text_code_item">显示文本代码</string>
+    <string name="sync_show_qr_code_item">扫描二维码</string>
+    <string name="sync_save_recovery_code_item">保存恢复 PDF</string>
+    <string name="sync_delete_account_item">关闭并删除服务器数据…</string>
+    <string name="sync_disable_sync_item">关闭同步与备份…</string>
+    <string name="sync_enable_sync_next_button">下一步</string>
+    <string name="sync_recovery_code_content">如果您无法访问自己的设备，将需要此代码来恢复已同步数据。</string>
+    <string name="sync_recovery_code_hint">任何获得此代码的人都可以访问您已同步的数据，请妥善保管。</string>
+
+    <string name="turn_off_sync_dialog_title">关闭同步？</string>
+    <string name="turn_off_sync_dialog_content">此设备将无法再访问您已同步的数据</string>
+    <string name="turn_off_sync_dialog_primary_button">关闭</string>
+    <string name="turn_off_sync_dialog_secondary_button">取消</string>
+    <string name="sync_permission_required_store_recovery_code">保存恢复 PDF 需要存储权限</string>
+    <string name="sync_share_title">分享到…</string>
+    <string name="sync_pdf_title">同步恢复代码</string>
+    <string name="sync_pdf_description">恢复代码可让您在多台设备之间同步密码、自动填充数据和 Duck.ai 聊天记录，并在无法访问某台设备时恢复已同步数据。</string>
+    <string name="sync_code_box_title">请妥善保管这些信息。</string>
+    <string name="sync_instructions_title">此代码如何使用？</string>
+    <string name="sync_instructions_step1">在要同步的设备上打开 DuckDuckGo，前往“设置”中的“同步与备份”。</string>
+    <string name="sync_instructions_step2">选择“与另一台设备同步”，扫描二维码或输入文本代码。</string>
+    <string name="sync_instructions_step3">同步将被激活，您将再次可以访问所有数据。</string>
+    <string name="sync_pdf_retention_notice">如果您超过 18 个月未使用启用了同步与备份的 DuckDuckGo 浏览器，您的数据将从服务器删除且无法恢复。</string>
+    <string name="remove_device_dialog_title">移除设备？</string>
+    <string name="remove_device_dialog_content" instruction="Placeholder is a device name">“%1$s”将无法再访问您已同步的数据。</string>
+    <string name="remove_device_dialog_primary_button">移除</string>
+    <string name="remove_device_dialog_secondary_button">取消</string>
+    <string name="edit_device_dialog_title">编辑</string>
+    <string name="edit_device_dialog_hint">设备名称</string>
+    <string name="edit_device_dialog_primary_button">确定</string>
+    <string name="edit_device_dialog_secondary_button">取消</string>
+    <string name="sync_device_this_device_hint">此设备</string>
+    <string name="sync_device_menu_option_edit">编辑</string>
+    <string name="sync_device_menu_option_remove">移除设备</string>
+    <string name="sync_show_code_copy">复制代码</string>
+    <string name="sync_show_code_copy_hint">在第二台设备上设置同步时选择“手动输入代码”后，使用此代码</string>
+    <string name="sync_code_copied_message">恢复代码已复制</string>
+    <string name="sync_camera_permission_required">需要相机权限</string>
+    <string name="sync_camera_unavailable">相机不可用</string>
+    <string name="sync_camera_permission_required_description">请前往设备设置，授予此应用访问相机的权限。</string>
+    <string name="sync_go_to_settings">前往设置</string>
+    <string name="sync_general_error">出了点问题</string>
+    <string name="sync_notification_channel_name">同步</string>
+    <string name="sync_notify_me_title">通知已关闭</string>
+    <string name="sync_notify_me_description">当同步与备份遇到错误时接收通知。</string>
+
+    <string name="sync_turn_off_error">无法关闭同步与备份。</string>
+    <string name="sync_edit_device_error">无法更新设备名称。</string>
+    <string name="sync_remove_device_error">无法从同步与备份中移除此设备。</string>
+    <string name="sync_delete_data_error">无法删除服务器上的数据。</string>
+    <string name="sync_login_authenticated_device_error">要配对这些设备，请先在一台设备上关闭同步与备份，然后在另一台设备上点按“与另一台设备同步”。</string>
+    <string name="sync_connect_generic_error">无法连接到服务器。</string>
+    <string name="sync_connect_login_error">无法与另一台设备同步。</string>
+    <string name="sync_create_account_generic_error">无法连接到服务器。</string>
+    <string name="sync_invalid_code_error">抱歉，此代码无效。请确认输入或扫描的代码正确无误。</string>
+    <string name="sync_recovery_pdf_error">无法创建恢复 PDF。</string>
+    <string name="sync_dialog_error_ok">确定</string>
+    <string name="sync_dialog_error_title">同步与备份</string>
+    <string name="sync_encryption_not_supported_error_title">设备不受支持</string>
+    <string name="sync_encryption_not_supported_error">同步与备份采用端到端加密，需要能够在您的设备上加密并存储数据。由于您的设备不支持加密存储，同步与备份不可用。</string>
+
+    <string name="sync_auth_text_for_access">解锁设备以访问同步与备份。</string>
+    <string name="sync_biometric_prompt_title">同步与备份已锁定</string>
+    <string name="sync_require_device_passcode_dialog_title">保护您的设备以使用同步与备份</string>
+    <string name="sync_require_device_passcode_dialog_body">使用同步与备份需要设置设备锁屏图案、PIN 码或生物识别。</string>
+    <string name="sync_require_device_passcode_dialog_action">前往设置</string>
+
+    <string name="sync_delete_server_data_dialog_title">删除服务器数据？</string>
+    <string name="sync_delete_server_data_dialog_content">您的备份将从服务器删除。所有设备都将断开同步，但任何设备上的数据都不会被删除。</string>
+    <string name="sync_delete_server_data_dialog_primary_button">删除服务器数据</string>
+    <string name="sync_delete_server_data_dialog_secondary_button">取消</string>
+
+    <string name="syncPromoTitlePasswords">同步并备份您的密码</string>
+    <string name="syncPromoSubtitlePasswords">无需账号。端到端加密意味着只有您能看到密码，连我们也看不到。</string>
+
+    <string name="syncPromoTitleBookmarks">同步并备份您的书签</string>
+    <string name="syncPromoSubtitleBookmarks">无需账号。端到端加密意味着只有您能看到书签，连我们也看不到。</string>
+
+    <string name="syncPromoPrimaryButton">设置同步</string>
+    <string name="syncPromoSecondaryButton">不用了</string>
+
+    <string name="syncGetAppsOnOtherPlatforms">在其他设备上获取 DuckDuckGo</string>
+    <string name="syncGetAppsOnOtherPlatformsTitle">在其他设备上获取 DuckDuckGo，以便与此设备同步</string>
+    <string name="syncGetAppsOnOtherPlatformsActivityTitle">获取 DuckDuckGo</string>
+    <string name="syncGetAppsOnOtherPlatformInstruction" instruction="A URL will be shown after this string">要在桌面设备或其他移动设备上下载 DuckDuckGo，请访问：</string>
+    <string name="syncGetAppsOnOtherPlatformInstructionUrlDownloadButton">分享下载链接</string>
+    <string name="syncGetAppsOnOtherPlatformInstructionUrlLinkCopied" instruction="This is shown after the user taps on the link, to confirm it was copied to their device clipboard">链接已复制</string>
+
+    <string name="sync_dialog_switch_account_header">切换到其他同步？</string>
+    <string name="sync_dialog_switch_account_primary_button">切换同步</string>
+    <string name="sync_dialog_switch_account_secondary_button">取消</string>
+    <string name="sync_dialog_switch_account_description">此设备已同步，确定要将其与另一个备份或设备同步吗？切换不会移除已同步到此设备的数据。</string>
+
+    <string name="sync_setup_deep_link_confirmation_dialog_title">同步新设备？</string>
+    <string name="sync_setup_deep_link_confirmation_dialog_message" instruction="Placeholder is a device name. e.g., Samsung S23">“%1$s”将可以访问您已同步的 DuckDuckGo 数据。</string>
+    <string name="sync_setup_deep_link_confirmation_dialog_button_positive">立即同步</string>
+    <string name="sync_setup_deep_link_confirmation_dialog_button_negative">取消</string>
+
+    <string name="deep_link_auth_prompt_title">设置同步与备份</string>
+    <string name="deep_link_auth_prompt_message">解锁设备以设置同步与备份</string>
+
+    <string name="addBookmarkDialogSyncPromoText">跨设备同步书签</string>
+    <string name="addBookmarkDialogHideSyncSuggestion">隐藏</string>
+
+    <string name="getDesktopBrowserSettingItemTitle">获取桌面浏览器</string>
+    <string name="getDesktopBrowserSettingItemSubtitleTitle">适用于 Mac 和 Windows 的 DuckDuckGo</string>
+
+    <string name="sync_settings_recovery_section_header">恢复</string>
+    <string name="sync_settings_download_recovery_code_item">将恢复代码下载为 PDF</string>
+    <string name="sync_settings_download_recovery_code_item_hint">如果您无法访问此设备，请使用此代码恢复数据——请妥善保管。</string>
+    <string name="sync_settings_data_expiration">同步与备份数据在 18 个月不活动后将无法恢复。<annotation type="learn_more_link">了解详情</annotation></string>
+
+    <string name="sync_previous_session_ready_title">要从上次安装恢复同步与备份数据吗？</string>
+    <string name="sync_previous_session_ready_body">恢复后即可在 DuckDuckGo 中找回之前保存的书签、密码和其他数据。</string>
+    <string name="sync_previous_session_ready_resume_cta">恢复同步与备份</string>
+    <string name="sync_previous_session_ready_continue_cta">设置新的同步</string>
+
+    <string name="sync_recover_data_title">轻松恢复您的数据</string>
+    <string name="sync_recover_data_content">如果您无法访问此设备，请使用此代码恢复数据。同步与备份数据在 18 个月不活动后将无法恢复。</string>
+    <string name="sync_recover_data_recovery_code_label">恢复代码</string>
+    <string name="sync_recover_data_download_pdf">下载为 PDF</string>
+    <string name="sync_restore_on_reinstall_title">重装应用时恢复</string>
+    <string name="sync_restore_on_reinstall_description">如果您重新安装 DuckDuckGo 应用，我们会询问您是否要在此设备上恢复数据。</string>
+
+    <string name="sync_chat_promo_banner_title">使用同步与备份，在各设备上访问您的聊天记录。</string>
+    <string name="sync_chat_promo_banner_cta_title">与另一台设备同步</string>
+    <string name="sync_chat_bottom_sheet_title">让您的聊天记录在各设备间同步吧！</string>
+    <string name="sync_chat_bottom_sheet_description">在另一台设备上的 DuckDuckGo 应用中，前往“设置 › 同步与备份 › 与另一台设备同步”，找到二维码。</string>
+    <string name="sync_chat_bottom_sheet_positive">扫描二维码</string>
+    <string name="sync_chat_bottom_sheet_negative">暂不</string>
+
+    <string name="sync_v2_joiner_confirmation_title">要同步您的数据吗？</string>
+    <string name="sync_v2_joiner_confirmation_positive">立即同步</string>
+    <string name="sync_v2_joiner_confirmation_negative">取消</string>
+
+    <string name="sync_v2_host_confirmation_title">要同步您的数据吗？</string>
+    <string name="sync_v2_host_confirmation_positive">立即同步</string>
+    <string name="sync_v2_host_confirmation_negative">取消</string>
+
+    <string name="sync_v2_confirmation_message_ddg" instruction="Placeholder is a peer device name, e.g. Samsung S23.">“%1$s”将可以访问您已同步的 DuckDuckGo 密码、自动填充数据和 Duck.ai 聊天记录。</string>
+    <string name="sync_v2_confirmation_message_3p" instruction="Placeholder is a peer device name, e.g. Samsung S23.">“%1$s”将可以访问您已同步的 Duck.ai 聊天记录。</string>
+    <string name="sync_v2_confirmation_message_unknown_peer_ddg">另一台设备将可以访问您已同步的 DuckDuckGo 密码、自动填充数据和 Duck.ai 聊天记录。</string>
+    <string name="sync_v2_confirmation_message_unknown_peer_3p">另一台设备将可以访问您已同步的 Duck.ai 聊天记录。</string>
+
+    <string name="sync_v2_error_pairing_failed">同步失败。</string>
+    <string name="sync_v2_error_pairing_rejected">已从另一台设备取消同步。</string>
+    <string name="sync_v2_error_pairing_canceled">同步已取消。</string>
+    <string name="sync_v2_error_upgrade_required">请更新 DuckDuckGo 浏览器，然后重试。</string>
+    <string name="sync_v2_error_third_party_already_upgraded">请从另一台设备上已连接的 DuckDuckGo 浏览器同步此设备</string>
+    <string name="sync_v2_error_try_again">请重试。</string>
+    <string name="sync_v2_error_got_it">知道了</string>
+    <string name="sync_v2_already_paired_title">已同步。</string>
+    <string name="sync_v2_already_paired_message">这些设备已连接到同步与备份。</string>
+
+    <string name="sync_simplified_settings_header_headline_disabled">让 DuckDuckGo 保持同步！</string>
+    <string name="sync_simplified_settings_header_headline_enabled">DuckDuckGo 已同步。</string>
+    <string name="sync_simplified_settings_header_body_disabled">在您的 DuckDuckGo&#160;应用之间端到端加密同步并备份自动填充数据和书签。</string>
+    <string name="sync_simplified_settings_header_body_disabled_with_duck_ai">在您的 DuckDuckGo&#160;应用之间端到端加密同步并备份自动填充数据、书签和 Duck.ai&#160;聊天记录。</string>
+    <string name="sync_simplified_settings_header_body_enabled">您的书签和自动填充数据正在通过端到端加密同步与备份。</string>
+    <string name="sync_simplified_settings_header_body_enabled_with_duck_ai">您的书签、自动填充数据和 Duck.ai&#160;聊天记录正在通过端到端加密同步与备份。</string>
+
+    <string name="sync_simplified_settings_sync_this_device_item">同步此设备</string>
+    <string name="sync_simplified_settings_sync_with_another_device_button">与另一台设备同步</string>
+    <string name="sync_simplified_settings_recover_section_header">恢复已同步数据</string>
+    <string name="sync_simplified_settings_recover_data_item">我有恢复代码</string>
+
+    <string name="sync_simplified_settings_devices_section_header">我的设备</string>
+    <string name="sync_simplified_settings_local_device_item_hint">此设备</string>
+    <string name="sync_simplified_settings_sync_with_another_device_item">与另一台设备同步</string>
+    <string name="sync_simplified_settings_download_section_header">下载</string>
+    <string name="sync_simplified_settings_bookmarks_section_header">书签</string>
+    <string name="sync_simplified_settings_recovery_section_header">恢复</string>
+    <string name="sync_simplified_settings_restore_on_reinstall_item">重装应用时恢复</string>
+    <string name="sync_simplified_settings_restore_on_reinstall_item_hint">如果您重新安装 DuckDuckGo&#160;应用，我们会询问您是否要在此设备上恢复数据。</string>
+    <string name="sync_simplified_settings_copy_recovery_code_item">复制您的恢复代码</string>
+    <string name="sync_simplified_settings_download_recovery_code_item">下载您的恢复代码</string>
+    <string name="sync_simplified_settings_download_recovery_code_item_hint">如果您无法访问此设备，请使用此代码恢复数据——请妥善保管。</string>
+    <string name="sync_simplified_settings_data_expiration_notice">同步&#160;&amp;&#160;备份数据在 18 个月不活动后将无法恢复。<annotation type="learn_more_link">了解详情</annotation></string>
+    <string name="sync_simplified_settings_delete_account_item">关闭并删除服务器数据</string>
+    <string name="sync_simplified_settings_turn_off_item">关闭同步&#160;&amp;&#160;备份</string>
+    <string name="sync_simplified_settings_storage_permission_message">保存恢复 PDF 需要存储权限</string>
+    <string name="sync_simplified_settings_learn_more_screen_title">同步与备份</string>
+
+    <string name="sync_simplified_settings_notify_me_title">通知已关闭</string>
+    <string name="sync_simplified_settings_notify_me_body">当同步&#160;&amp;&#160;备份遇到错误时接收通知。</string>
+    <string name="sync_simplified_settings_get_other_devices_item">在其他设备上获取 DuckDuckGo</string>
+    <string name="sync_simplified_settings_get_desktop_browser_item">获取桌面浏览器</string>
+
+    <string name="sync_simplified_settings_delete_server_data_dialog_title">关闭同步&#160;&amp;&#160;备份并删除服务器数据？</string>
+    <string name="sync_simplified_settings_delete_server_data_dialog_body">使用同步&#160;&amp;&#160;备份的所有设备都将断开连接，您已同步的数据将从服务器删除。</string>
+    <string name="sync_simplified_settings_delete_server_data_dialog_primary_button">删除服务器数据</string>
+    <string name="sync_simplified_settings_delete_server_data_dialog_secondary_button">取消</string>
+    <string name="sync_simplified_settings_delete_server_data_dialog_title_v2">此操作无法撤销。</string>
+    <string name="sync_simplified_settings_delete_server_data_dialog_body_v2">使用同步&#160;&amp;&#160;备份的所有设备都将断开连接，您已同步的数据将从服务器删除。</string>
+    <string name="sync_simplified_settings_delete_server_data_dialog_primary_button_v2">永久删除</string>
+    <string name="sync_simplified_settings_delete_server_data_dialog_secondary_button_v2">取消</string>
+
+    <string name="sync_simplified_settings_turn_off_sheet_remove_title" instruction="Placeholder is a device name. e.g., Samsung S23">从同步&#160;&amp;&#160;备份中移除 %1$s？</string>
+    <string name="sync_simplified_settings_turn_off_sheet_remove_body" instruction="Placeholder is a device name. e.g., Samsung S23">“%1$s”将无法再访问您在其他设备上已同步的数据。</string>
+    <string name="sync_simplified_settings_turn_off_sheet_remove_item">同时删除服务器数据？</string>
+    <string name="sync_simplified_settings_turn_off_sheet_remove_item_hint">关闭同步&#160;&amp;&#160;备份，并删除服务器上的所有已同步数据，同时停用您的恢复代码。</string>
+    <string name="sync_simplified_settings_turn_off_sheet_remove_primary_button">移除设备</string>
+    <string name="sync_simplified_settings_turn_off_sheet_title">关闭同步&#160;&amp;&#160;备份？</string>
+    <string name="sync_simplified_settings_turn_off_sheet_body">使用同步&#160;&amp;&#160;备份的所有设备都将断开连接，您已同步的数据将从服务器删除。</string>
+    <string name="sync_simplified_settings_turn_off_sheet_primary_button_delete">关闭并删除服务器数据</string>
+
+    <string name="sync_simplified_settings_turn_off_device_dialog_title" instruction="Placeholder is a device name. e.g., Samsung S23">从同步&#160;&amp;&#160;备份中移除 %1$s？</string>
+    <string name="sync_simplified_settings_turn_off_device_dialog_body" instruction="Placeholder is a device name. e.g., Samsung S23">“%1$s”将无法再访问您已同步的数据。书签、自动填充数据和 Duck.ai 聊天记录将保留在您的设备上。</string>
+    <string name="sync_simplified_settings_turn_off_device_dialog_primary_button">移除</string>
+    <string name="sync_simplified_settings_turn_off_device_dialog_secondary_button">取消</string>
+
+    <string name="sync_simplified_settings_require_passcode_dialog_title">保护您的设备以使用同步&#160;&amp;&#160;备份</string>
+    <string name="sync_simplified_settings_require_passcode_dialog_body">使用同步&#160;&amp;&#160;备份需要设置设备锁屏图案、PIN 码或生物识别。</string>
+    <string name="sync_simplified_settings_require_passcode_dialog_primary_button">前往设置</string>
+
+    <string name="sync_simplified_setup_header_headline">将此设备与附近的电脑同步。</string>
+    <string name="sync_simplified_setup_header_body">我们会帮助您同步设备。</string>
+    <string name="sync_simplified_setup_header_headline_v2">附近有另一台设备吗？同步您的设备。</string>
+    <string name="sync_simplified_setup_header_body_v2">现在没有其他设备？仅同步此设备，稍后再与其他设备同步。</string>
+    <string name="sync_simplified_setup_primary_button">与另一台设备同步</string>
+    <string name="sync_simplified_setup_secondary_button">仅同步此设备</string>
+    <string name="sync_simplified_setup_secondary_button_syncing">正在连接…</string>
+
+    <string name="sync_simplified_recover_data_headline">恢复已同步数据</string>
+    <string name="sync_simplified_recover_data_body">您需要设置同步&#160;&amp;&#160;备份时获得的恢复&#160;代码。您可能已将其保存为 PDF，存在当时使用的设备上。</string>
+    <string name="sync_simplified_recover_data_primary_button">恢复已同步数据</string>
+
+    <string name="sync_simplified_previous_session_headline">您上一次的同步&#160;&amp;&#160;备份会话已就绪。</string>
+    <string name="sync_simplified_previous_session_body">恢复同步&#160;&amp;&#160;备份会话以找回您的书签、密码等数据，或继续进行新设置。</string>
+    <string name="sync_simplified_previous_session_primary_button">恢复同步&#160;&amp;&#160;备份</string>
+    <string name="sync_simplified_previous_session_secondary_button">设置新的同步</string>
+
+    <string name="sync_simplified_scanner_show_qr_code_content_description">显示二维码</string>
+    <string name="sync_simplified_scanner_camera_tab_label">扫描二维码</string>
+    <string name="sync_simplified_scanner_manual_entry_tab_label">输入代码</string>
+
+    <string name="sync_simplified_scanner_camera_header_headline">扫描二维码&#160;进行同步</string>
+    <string name="sync_simplified_scanner_camera_header_body">打开<annotation type="icon">&#65532;</annotation>&#160;<b><annotation type="highlight">DuckDuckGo&#160;桌面版</annotation></b>\n<annotation type="gap">\n</annotation>并前往<annotation type="highlight">同步&#160;&amp;&#160;备份</annotation> › <annotation type="highlight">与另一台设备同步</annotation></string>
+    <string name="sync_simplified_scanner_camera_primary_button">我已准备好扫描</string>
+    <string name="sync_simplified_scanner_camera_primary_button_v2">知道了</string>
+    <string name="sync_simplified_scanner_camera_invalid_code_message">抱歉，扫描的代码无效。</string>
+    <string name="sync_simplified_scanner_no_permission_headline">需要相机权限</string>
+    <string name="sync_simplified_scanner_no_permission_body">请前往设备设置，授予此应用访问相机的权限。</string>
+    <string name="sync_simplified_scanner_no_permission_primary_button">前往设置</string>
+    <string name="sync_simplified_scanner_no_permission_headline_v2">DuckDuckGo 需要访问您的&#160;相机。</string>
+    <string name="sync_simplified_scanner_no_permission_body_v2">扫描二维码&#160;需要相机权限。</string>
+    <string name="sync_simplified_scanner_no_permission_primary_button_v2">更改权限</string>
+    <string name="sync_simplified_scanner_no_hardware_headline">相机不可用</string>
+
+    <string name="sync_simplified_scanner_manual_entry_header_headline">输入同步&#160;代码</string>
+    <string name="sync_simplified_scanner_manual_entry_header_body">打开另一台设备上的<annotation type="icon">&#65532;</annotation>&#160;<b><annotation type="highlight">DuckDuckGo&#160;应用</annotation></b>\n<annotation type="gap">\n</annotation>前往<annotation type="highlight">同步&#160;&amp;&#160;备份</annotation> › <annotation type="highlight">与另一台设备同步</annotation> › <annotation type="highlight">复制&#160;文本代码</annotation></string>
+    <string name="sync_simplified_scanner_manual_entry_example_code_label">示例代码：</string>
+    <string name="sync_simplified_scanner_manual_entry_primary_button">粘贴同步代码</string>
+    <string name="sync_simplified_scanner_manual_entry_invalid_code_message">抱歉，粘贴的代码无效。</string>
+
+    <string name="sync_simplified_qr_code_screen_title">二维码</string>
+    <string name="sync_simplified_qr_code_header_headline">从另一台设备扫描</string>
+    <string name="sync_simplified_qr_code_header_body">在另一台设备上打开<annotation type="icon">&#65532;</annotation>&#160;<b><annotation type="highlight">DuckDuckGo</annotation></b>\n<annotation type="gap">\n</annotation>并前往<annotation type="highlight">同步&#160;&amp;&#160;备份</annotation> › <annotation type="highlight">与另一台设备同步</annotation>，然后扫描此代码：</string>
+    <string name="sync_simplified_qr_code_copy_button">复制文本代码</string>
+    <string name="sync_simplified_qr_code_share_button">分享</string>
+    <string name="sync_simplified_qr_code_copied_message">恢复代码已复制</string>
+
+    <string name="sync_simplified_pairing_headline">同步&#160;&amp;&#160;备份在您的所有设备上均已端到端加密。</string>
+    <string name="sync_simplified_pairing_headline_check_other_device">请查看您的另一台设备。</string>
+    <string name="sync_simplified_pairing_headline_recovery">正在恢复数据</string>
+    <string name="sync_simplified_pairing_body">正在连接…</string>
+
+    <string name="sync_simplified_pairing_dialog_host_title">同步新设备？</string>
+    <string name="sync_simplified_pairing_dialog_host_primary_button">立即同步</string>
+    <string name="sync_simplified_pairing_dialog_host_secondary_button">取消</string>
+    <string name="sync_simplified_pairing_dialog_joiner_title">同步新设备？</string>
+    <string name="sync_simplified_pairing_dialog_joiner_primary_button">立即同步</string>
+    <string name="sync_simplified_pairing_dialog_joiner_secondary_button">取消</string>
+    <string name="sync_simplified_pairing_dialog_acknowledgment_title">请在另一台设备上确认…</string>
+    <string name="sync_simplified_pairing_dialog_acknowledgment_primary_button">知道了</string>
+    <string name="sync_simplified_pairing_dialog_check_other_device_title">请查看您的另一台设备</string>
+    <string name="sync_simplified_pairing_dialog_connecting_title">同步进行中</string>
+    <string name="sync_simplified_pairing_dialog_connecting_body">正在连接…</string>
+
+    <string name="sync_simplified_recovery_code_headline" instruction="Placeholder is a device name. e.g., Samsung S23">%1$s 已加入同步&#160;&amp;&#160;备份。</string>
+    <string name="sync_simplified_recovery_code_body">如果您无法访问此设备，请使用此代码恢复数据。请妥善保管。</string>
+    <string name="sync_simplified_recovery_code_label">恢复代码</string>
+    <string name="sync_simplified_recovery_code_download_button">下载您的恢复代码</string>
+    <string name="sync_simplified_recovery_code_restore_on_reinstall_item">重装应用时恢复</string>
+    <string name="sync_simplified_recovery_code_restore_on_reinstall_item_hint">如果您重新安装 DuckDuckGo&#160;应用，我们会询问您是否要在此设备上恢复数据。</string>
+    <string name="sync_simplified_recovery_code_primary_button">完成</string>
+    <string name="sync_simplified_recovery_code_copied_message">恢复代码已复制</string>
+    <string name="sync_simplified_recovery_code_storage_permission_message">保存恢复 PDF 需要存储权限</string>
+
+    <string name="sync_simplified_edit_device_header_status">已同步</string>
+    <string name="sync_simplified_edit_device_edit_name_item">编辑名称</string>
+    <string name="sync_simplified_edit_device_remove_item">移除设备</string>
+    <string name="sync_simplified_edit_device_sync_this_device_item">同步此设备</string>
+    <string name="sync_simplified_edit_device_remove_notice_this_device">如果移除此设备，它将无法再访问您已同步的数据。</string>
+    <string name="sync_simplified_edit_device_remove_notice_another_device">如果关闭此功能，此设备将无法再访问您已同步的数据。</string>
+    <string name="sync_simplified_edit_device_remove_notice_this_device_v2" instruction="Placeholder is a device name. e.g., Samsung S23">如果关闭此功能，“%1$s”将无法再访问您在其他设备上已同步的数据。</string>
+    <string name="sync_simplified_edit_device_remove_notice_another_device_v2" instruction="Placeholder is a device name. e.g., Samsung S23">“%1$s”将无法再访问您在其他设备上已同步的数据。</string>
+
+    <string name="sync_simplified_edit_device_edit_name_dialog_title">编辑名称</string>
+    <string name="sync_simplified_edit_device_edit_name_dialog_primary_button">完成</string>
+    <string name="sync_simplified_edit_device_edit_name_dialog_secondary_button">取消</string>
+
+    <string name="sync_simplified_edit_device_remove_dialog_title">移除设备？</string>
+    <string name="sync_simplified_edit_device_remove_dialog_body" instruction="Placeholder is a device name. e.g., Samsung S23">“%1$s”将无法再访问您已同步的数据。</string>
+    <string name="sync_simplified_edit_device_remove_dialog_primary_button">移除</string>
+    <string name="sync_simplified_edit_device_remove_dialog_secondary_button">取消</string>
+    <string name="sync_simplified_edit_device_remove_dialog_title_v2" instruction="Placeholder is a device name. e.g., Samsung S23">从同步&#160;&amp;&#160;备份中移除 %1$s？</string>
+    <string name="sync_simplified_edit_device_remove_dialog_body_v2" instruction="Placeholder is a device name. e.g., Samsung S23">“%1$s”将无法再访问您已同步的数据。书签、自动填充数据和 Duck.ai 聊天记录将保留在您的设备上。</string>
+
+    <string name="sync_simplified_edit_device_turn_off_dialog_title">关闭同步&#160;&amp;&#160;备份？</string>
+    <string name="sync_simplified_edit_device_turn_off_dialog_body">此设备将无法再访问您在其他设备上已同步的数据。</string>
+    <string name="sync_simplified_edit_device_turn_off_dialog_primary_button">关闭</string>
+    <string name="sync_simplified_edit_device_turn_off_dialog_secondary_button">取消</string>
+
+    <string name="sync_simplified_error_dialog_title">同步&#160;&amp;&#160;备份</string>
+    <string name="sync_simplified_error_dialog_primary_button">确定</string>
+    <string name="sync_simplified_error_dialog_generic_body">出了点问题</string>
+    <string name="sync_simplified_error_dialog_create_account_body">无法连接到服务器。</string>
+    <string name="sync_simplified_error_dialog_edit_device_body">无法更新设备名称。</string>
+    <string name="sync_simplified_error_dialog_recovery_pdf_body">无法创建恢复 PDF。</string>
+    <string name="sync_simplified_error_dialog_recovery_code_body">无法获取恢复代码。</string>
+    <string name="sync_simplified_pairing_failed_generic_message">出了点问题。</string>
+
+    <string name="sync_simplified_deep_link_confirmation_dialog_title">同步新设备？</string>
+    <string name="sync_simplified_deep_link_confirmation_dialog_body" instruction="Placeholder is a device name. e.g., Samsung S23">“%1$s”将可以访问您已同步的 DuckDuckGo&#160;数据。</string>
+    <string name="sync_simplified_deep_link_confirmation_dialog_primary_button">立即同步</string>
+    <string name="sync_simplified_deep_link_confirmation_dialog_secondary_button">取消</string>
+    <string name="sync_simplified_deep_link_auth_prompt_title">设置同步&#160;&amp;&#160;备份</string>
+    <string name="sync_simplified_deep_link_auth_prompt_message">解锁设备以设置同步&#160;&amp;&#160;备份</string>
+
+    <string name="sync_passwords_import_promo_title">在手机&#160;和&#160;桌面设备上访问您的密码。</string>
+    <string name="sync_passwords_import_promo_primary_button">开启同步&#160;&amp;&#160;备份</string>
+
+    <string name="sync_bookmarks_import_promo_title">在手机&#160;和&#160;桌面设备上访问您的书签。</string>
+    <string name="sync_bookmarks_import_promo_primary_button">开启同步&#160;&amp;&#160;备份</string>
+</resources>

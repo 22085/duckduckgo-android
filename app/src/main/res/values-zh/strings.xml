@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2022 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="duckDuckGoLogoDescription">DuckDuckGo 标志</string>
+    <string name="duckDuckGoProtectionPrivacyPeaceTagLine">防护。隐私。安心。</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="open">打开</string>
+    <string name="cancel">取消</string>
+    <string name="search">搜索</string>
+
+    <!--Duck.ai contextual fire-->
+    <string name="duckAiChatDeletedSnackbar">聊天已删除</string>
+
+    <!-- Onboarding Activity -->
+    <string name="onboardingDefaultBrowserDescription">前往“设置”，每次都使用 DuckDuckGo 进行搜索和浏览。</string>
+    <string name="onboardingDefaultBrowserTitle">将 DuckDuckGo 设为默认浏览器</string>
+
+    <!-- Default Browser -->
+    <string name="cannotLaunchDefaultAppSettings">无法打开默认应用设置页面</string>
+    <string name="setAsDefaultBrowser">设为默认浏览器</string>
+    <string name="defaultBrowserMaybeLater">以后再说</string>
+    <string name="defaultBrowserDescriptionNoDefault">每次打开链接都安心无忧。</string>
+    <string name="defaultBrowserInstructions">选择 DuckDuckGo，然后点按 <font color='#678fff'>始终</font>。</string>
+
+    <!-- Browser Activity -->
+    <string name="browserPopupMenu">浏览器菜单</string>
+    <string name="refresh">刷新</string>
+    <string name="back">返回</string>
+    <string name="forward">前进</string>
+
+    <string name="omnibarInputHint">搜索或输入网址</string>
+    <string name="clearButtonContentDescription">清除搜索输入</string>
+    <string name="no_compatible_third_party_app_installed">未安装兼容的应用</string>
+
+    <string name="addFavoriteMenuTitle">添加收藏</string>
+    <string name="removeFavoriteMenuTitle">取消收藏</string>
+    <string name="favoriteAddedMessage">已添加收藏</string>
+    <string name="bookmarkAddedMessage">已添加书签</string>
+    <string name="downloadsMenuTitle">下载</string>
+    <string name="favoriteDeleteConfirmationMessage">已取消收藏</string>
+    <string name="fireproofDeleteConfirmationMessage">已取消免清除</string>
+    <string name="privacyProtectionEnabledConfirmationMessage" instruction="Placeholder is a website">已为 %1$s 启用隐私保护</string>
+    <string name="privacyProtectionDisabledConfirmationMessage" instruction="Placeholder is a website">已为 %1$s 停用隐私保护</string>
+    <string name="undoSnackbarAction">撤销</string>
+    <!-- Trackers blocked animation-->
+    <plurals name="trackersBlockedAnimationMessage" tools:ignore="ImpliedQuantity">
+        <item quantity="one" instruction="This sentence is preceded by a number greater than zero, i.e. 1 Tracker Blocked">已拦截追踪器</item>
+        <item quantity="other" instruction="This sentence is preceded by a number greater than zero, i.e. 5 Trackers Blocked">已拦截追踪器</item>
+    </plurals>
+
+    <!-- Downloading files -->
+    <string name="downloadImage">下载图片</string>
+    <string name="permissionRequiredToDownload">下载需要存储权限</string>
+
+    <!-- Sharing options -->
+    <string name="options">选项</string>
+    <string name="shareLink">分享链接</string>
+    <string name="copyUrl">复制链接地址</string>
+    <string name="urlCopiedToClipboard">链接已复制到剪贴板</string>
+
+    <!-- Find in page -->
+    <string name="nextSearchTermDescription">查找下一个</string>
+    <string name="previousSearchTermDescription">查找上一个</string>
+    <string name="closeFindInPageButtonDescription">关闭页内查找视图</string>
+    <string name="findInPageHint">在页面中查找</string>
+
+    <!-- AutoComplete Suggestions -->
+    <string name="editQueryBeforeSubmitting">搜索前编辑查询内容</string>
+    <string name="autocompleteRemoveItemTitle">要删除此搜索建议吗？</string>
+    <string name="autocompleteRemoveItemCancel">取消</string>
+    <string name="autocompleteRemoveItemRemove">删除</string>
+    <string name="autocompleteSwitchToTab" instruction="Placeholder is a website">切换到标签页 · %1$s</string>
+
+    <!-- Opening external apps -->
+    <string name="openExternalApp">打开外部应用</string>
+    <string name="launchingExternalApp">在其他应用中打开</string>
+    <string name="confirmOpenExternalApp">要离开 DuckDuckGo 查看此内容吗？</string>
+    <string name="unableToOpenLink">无法打开此类链接</string>
+
+    <!-- Tabs -->
+    <string name="tabActivityTitle">标签页</string>
+    <string name="tabsMenuItem">标签页</string>
+    <string name="newTabMenuItem">新建标签页</string>
+    <string name="openInNewTab">在新标签页中打开</string>
+    <string name="openInNewBackgroundTab">在后台标签页中打开</string>
+    <string name="openImageInNewTab">在后台标签页中打开图片</string>
+    <string name="faviconContentDescription">网站图标</string>
+    <string name="closeContentDescription">关闭</string>
+    <string name="closeAllTabsMenuItem">关闭所有标签页</string>
+    <string name="closeTab">关闭标签页</string>
+    <string name="tabClosed">标签页已关闭</string>
+    <string name="tabClosedUndo">撤销</string>
+    <string name="downloadsMenuItemTitle">下载</string>
+    <string name="tabSwitcherListViewMenu">列表视图</string>
+    <string name="tabSwitcherGridViewMenu">网格视图</string>
+
+    <!--Tab Switcher Animation-->
+    <string name="trackersBlockedInTheLast7days" instruction="Placeholder is the number of trackers blocked > 1">&lt;b&gt;过去 7 天已拦截 %1$s 个追踪器&lt;/b&gt;</string>
+    <string name="trackersBlocked" instruction="Placeholder is the number of trackers blocked">&lt;b&gt;已拦截 %1$s 个追踪器&lt;/b&gt;</string>
+    <string name="inTheLast7Days">过去 7 天内</string>
+
+    <!-- Fire -->
+    <string name="fireMenu">清除数据</string>
+    <string name="fireClearAll">删除标签页和数据</string>
+    <string name="fireCancel">取消</string>
+    <string name="fireDataCleared">数据已清除</string>
+
+    <!-- Settings Activity -->
+    <string name="settingsActivityTitle">设置</string>
+    <string name="settingsMenuItemTitle">设置</string>
+    <string name="settingsHeadingProtections">防护</string>
+    <string name="settingsHeadingAppearance">外观</string>
+    <string name="settingsWhatsNew">新功能</string>
+    <string name="settingsHeadingAbout">关于</string>
+    <string name="settingsAboutDuckduckgo">关于 DuckDuckGo</string>
+    <string name="settingsVersion">版本</string>
+    <string name="leaveFeedback">分享反馈</string>
+    <string name="leaveFeedbackNew">发送反馈</string>
+    <string name="settingsEmailProtectionTitle">邮件保护</string>
+    <string name="settingsHeadingNextSteps">后续步骤</string>
+    <string name="settingsNextStepsHideItem">隐藏</string>
+    <string name="settingsLightTheme">浅色</string>
+    <string name="settingsTheme">主题</string>
+    <string name="settingsDarkTheme">深色</string>
+    <string name="settingsSystemTheme">跟随系统</string>
+    <string name="settingsThemeDialogSave">设置主题</string>
+    <string name="settingsTitleAppLinks">在应用中打开链接</string>
+    <string name="settingsTitleAppLinksDialog">在应用中打开链接</string>
+    <string name="settingsAppLinksAskEveryTime">每次都询问</string>
+    <string name="settingsAppLinksAlways">始终</string>
+    <string name="settingsAppLinksNever">从不</string>
+    <string name="settingsTitleNotifications">通知</string>
+    <string name="settingsSubtitleNotificationsDisabled">已停用</string>
+    <string name="settingsSubtitleNotificationsEnabled">已启用</string>
+    <string name="settingsDefaultBrowserTitle">默认浏览器</string>
+    <string name="settingsPrivateSearchTitle">私密搜索</string>
+    <string name="settingsGeneral" instruction="List item for general settings">通用</string>
+    <string name="settingsWebTrackingProtectionTitle">网页追踪防护</string>
+    <string name="settingsHeadingMainSettings">其他设置</string>
+    <string name="settingsPermissionsSetting">权限</string>
+    <string name="settingsSyncSetting">同步与备份</string>
+    <string name="settingsDataClearing">数据清除</string>
+    <string name="settingsAddWidget">将小组件添加到主屏幕</string>
+    <string name="settingsAddressBarPosition">设置地址栏位置</string>
+    <string name="settingsEnableVoiceSearch">启用私密语音搜索</string>
+    <string name="settingsDDGOnOtherPlatforms">其他平台上的 DuckDuckGo</string>
+    <string name="settingsDuckAi">AI 功能</string>
+
+    <!-- Private Search -->
+    <string name="privateSearchActivityTitle">私密搜索</string>
+    <string name="privateSearchDescription">DuckDuckGo 私密搜索是您的默认搜索引擎，让您在网上搜索时不会被追踪。</string>
+    <string name="privateSearchMoreSearchSettingsPrimaryText">更多搜索设置</string>
+    <string name="privateSearchMoreSearchSettingsSecondaryText">自定义搜索语言、地区等</string>
+    <string name="privateSearchMoreSearchSettingsTitle">更多搜索设置</string>
+    <string name="privateSearchAutocompleteToggle">搜索建议</string>
+    <string name="privateSearchAutocompleteHint">输入时显示搜索建议，包括您的书签。所有搜索都是私密的。</string>
+    <string name="privateSearchAutocompleteRecentlyVisitedSitesToggle">最近访问过的网站</string>
+    <string name="privateSearchAutocompleteRecentlyVisitedSitesHint">在搜索建议中显示最近访问过的网站。最近访问过的网站是私密的，仅存储在您的设备上，可通过火焰按钮清除。</string>
+    <string name="privateSearchChatSuggestionsToggle">聊天建议</string>
+    <string name="privateSearchAutocompleteHintWithChatSuggestions">在地址栏中输入时，根据您的历史记录、书签以及（可选）Duck.ai 聊天记录显示建议。所有搜索都是私密的。</string>
+
+    <!-- General Settings -->
+    <string name="generalSettingsActivityTitle" instruction="Title of the general settings screen">通用</string>
+
+    <!-- Web Tracking Protection -->
+    <string name="webTrackingProtectionActivityTitle">网页追踪防护</string>
+    <string name="webTrackingProtectionLearnMoreTitle">网页追踪防护</string>
+    <string name="webTrackingProtectionTitle">网页追踪防护</string>
+    <string name="webTrackingProtectionExplanationDescription"><![CDATA[DuckDuckGo 浏览器提供追踪防护，且始终处于启用状态。\n<a href="">了解更多</a>]]></string>
+    <string name="webTrackingProtectionExplanationTitle">我们如何保护您</string>
+    <string name="webTrackingProtectionThirdPartyTrackersTitle">拦截第三方追踪器</string>
+    <string name="webTrackingProtectionThirdPartyTrackersDescription">通过阻止第三方追踪器加载，帮助拦截跨网站追踪您的第三方 Cookie。</string>
+    <string name="webTrackingProtectionTargetedAdsTitle">拦截定向广告</string>
+    <string name="webTrackingProtectionTargetedAdsDescription">在侵入性追踪器加载之前将其拦截，从而有效消除依赖追踪的广告。</string>
+    <string name="webTrackingProtectionFingerprintTrackingTitle">防止指纹追踪</string>
+    <string name="webTrackingProtectionFingerprintTrackingDescription">帮助阻止追踪公司获取有关您的浏览器和设备的唯一标识符，他们会用这些标识符在网上跟踪您。</string>
+    <string name="webTrackingProtectionLinkTrackingTitle">拦截链接追踪</string>
+    <string name="webTrackingProtectionLinkTrackingDescription">移除链接中的追踪参数，防止第三方跨网站追踪您的行为。</string>
+    <string name="webTrackingProtectionReferrerTrackingTitle">防范引荐来源追踪</string>
+    <string name="webTrackingProtectionReferrerTrackingDescription">帮助阻止公司识别您上次访问的网站。</string>
+    <string name="webTrackingProtectionFirstPartyCookiesTitle">第一方 Cookie 到期处理</string>
+    <string name="webTrackingProtectionFirstPartyCookiesDescription">第一方 Cookie 会在 30 天后自动过期，确保网站在您退出登录后无法无限期地追踪您。</string>
+    <string name="webTrackingProtectionDnsCnameCloakingTitle">防范 DNS CNAME 伪装</string>
+    <string name="webTrackingProtectionDnsCnameCloakingDescription">帮助拦截试图利用 DNS 伪装成网站一部分的第三方追踪器。</string>
+    <string name="webTrackingProtectionGoogleAmpTrackingTitle">拦截 Google AMP 追踪</string>
+    <string name="webTrackingProtectionGoogleAmpTrackingDescription">将 Google AMP 链接替换为原始发布者的网站。</string>
+    <string name="webTrackingProtectionGoogleSigninPopupsTitle">拦截 Google 登录弹窗</string>
+    <string name="webTrackingProtectionGoogleSigninPopupsDescription">拦截 Google 在其不拥有的网站上弹出的登录窗口。</string>
+    <string name="webTrackingProtectionGlobalPrivacyControlTitle">全局隐私控制</string>
+    <string name="webTrackingProtectionGlobalPrivacyControlDescription">通过告知网站不要出售或分享您的个人信息，代您表达拒绝出售的权利。</string>
+
+    <!-- Get Desktop Browser -->
+    <string name="getDesktopBrowserSettingItemTitle">获取桌面版浏览器</string>
+    <string name="getDesktopBrowserSettingItemSubtitleTitle">适用于 Mac 和 Windows 的 DuckDuckGo</string>
+    <string name="getDesktopBrowserHideItem">隐藏</string>
+
+    <!-- Cookie Pop-Up Protection -->
+    <string name="cookiePopupProtectionTitle">Cookie 弹窗防护</string>
+
+    <!-- Fire Button -->
+    <string name="dataClearingActivityTitle">数据清除</string>
+    <string name="dataClearingDescription">删除数据有助于保护您的在线隐私。使用火焰按钮可手动删除数据，也可以设置自动删除。</string>
+    <plurals name="dataClearingExcludedSites" tools:ignore="ImpliedQuantity">
+        <item quantity="one">有 1 个网站不参与清除</item>
+        <item quantity="other" instruction="Placeholder is the number of sites excluded">有 %1$d 个网站不参与清除</item>
+    </plurals>
+    <string name="dataClearingAutomaticClearingOn">开</string>
+    <string name="dataClearingAutomaticClearingOff">关</string>
+    <string name="dataClearingClearBrowsingData">清除浏览数据</string>
+    <string name="dataClearingAutomaticDataClearing">自动删除数据</string>
+    <string name="dataClearingAutomaticallyClearDataToggle">自动删除数据</string>
+    <string name="dataClearingAutomaticTabsOptionDescription">关闭所有打开的标签页</string>
+    <string name="dataClearingAutomaticDataOptionDescription">删除所有网站数据，包括访问过的网站。可能会使您退出账号。</string>
+    <string name="dataClearingAutomaticChatsOptionDescription">删除所有聊天，包括置顶聊天</string>
+
+    <!-- Fire Dialog Granular Options -->
+    <string name="dataClearingOptionTabs">标签页</string>
+    <string name="dataClearingOptionData">Cookie 和网站数据</string>
+    <string name="dataClearingDuckAiChats">Duck.ai 聊天</string>
+
+    <!-- Single tab burning -->
+    <string name="singleTabFireDialogTitle">要删除标签页和网站数据吗？</string>
+    <string name="singleTabFireDialogTitleWithChats">要删除标签页、网站数据和聊天吗？</string>
+    <string name="singleTabFireDialogDeleteAll">全部删除</string>
+    <string name="singleTabFireDialogDeleteThisTab">删除此标签页</string>
+    <string name="singleTabFireDialogDeleteChat">删除聊天</string>
+    <string name="singleTabFireDialogDeleteChats">删除聊天</string>
+    <string name="singleTabFireDialogTitleDuckAi">要删除此聊天吗？</string>
+    <string name="singleTabFireDialogSubtitleSiteData">删除网站数据可能会使您退出账号。</string>
+    <string name="singleTabFireDialogSubtitleDownloads">这会取消正在进行的下载。</string>
+    <plurals name="tabsClearedSnackbarMessage">
+        <item quantity="one" instruction="Placeholder is the number of tabs deleted, e.g. 1 tab and its data deleted">已删除 %1$d 个标签页及其数据</item>
+        <item quantity="other" instruction="Placeholder is the number of tabs deleted, e.g. 3 tabs and their data deleted">已删除 %1$d 个标签页及其数据</item>
+    </plurals>
+    <string name="singleTabFireDialogClearNotSupportedSnackbar">无法删除网站数据。请更新 WebView。</string>
+    <string name="singleTabFireDialogClearErrorSnackbar">由于出现错误，无法删除网站数据。</string>
+
+    <!-- Permissions -->
+    <string name="permissionsActivityTitle">权限</string>
+    <string name="permissionsGeneralPermissionsTitle" instruction="Section header on the Permissions settings screen, above the Notifications and Open Links in Apps settings">通用权限</string>
+
+    <!-- Appearance -->
+    <string name="appearanceActivityTitle">外观</string>
+    <string name="settingsShowFullUrlTitle">显示完整网址</string>
+
+    <!-- Settings - Automatically clearing data -->
+    <string name="settingsAutomaticallyClearingDialogSave">保存</string>
+    <string name="settingsAutomaticallyClearWhatDialogTitle">自动清除…</string>
+    <string name="settingsAutomaticallyClearWhatOptionNone">无</string>
+    <string name="settingsAutomaticallyClearWhatOptionTabs">标签页</string>
+    <string name="settingsAutomaticallyClearWhatOptionTabsAndData">标签页和数据</string>
+    <string name="settingsAutomaticallyClearWhatOptionTabsAndDataAndChats">标签页、数据和 Duck.ai 聊天</string>
+
+    <string name="settingsAutomaticallyClearWhen">删除时机…</string>
+    <string name="settingsAutomaticallyClearWhenDialogTitle">删除时机…</string>
+    <string name="settingsAutomaticallyClearWhenAppExitOnly">仅在退出应用时</string>
+    <string name="settingsAutomaticallyClearWhenAppExit5Seconds">退出应用，且闲置 5 秒后</string>
+    <string name="settingsAutomaticallyClearWhenAppExit5Minutes">退出应用，且闲置 5 分钟后</string>
+    <string name="settingsAutomaticallyClearWhenAppExit15Minutes">退出应用，且闲置 15 分钟后</string>
+    <string name="settingsAutomaticallyClearWhenAppExit30Minutes">退出应用，且闲置 30 分钟后</string>
+    <string name="settingsAutomaticallyClearWhenAppExit60Minutes">退出应用，且闲置 1 小时后</string>
+    <string name="settingsClearAiDataTitle">删除 Duck.ai 聊天</string>
+    <string name="settingsClearAiDataDeleteMessage">火焰按钮也会删除 Duck.ai 历史记录，包括置顶聊天。</string>
+    <!-- About Activity -->
+    <string name="aboutActivityTitle">关于 DuckDuckGo</string>
+    <string name="aboutActivityTitleNew">关于</string>
+    <string name="aboutHeaderNewTagLine">防护。隐私。安心。</string>
+    <string name="aboutDescriptionBrandUpdate2025">欢迎加入鸭子大家庭！\n\nDuckDuckGo 是一家独立的在线保护公司，致力于帮助任何希望夺回个人信息控制权的人。\n\n我们认为，保护您的个人信息免受黑客、骗子和侵犯隐私的公司侵害的最好方法，就是从一开始就不让这些信息被收集。这就是为什么数百万人<annotation type="chart_comparison">选择 DuckDuckGo 而不是 Chrome 和其他浏览器</annotation>来搜索和浏览网页。我们的内置搜索引擎像 Google 一样好用，但从不追踪您的搜索。而我们的浏览防护功能，例如广告追踪器拦截和 Cookie 拦截，有助于阻止其他公司收集您的数据。哦对了，我们的浏览器是免费的——我们通过<annotation type="privacy_respecting_ads">尊重隐私的搜索广告</annotation>赚钱，而不是利用您的数据。\n\n此外，我们还在浏览器中集成了<annotation type="ppro_help_page">DuckDuckGo 订阅</annotation>。订阅用户可以获得更多隐私保护，包括快速简单的 <annotation type="vpn_help_page">VPN</annotation>（帮助保护您的在线活动）、我们私密 AI 聊天服务 Duck.ai 中的高级 AI 模型、一项可从人员搜索网站上查找并删除您个人信息的服务，以及一项在身份被盗时帮助您恢复身份的服务。\n\n使用为保护数据而非收集数据而设计的浏览器，夺回您个人信息的控制权。</string>
+    <string name="no_suggestions">无建议</string>
+
+    <!-- Broken Site Activity -->
+
+
+    <string name="brokenSiteProtectionsOn">此网站的防护已<b>开启</b></string>
+    <string name="brokenSiteProtectionsOff">此网站的防护已<b>关闭</b></string>
+    <string name="brokenSiteProtectionsOnBannerMessage">关闭防护可能会有帮助。</string>
+
+    <!-- Widget -->
+    <string name="searchWidgetTextHint">搜索 DuckDuckGo</string>
+
+    <!-- Favorites widget -->
+    <string name="addFavoriteMenuTitleHighlighted">👋 添加收藏</string>
+    <string name="widgetConfigurationTitleText">选择主题</string>
+    <string name="widgetConfigurationSystemThemeOption">跟随系统</string>
+    <string name="widgetConfigurationLightThemeOption">浅色</string>
+    <string name="widgetConfigurationDarkThemeOption">深色</string>
+    <string name="widgetConfigurationAddWidgetOption">添加小组件</string>
+    <string name="searchWidgetEmtpyFavoritesHint">尚未添加收藏</string>
+    <string name="searchWidgetEmtpyFavoritesCta">添加收藏</string>
+    <string name="widgetConfigurationActivityTitle">小组件配置</string>
+    <string name="favoritesWidgetLabel">搜索和收藏</string>
+    <string name="searchWidgetLabel">搜索和 Duck.ai</string>
+
+    <!-- Home Screen Shortcuts -->
+
+    <string name="shortcutAddedText" instruction="Placeholder is the name of a website">成功！%1$s 已添加到您的主屏幕。</string>
+
+    <!-- User Survey -->
+    <string name="surveyCtaTitle">帮我们改进应用吧！</string>
+    <string name="surveyCtaDescription">参加我们的简短调查，分享您的反馈。</string>
+    <string name="surveyCtaLaunchButton">参加调查</string>
+    <string name="surveyCtaDismissButton">不用了</string>
+    <string name="surveyActivityTitle">用户调查</string>
+    <string name="surveyTitle">DuckDuckGo 调查</string>
+    <string name="surveyDismissContentDescription">关闭调查</string>
+    <string name="surveyLoadingErrorTitle">哎呀！</string>
+    <string name="surveyLoadingErrorText">调查目前无法加载。\n请稍后再试。</string>
+
+    <!-- Add widget -->
+    <string name="addWidgetInstructionsActivityTitle">添加小组件</string>
+    <string name="addWidgetInstruction1Label">1</string>
+    <string name="addWidgetInstruction1">长按主屏幕，然后打开小组件菜单。</string>
+    <string name="addWidgetInstruction2Label">2</string>
+    <string name="addWidgetInstruction2">找到 DuckDuckGo 小组件。</string>
+    <string name="addWidgetInstruction3Label">3</string>
+    <string name="addWidgetInstruction3">将小组件拖到主屏幕上。</string>
+    <string name="addWidgetInstructionsButtonGoHome">前往主屏幕</string>
+    <string name="addWidgetInstructionsButtonClose">关闭</string>
+
+    <!-- App Enjoyment / Rating / Feedback -->
+    <string name="appEnjoymentDialogTitle">喜欢 DuckDuckGo 吗？</string>
+    <string name="appEnjoymentDialogMessage">我们很想知道您的想法。</string>
+    <string name="appEnjoymentDialogPositiveButton">我喜欢</string>
+    <string name="appEnjoymentDialogNegativeButton">有待改进</string>
+
+    <string name="rateAppDialogTitle">为应用评分</string>
+    <string name="rateAppDialogMessage">您的反馈很重要。请写一条评价，表达您的喜爱。</string>
+    <string name="rateAppDialogPositiveButton">去评分</string>
+
+    <string name="giveFeedbackDialogTitle">很抱歉听到这个消息</string>
+    <string name="giveFeedbackDialogMessage">请告诉我们如何改进应用。</string>
+    <string name="giveFeedbackDialogPositiveButton">分享反馈</string>
+
+    <string name="noThanks">不用了</string>
+
+    <!-- Notification Channel Names -->
+    <string name="notificationChannelTutorials">教程</string>
+
+    <!-- Clear Notification -->
+    <string name="clearNotificationTitle">数据清除已设为手动</string>
+    <string name="clearNotificationDescription">自定义 DuckDuckGo，让它在每次会话后自动清除浏览数据。</string>
+
+    <!-- Privacy Protection Notification -->
+    <string name="privacyProtectionNotificationDefaultTitle">我们正在保护您的隐私</string>
+    <string name="privacyProtectionNotificationReportTitle">您的隐私报告</string>
+    <string name="privacyProtectionNotificationDefaultDescription">使用 DuckDuckGo 应用可通过拦截追踪器和加密连接来保护您的数据。</string>
+    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">使用 DuckDuckGo 期间，您通过加密 %1$d 个未加密连接保护了数据。</string>
+    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">使用 DuckDuckGo 期间，您通过拦截 %1$d 个追踪器保护了数据。</string>
+    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">使用 DuckDuckGo 期间，您通过拦截 %1$d 个追踪器并加密 %2$d 个未加密连接保护了数据。</string>
+    <string name="privacyProtectionNotificationLaunchButton">继续浏览</string>
+
+    <!-- Authentication -->
+    <string name="authenticationDialogTitle">登录</string>
+    <string name="authenticationDialogMessage" instruction="Placeholder is the name of a website">%1$s 需要用户名和密码。</string>
+    <string name="authenticationDialogPositiveButton">登录</string>
+    <string name="authenticationDialogNegativeButton">取消</string>
+    <string name="authenticationDialogUsernameHint">用户名</string>
+    <string name="authenticationDialogPasswordHint">密码</string>
+
+    <!-- User-facing label for when a user selects text and might want to search for that text -->
+    <string name="systemTextSearchMessage">搜索 DuckDuckGo</string>
+
+    <!-- Webview Recovery -->
+    <string name="crashedWebViewErrorMessage">"无法显示该网页。"</string>
+    <string name="crashedWebViewErrorAction">"重新加载"</string>
+
+    <!-- System Search-->
+    <string name="systemSearchAppNotFound">找不到应用</string>
+    <string name="systemSearchOnboardingThanks">感谢您选择 DuckDuckGo！\n使用我们的浏览器有助于保护您免受黑客、骗子和贪图数据的公司的侵害。</string>
+    <string name="systemSearchOnboardingFeaturesIntroText">DuckDuckGo 应用还可以：</string>
+    <string name="systemSearchOnboardingFeatureOneText">拦截不安全的追踪器。</string>
+    <string name="systemSearchOnboardingFeatureTwoText">强制网站使用加密连接。</string>
+    <string name="systemSearchOnboardingFeatureThreeText">一键清除数据。</string>
+    <string name="systemSearchOnboardingButtonMore">显示更多</string>
+    <string name="systemSearchOnboardingButtonLess">隐藏</string>
+    <string name="systemSearchOnboardingButtonOk">知道了</string>
+
+    <!-- Dax Dialog -->
+    <string name="daxDialogHighFive">击掌！</string>
+    <string name="daxDialogGotIt">知道了</string>
+
+    <!-- AppTP Retention Experiment Dax Dialog -->
+    <string name="daxDialogAppTpRetentionText"><![CDATA[您现在可以在全网拦截追踪器了 🎉<br/><br/>我还可以拦截隐藏在您其他应用中的追踪器，即使您没有在使用手机。]]></string>
+    <string name="daxDialogAppTpRetentionPrimaryButtonText">启用应用追踪防护</string>
+    <string name="daxDialogAppTpRetentionSecondaryButtonText">暂不启用</string>
+
+    <!-- New Onboarding Experience -->
+    <string name="onboardingWelcomeTitle">"欢迎使用 DuckDuckGo！"</string>
+    <string name="onboardingDaxText"><![CDATA[互联网有时候挺吓人的。<br/><br/>别担心！私密搜索和浏览比您想象的要简单。]]></string>
+    <string name="onboardingLetsDoItButton">开始吧！</string>
+    <string name="daxNonSerpCtaText"><![CDATA[当您点按和滚动时，我会拦截烦人的追踪器。<br/><br/>继续吧——尽情浏览！]]></string>
+    <string name="daxMainNetworkCtaText" instruction="%1$s is the name of a company, %2$s is the website where the tracking is happening, %3$s is the name of the company showing in %1$s">注意！我无法阻止 %1$s 在 %2$s 上看到您的活动 &lt;br/&gt;&lt;br/&gt;但只要和我一起浏览，我就能通过拦截它们在许多其他网站上的追踪器，减少 %3$s 对您的了解。</string>
+    <string name="daxMainNetworkOwnedCtaText" instruction="%1$s is the name of a company, %2$s is the website where the tracking is happening, %3$s is the name of the company showing in %1$s">注意！由于 %1$s 拥有 %2$s，我无法阻止它们在此看到您的活动。&lt;br/&gt;&lt;br/&gt;但只要和我一起浏览，我就能通过拦截它们在许多其他网站上的追踪器，减少 %3$s 对您的了解。</string>
+
+    <!-- Download Confirmation -->
+    <string name="downloadConfirmationSaveFileTitle" instruction="Placeholder is the name of a file">保存 %1$s</string>
+    <string name="downloadConfirmationKeepBothFilesText">两个都保留</string>
+    <string name="downloadConfirmationReplaceOldFileText">替换</string>
+    <string name="downloadConfirmationOpenFileText">打开</string>
+    <string name="downloadConfirmationUnableToOpenFileText">无法打开文件</string>
+    <string name="downloadConfirmationUnableToDeleteFileText">无法删除旧文件</string>
+
+    <!-- Change Icon Activity -->
+    <string name="changeIconActivityTitle">应用图标</string>
+    <string name="changeIconCtaLabel">应用图标</string>
+    <string name="changeIconCtaAccept">应用</string>
+    <string name="changeIconCtaCancel">取消</string>
+    <string name="changeIconDialogTitle">要应用新图标吗？</string>
+    <string name="changeIconDialogMessage">应用更改时，应用可能会关闭。欣赏完您帅气的新图标后，欢迎回来。</string>
+
+    <!-- New dashboard / menu buttons -->
+    <string name="manageAllowlist">未受保护的网站</string>
+    <string name="reportBrokenSite">报告网站异常</string>
+
+    <!-- Dialogs -->
+    <string name="dialogAddTitle">添加</string>
+    <string name="dialogEditTitle">编辑</string>
+    <string name="dialogSaveAction">保存</string>
+
+    <!-- Allowlist -->
+    <string name="allowlistActivityTitle">未受保护的网站</string>
+    <string name="allowlistEntryOverflowContentDescription" instruction="Placeholder is a website">未受保护网站 %1$s 的更多选项</string>
+    <string name="allowlistEntryDeleteConfirmMessage" instruction="Placeholder is a website">确定要将 &lt;b>%1$s&lt;/b> 从“未受保护的网站”中移除吗？</string>
+    <string name="allowlistExplanation">这些网站将不受隐私保护的增强功能保护。</string>
+    <string name="allowlistNoEntries">所有网站均已启用隐私保护</string>
+    <string name="allowlistDomainHint">www.example.com</string>
+    <string name="allowlistFormatError">请输入类似 <b>example.com</b> 的域名，然后重试</string>
+
+    <!-- Settings -->
+    <string name="settingsPrivacyProtectionAllowlist">未受保护的网站</string>
+
+    <!-- Fireproof websites -->
+    <string name="fireproofWebsitesActivityTitle">免清除网站</string>
+    <string name="settingsFireproofWebsites">免清除网站</string>
+    <string name="fireproofWebsiteMenuTitleAdd">将此网站设为免清除</string>
+    <string name="fireproofWebsiteSnackbarConfirmation" instruction="Placeholder is a website">&lt;b>%1$s&lt;/b> 现已设为免清除</string>
+    <string name="fireproofWebsiteSnackbarAction">撤销</string>
+    <string name="fireproofWebsiteDeleteConfirmMessage" instruction="Placeholder is a website">确定要删除 &lt;b>%1$s&lt;/b> 吗？</string>
+    <string name="fireproofWebsiteFeatureDescription">网站依靠 Cookie 让您保持登录状态。将网站设为免清除后，即使使用火焰按钮，Cookie 也不会被删除，您将保持登录状态。我们仍会拦截在免清除网站上发现的第三方追踪器。</string>
+    <string name="fireproofWebsiteOverflowContentDescription" instruction="Placeholder is a website">免清除网站 %1$s 的更多选项</string>
+    <string name="fireproofWebsiteLoginDialogTitle" instruction="Placeholder is a website">要将 %1$s 设为免清除吗？</string>
+    <string name="fireproofWebsiteLoginDialogDescription">将此网站设为免清除后，使用火焰按钮后您仍将保持登录状态。</string>
+    <string name="fireproofWebsiteLoginDialogPositive">设为免清除</string>
+    <string name="fireproofWebsiteLoginDialogNegative">暂不设置</string>
+    <string name="fireproofWebsiteItemsSectionTitle">免清除网站</string>
+    <string name="fireproofWebsiteEmptyListHint">还没有免清除网站</string>
+    <string name="fireproofWebsiteSettingSelectionTitle">登录时设为免清除的网站</string>
+    <string name="fireproofWebsiteRemoveAllConfirmation">已取消所有网站的免清除</string>
+    <string name="fireproofWebsiteRemovalConfirmation" instruction="Placeholder is a website">已取消 &lt;b>%1$s&lt;/b> 的免清除</string>
+    <string name="fireproofWebsiteSettingsSelectionDialogAskEveryTime">每次都询问</string>
+    <string name="fireproofWebsiteSettingsSelectionDialogAlways">始终</string>
+    <string name="fireproofWebsiteSettingsSelectionDialogNever">从不</string>
+    <string name="disableLoginDetectionDialogTitle">要停用登录时提醒设为免清除吗？</string>
+    <string name="disableLoginDetectionDialogDescription">您可以随时在“设置”中更改此偏好设置。</string>
+    <string name="disableLoginDetectionDialogPositive">停用</string>
+    <string name="disableLoginDetectionDialogNegative">取消</string>
+    <string name="automaticFireproofWebsiteLoginDialogTitle">登录时自动将网站设为免清除？</string>
+    <string name="automaticFireproofWebsiteLoginDialogDescription">将网站设为免清除后，使用火焰按钮后您仍将保持登录状态。您可以随时在“设置”中更改。 </string>
+    <string name="automaticFireproofWebsiteLoginDialogFirstOption">始终设为免清除</string>
+    <string name="automaticFireproofWebsiteLoginDialogSecondOption">将此网站设为免清除</string>
+    <string name="automaticFireproofWebsiteLoginDialogThirdOption">暂不设置</string>
+
+
+    <!-- Fire Animation settings -->
+    <string name="settingsFireAnimation">火焰按钮动画</string>
+    <string name="settingsHeroFireAnimation">烈焰</string>
+    <string name="settingsHeroFireAnimationClassic">经典烈焰</string>
+    <string name="settingsHeroWaterAnimation">漩涡</string>
+    <string name="settingsHeroAbstractAnimation">气流</string>
+    <string name="settingsNoneAnimation">无</string>
+    <string name="settingsSelectFireAnimationDialog">火焰按钮动画</string>
+    <string name="settingsSelectFireAnimationDialogSave">保存</string>
+
+    <!-- Dos Attack error-->
+    <string name="dosErrorMessage">连接已中止。此网站可能对您的设备有害。</string>
+
+    <!-- Precise Location -->
+    <string name="preciseLocationSystemDialogTitle">要允许 DuckDuckGo 隐私浏览器使用设备位置吗？</string>
+    <string name="preciseLocationSystemDialogSubtitle" instruction="%1$s and %2$s are both the name of the website requesting the location">%1$s 正在请求您的设备位置。您需要先允许应用发送您的设备位置，然后 %2$s 才能请求权限。</string>
+    <string name="preciseLocationSystemDialogAllow">启用</string>
+    <string name="preciseLocationSystemDialogDeny">以后再说</string>
+    <string name="preciseLocationSystemDialogNeverAllow">不再询问此网站</string>
+    <string name="preciseLocationSiteDialogTitle" instruction="Placeholder is the name of a website">要授予 %1$s 访问位置信息的权限吗？</string>
+    <string name="preciseLocationSiteDialogSubtitle">您可以在“设置”中管理已授予各个网站的位置访问权限。</string>
+    <string name="preciseLocationDDGDialogSubtitle">我们仅使用您的匿名位置来提供更贴近您的搜索结果。您可以在“设置”中管理已授予各个网站的位置访问权限。</string>
+    <string name="preciseLocationSiteDialogAllowAlways">始终允许</string>
+    <string name="preciseLocationSiteDialogAllowOnce">仅本次会话</string>
+    <string name="preciseLocationSiteDialogDenyAlways">始终拒绝</string>
+    <string name="preciseLocationSiteDialogDenyOnce">本次会话拒绝</string>
+    <string name="preciseLocationFeatureDescription">您访问的网站可能会请求了解您的设备位置。在您明确授予权限之前，它们无法访问。DuckDuckGo 仅匿名使用您的位置来提供本地搜索结果。</string>
+    <string name="preciseLocationToggleText">网站可以请求我的位置</string>
+    <string name="preciseLocationEmptyListHint">没有网站获得访问位置信息的权限</string>
+    <string name="preciseLocationNoSystemPermission">要管理您已授予各个网站的位置访问权限，请在 Android 设置中为此应用启用位置信息。</string>
+    <string name="preciseLocationActivityTitle">位置</string>
+    <string name="preciseLocationDeleteConfirmMessage" instruction="Placeholder is the name of a website">确定要删除 &lt;b>%1$s&lt;/b> 吗？</string>
+    <string name="preciseLocationDeleteContentDescription" instruction="Placeholder is the domain of a website">域名 %1$s 的位置权限的更多选项</string>
+    <string name="preciseLocationAllowedSitesSectionTitle">已授予</string>
+    <string name="preciseLocationDeniedSitesSectionTitle">已拒绝</string>
+    <string name="preciseLocationSnackbarMessage" instruction="Placeholder is the name of a website">您之前已授予 %1$s 访问您设备位置信息的权限。</string>
+
+    <!--Fire button education-->
+    <string name="daxClearDataCtaText">个人数据会在浏览器中越积越多，真讨厌。用火焰按钮把它们全部烧掉吧。现在就试试！ &#128071;</string>
+
+    <!--  Global Privacy Control-->
+    <string name="globalPrivacyControlActivityTitle">全局隐私控制 (GPC)</string>
+    <string name="globalPrivacyControlDescription"><![CDATA[DuckDuckGo 会自动拦截许多追踪器。通过全局隐私控制 (GPC)，您还可以要求参与的网站限制向其他公司出售或分享您的个人数据。<u><a href="">了解更多</a><u/>]]></string>
+    <string name="globalPrivacyControlSetting">全局隐私控制 (GPC)</string>
+    <string name="globalPrivacyControlToggle">全局隐私控制 (GPC)</string>
+    <string name="disabled">已停用</string>
+    <string name="enabled">已启用</string>
+
+    <!-- Opening app links -->
+    <string name="settingTitleOpenLinksInAssociatedApps">在关联应用中打开链接</string>
+    <string name="settingSubtitleOpenLinksInAssociatedApps">停用后，链接将不再自动在其他已安装的应用中打开。</string>
+    <string name="appLinkDialogTitle">要在其他应用中打开吗？</string>
+    <string name="appLinkSnackBarAction">在应用中打开</string>
+    <string name="appLinkMultipleSnackBarAction">选择应用</string>
+    <string name="appLinkSnackBarMessage" instruction="Placeholder is the name of an app">您可以在 %1$s 中打开此链接。</string>
+    <string name="appLinkMultipleSnackBarMessage">您可以在其他应用中打开此链接。</string>
+    <string name="appLinkIntentChooserTitle">打开方式</string>
+
+    <!-- Email Autofill -->
+    <string name="aliasToClipboardMessage">新地址已复制到剪贴板</string>
+
+    <!-- Autofill -->
+    <string name="autofillSnackbarAction" instruction="Label for a button that lets the user view the details for a login credential">查看</string>
+
+    <!-- Waitlist Notification -->
+    <string name="waitlistNotificationDialogDescription">轮到您时，要我们向您发送通知吗？</string>
+    <string name="waitlistNotificationDialogNoThanks">不用了</string>
+    <string name="waitlistNotificationDialogNotifyMe">通知我</string>
+
+    <!-- Email Protection -->
+    <string name="emailProtectionActivityTitle">邮件保护</string>
+    <string name="emailNotSupported">设备不受支持</string>
+    <string name="emailNotSupportedExplanation">邮件保护可让您创建能移除邮件追踪器的私密电子邮件地址。我们需要在您的设备上加密并本地存储您创建的这些地址。由于您的设备不支持加密存储，邮件保护不可用。</string>
+
+    <!-- Accessibility-->
+    <string name="settingsAccessibility">无障碍</string>
+    <string name="accessibilityActivityTitle">无障碍</string>
+    <string name="accessibilityFontSizeTitle">文字大小</string>
+    <string name="accessibilityFontSizeHint">拖动滑块，直到您能舒适地阅读。在 DuckDuckGo 中查看的网站将随之调整。</string>
+    <string name="accessibilityForceZoomTitle">强制手动缩放页面</string>
+    <string name="accessibilityForceZoomSubtitle">在任何网站上双指缩放，即使是那些原本禁止缩放的网站</string>
+    <string name="accessibilityTextSizeOverrideTitle">管理文字大小</string>
+    <string name="accessibilityTextSizeOverrideSubtitle">在 DuckDuckGo 中查看的网站上的文字将随以下设置进行调整</string>
+
+    <!-- Privacy Policy -->
+    <string name="settingsPrivacyPolicyDuckduckgo">隐私政策</string>
+
+    <!-- Home Screen Widget -->
+    <string name="homeScreenWidgetAdded" instruction="Placeholder is the name of the widget">%1$s 小组件已添加到主屏幕</string>
+
+    <!-- MacOs Settings -->
+
+    <!-- Downloads -->
+    <string name="downloadsMenuItem">下载</string>
+    <string name="downloadsDownloadFinishedActionName">打开</string>
+
+    <!-- App Tracking Protection -->
+    <string name="atp_SettingsTitle">应用追踪防护</string>
+    <string name="atp_SettingsDeviceShieldNeverEnabled">在设备上拦截应用追踪器</string>
+    <string name="atp_SettingsDeviceShieldEnabled">已启用</string>
+    <string name="atp_SettingsDeviceShieldDisabled">已停用</string>
+
+    <!-- Autoconsent -->
+    <!-- smartling.character_limit = 82 -->
+    <string name="autoconsentDialogTitle"><![CDATA[<b>要我来处理 Cookie 弹窗吗？</b>]]></string>
+    <!-- smartling.character_limit = 160 -->
+    <string name="autoconsentDialogDescription">我可以尝试选择最注重隐私的设置，并隐藏此类弹窗。</string>
+    <!-- smartling.character_limit = 42 -->
+    <string name="autoconsentPrimaryCta">帮我处理弹窗</string>
+    <!-- smartling.character_limit = 42 -->
+    <string name="autoconsentSecondaryCta">不用，我自己管理</string>
+
+    <string name="autoconsentCosmeticNoticeAnimationText">弹窗已隐藏</string>
+    <string name="autoconsentManagedNoticeAnimationText">Cookie 已管理</string>
+
+    <!-- Notify Me View on Downloads -->
+
+    <!-- Windows Settings -->
+
+    <!-- Full screen message-->
+    <string name="fullScreenMessage">从顶部向下拖动并点按返回按钮即可退出全屏</string>
+
+    <!-- Tab Switcher -->
+    <string name="closeAppTabsConfirmationDialogTitle" instruction="Dialog title for deleting all open tabs">要关闭所有标签页吗？</string>
+    <string name="closeAppTabsConfirmationDialogDescription">确定要关闭所有标签页吗？</string>
+    <string name="closeAppTabsConfirmationDialogCancel">取消</string>
+    <string name="closeAppTabsConfirmationDialogClose">关闭</string>
+
+    <string name="selectTabsMenuItem">选择标签页</string>
+    <string name="selectAllTabsMenuItem">全选</string>
+    <string name="deselectAllTabsMenuItem">取消全选</string>
+    <string name="tabSelectionTitle" tools:ignore="MissingInstruction">已选 %1$d 个</string>
+    <string name="tabSelectedIndicator">标签页已选中指示器</string>
+    <string name="tabNotSelectedIndicator">标签页未选中指示器</string>
+
+    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">来自 DuckDuckGo 的 %1$d 个链接</string>
+    <plurals name="shareLinksMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">分享链接</item>
+        <item quantity="other">分享 %1$d 个链接</item>
+    </plurals>
+
+    <plurals name="tabSwitcherBookmarkDialogTitle" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">要收藏此标签页吗？</item>
+        <item quantity="other">要收藏这 %1$d 个标签页吗？</item>
+    </plurals>
+    <plurals name="tabSwitcherBookmarkToast" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">已添加 %1$d 个书签</item>
+        <item quantity="other">已添加 %1$d 个书签</item>
+    </plurals>
+    <string name="tabSwitcherBookmarkDialogPositiveButton">收藏</string>
+    <plurals name="bookmarkTabsMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">收藏标签页</item>
+        <item quantity="other">收藏 %1$d 个标签页</item>
+    </plurals>
+    <string name="tabSwitcherBookmarkDialogDescription">已有的书签不会重复添加。</string>
+
+    <plurals name="tabSwitcherCloseAllTabsDialogTitle" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">要关闭标签页吗？</item>
+        <item quantity="other">要关闭全部 %1$d 个标签页吗？</item>
+    </plurals>
+    <plurals name="tabSwitcherCloseOtherTabsDialogTitle" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">要关闭其他标签页吗？</item>
+        <item quantity="other">要关闭其他 %1$d 个标签页吗？</item>
+    </plurals>
+    <plurals name="tabSwitcherCloseTabsDialogTitle" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">要关闭标签页吗？</item>
+        <item quantity="other">要关闭 %1$d 个标签页吗？</item>
+    </plurals>
+    <plurals name="tabSwitcherCloseAllTabsDialogDescription" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">确定要关闭此标签页吗？</item>
+        <item quantity="other">确定要关闭全部标签页吗？</item>
+    </plurals>
+    <plurals name="tabSwitcherCloseTabsDialogDescription" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">确定要关闭此标签页吗？</item>
+        <item quantity="other">确定要关闭这些标签页吗？</item>
+    </plurals>
+    <plurals name="closeTabsConfirmationDialogCloseTabs" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">关闭标签页</item>
+        <item quantity="other">关闭标签页</item>
+    </plurals>
+    <plurals name="closeTabsMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">关闭标签页</item>
+        <item quantity="other">关闭 %1$d 个标签页</item>
+    </plurals>
+    <string name="closeOtherTabsMenuItem">关闭其他标签页</string>
+    <plurals name="tabSwitcherCloseTabsSnackbar" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">标签页已关闭</item>
+        <item quantity="other">已关闭 %1$d 个标签页</item>
+    </plurals>
+
+    <plurals name="tabSwitcherTitle" tools:ignore="ImpliedQuantity,MissingInstruction">
+        <item quantity="one">1 个标签页</item>
+        <item quantity="other">%1$d 个标签页</item>
+    </plurals>
+
+    <!-- Private voice search -->
+    <string name="accessibilityVoiceSearchSubtitle">在地址栏中添加私密语音搜索选项。音频不会被存储或与任何人分享，包括 DuckDuckGo。</string>
+    <string name="accessibilityVoiceSearchTitle">私密语音搜索</string>
+
+    <!-- Uploading an image from the camera or choosing to use existing image -->
+    <string name="imageCaptureCameraUnavailable">无法访问相机</string>
+    <string name="imageCaptureCameraGalleryDisambiguationTitle">上传图片</string>
+    <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">选择文件</string>
+    <string name="imageCaptureCameraGalleryDisambiguationCameraOption">拍照</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">允许 DuckDuckGo 在此设备上请求相机权限</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">只有允许 DuckDuckGo 请求访问权限，网站才能使用您的相机。</string>
+    <string name="imageCaptureCameraPermissionDeniedPositiveButton">打开设置</string>
+    <string name="imageCaptureCameraPermissionDeniedNegativeButton">取消</string>
+
+    <!-- Autofill -->
+    <string name="settingsPasswordsAndAutofillLoginsSetting">密码与自动填充</string>
+    <string name="autofillLoginSavedSnackbarMessage">密码已保存</string>
+    <string name="autofillLoginUpdatedSnackbarMessage">密码已更新</string>
+
+    <!-- SSL Error -->
+    <string name="sslErrorTitle">警告：此网站可能不安全</string>
+    <string name="sslErrorHeadline" instruction="Placeholder is domain with certificate issues">此网站的证书无效。您可能正在连接到冒充 %1$s 的服务器，这可能会使您的机密信息面临风险。</string>
+    <string name="sslErrorLeaveCTA">离开此网站</string>
+    <string name="sslErrorAdvancedCTA">高级</string>
+    <string name="sslErrorExpandedHeadline">当网站证书无效时，DuckDuckGo 会提醒您。</string>
+    <string name="sslErrorExpandedCTA"><![CDATA[<u>接受风险并访问网站</u>]]></string>
+    <string name="sslErrorExpiredMessage" instruction="Placeholder is domain with certificate issues">%1$s 的安全证书已过期。可能是网站配置错误、攻击者入侵了您的连接，或者您的系统时钟不正确。</string>
+    <string name="sslErrorWrongHostMessage" instruction="Placeholder is domain with certificate issues">%1$s 的安全证书与 *.%2$s 不匹配。可能是网站配置错误、攻击者入侵了您的连接，或者您的系统时钟不正确。</string>
+    <string name="sslErrorUntrustedMessage" instruction="Placeholder is domain with certificate issues">%1$s 的安全证书不受您设备的操作系统信任。可能是网站配置错误、攻击者入侵了您的连接，或者您的系统时钟不正确。</string>
+
+    <!-- Extended Onboarding-->
+    <string name="preOnboardingDaxDialog1ButtonBrandDesign">开始吧！</string>
+    <string name="preOnboardingDaxDialog1SecondaryButton">我以前来过</string>
+    <string name="preOnboardingDaxDialog2Title">防护已激活！</string>
+    <string name="preOnboardingDaxDialog2Button">选择您的浏览器</string>
+    <string name="preOnboardingDaxDialog3Title"><![CDATA[知道了！我会跳过其他提示。]]></string>
+    <string name="preOnboardingDaxDialog3Text"><![CDATA[记住：只需点按两次，即可用<b>火焰按钮</b>删除所有标签页、历史记录和浏览数据 🔥]]></string>
+    <string name="preOnboardingDaxDialog3SecondaryButton">查看教程</string>
+    <string name="preOnboardingComparisonChartItem1">默认私密搜索</string>
+    <string name="preOnboardingComparisonChartItem2">拦截第三方追踪器</string>
+    <string name="preOnboardingComparisonChartItem3">拦截 Cookie 弹窗</string>
+    <string name="preOnboardingComparisonChartItem4">拦截定向广告</string>
+    <string name="preOnboardingComparisonChartItem5">一键删除浏览数据</string>
+    <string name="preOnboardingComparisonChartDuckAi">在内置的 Duck.ai 中私密使用 ChatGPT</string>
+    <string name="preOnboardingComparisonChartAdAndCookiePopupBlocker">拦截定向广告和 Cookie 弹窗</string>
+    <string name="preOnboardingComparisonChartYoutubeAdBlocker">无广告播放 YouTube 视频</string>
+    <string name="preOnboardingDaxDialog3Button">开始浏览</string>
+    <string name="preOnboardingAddressBarTitle">您想把地址栏放在哪里？</string>
+    <string name="preOnboardingAddressBarOkButton">下一步</string>
+    <string name="preOnboardingAddressBarPositionTop">顶部</string>
+    <string name="preOnboardingAddressBarPositionBottom">底部</string>
+    <string name="preOnboardingAddressBarPositionSplit">分栏</string>
+    <string name="highlightsPreOnboardingAddressBarOption1Title">顶部（默认）</string>
+    <string name="highlightsPreOnboardingAddressBarOption1Description">一目了然</string>
+    <string name="highlightsPreOnboardingAddressBarOption2Title">底部</string>
+    <string name="highlightsPreOnboardingAddressBarOption2Description">触手可及</string>
+    <string name="onboardingSearchDaxDialogTitle">试试搜索！</string>
+    <string name="onboardingSearchDaxDialogDescription">您的 DuckDuckGo 搜索始终是私密的。</string>
+    <string name="onboardingSearchQueryOption1">用英语怎么说鸭子</string>
+    <string name="onboardingSearchQueryOption1English">用西班牙语怎么说鸭子</string>
+    <string name="onboardingSearchDaxDialogOption2">阿凡达演员表</string>
+    <string name="onboardingSearchDaxDialogOption2US">《野鸭变凤凰》演员表</string>
+    <string name="onboardingSearchDaxDialogOption3">本地天气</string>
+    <string name="onboardingSearchDaxDialogOption4">给我个惊喜！</string>
+    <string name="onboardingSearchQueryOption4">小鸭子</string>
+    <string name="onboardingSitesDaxDialogTitle">试试访问一个网站！</string>
+    <string name="onboardingSitesDaxDialogDescription">我会拦截追踪器，让它们无法监视您。</string>
+    <string name="onboardingSitesDaxDialogOption1">espn.com</string>
+    <string name="onboardingSitesDaxDialogOption2">yahoo.com</string>
+    <string name="onboardingSitesDaxDialogOption3">ebay.com</string>
+    <string name="onboardingSitesDaxDialogOption4">给我个惊喜！</string>
+    <string name="onboardingSerpDaxDialogDescription"><![CDATA[这就是 <b>DuckDuckGo 搜索</b>！私密。快速。广告更少。]]></string>
+    <string name="onboardingSerpDaxDialogBrandDesignTitle">这就是 DuckDuckGo 搜索！</string>
+    <string name="onboardingSerpDaxDialogBrandDesignDescription">私密。快速。广告更少。</string>
+    <string name="onboardingSerpDaxDialogButton">知道了！</string>
+    <string name="onboardingSitesSuggestionsDaxDialogTitle">接下来，试试访问一个网站！</string>
+    <plurals name="onboardingTrackersBlockedDialogDescription">
+        <item quantity="one" instruction="Placeholder is a number. This sentence is preceded by the name of a company, i.e. Facebook and 1 other..."><![CDATA[&#160;和 <b>另外 %1$d 个</b>正在尝试在此追踪您。我已将它们拦截！<br/><br/>☝️ 点按护盾了解更多信息。️]]></item>
+        <item quantity="other" instruction="Placeholder is a number. This sentence is preceded by the name of a company, i.e. Facebook and 3 others..."><![CDATA[&#160;和 <b>另外 %1$d 个</b>正在尝试在此追踪您。我已将它们拦截！<br/><br/>☝️ 点按护盾了解更多信息。️]]></item>
+    </plurals>
+    <plurals name="onboardingTrackersBlockedZeroDialogDescription" tools:ignore="ImpliedQuantity">
+        <item quantity="one" instruction="This sentence is preceded by the name of a company, i.e. Facebook was trying to track..."><![CDATA[&#160;正尝试在此追踪您。我已将其拦截！<br/><br/>☝️ 点按护盾了解更多信息。️]]></item>
+        <item quantity="other" instruction="This sentence is preceded by the name of several companies, i.e. Facebook and Google were trying to track..."><![CDATA[&#160;正尝试在此追踪您。我已将它们拦截！<br/><br/>☝️ 点按护盾了解更多信息。️]]></item>
+    </plurals>
+    <string name="onboardingTrackersBlockedDaxDialogButton">知道了！</string>
+    <string name="onboardingFireButtonDaxDialogDescription"><![CDATA[使用<b>火焰按钮</b>可即时清除您的浏览活动。<br/><br/>试试吧！️ &#128293;]]></string>
+    <string name="onboardingFireButtonDaxDialogOkButton">试试</string>
+    <string name="onboardingFireButtonDaxDialogCancelButton">跳过</string>
+    <string name="onboardingEndDaxDialogTitle">你能行！"</string>
+    <string name="onboardingEndDaxDialogDescription">记住：每次您和我一起浏览，就有一个烦人的广告失去了翅膀。</string>
+    <string name="onboardingInContextEndDaxDialogDescription">记住：每次您和我一起浏览，就有一个烦人的广告失去了翅膀。 👌</string>
+    <string name="onboardingEndDaxDialogButton">击掌！</string>
+    <string name="onboardingPrivacyProDaxDialogTitle">哦，差点忘了…</string>
+    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[DuckDuckGo 还提供<b>可选的付费订阅</b>，包含安全的 <b>VPN</b> 和<b>高级私密 AI</b>。]]></string>
+    <string name="onboardingPrivacyProDaxDialogOkButton">了解更多</string>
+    <string name="onboardingPrivacyProDaxDialogFreeTrialOkButton">免费试用！</string>
+    <string name="onboardingPrivacyProDaxDialogFreeTrialOkButtonBrandDesign">免费试用！</string>
+    <string name="onboardingPrivacyProDaxDialogCancelButton">跳过</string>
+    <string name="onboardingSkippedPrivacyProDaxDialogTitle">您知道吗？</string>
+
+    <!-- Input Screen Onboarding step -->
+    <string name="preOnboardingInputScreenTitle">想在地址栏中方便地使用私密 AI 聊天吗？</string>
+    <string name="preOnboardingInputScreenTitleUpdated">想在地址栏中方便地使用私密 AI 聊天吗？</string>
+    <string name="preOnboardingInputScreenButton">下一步</string>
+    <string name="preOnboardingInputScreenDescription"><![CDATA[AI 功能是私密且可选的。您可以在<b>设置 &gt; AI 功能</b>中进行更改。]]></string>
+
+    <!--Onboarding Reinstall Quick Setup-->
+    <string name="preOnboardingReinstallQuickSetupTitle">欢迎回来！&lt;br/&gt;想自定义什么吗？</string>
+    <string name="preOnboardingReinstallSetDefaultLabel">将 DuckDuckGo 设为默认浏览器</string>
+    <string name="preOnboardingReinstallAddHomeScreenWidgetLabel">添加主屏幕小组件</string>
+    <string name="preOnboardingReinstallAddressBarLabel">地址栏位置</string>
+    <string name="preOnboardingReinstallAddressBarSearchOptionsLabel">地址栏搜索选项</string>
+    <string name="preOnboardingReinstallStartBrowsing">开始浏览</string>
+
+    <!-- Quick setup bottom sheets -->
+    <string name="quickSetupAddressBarPositionTitle">您想把地址栏放在哪里？</string>
+    <string name="quickSetupAddressBarPositionCaption"><![CDATA[您可以在<b>设置 &gt; 外观</b>中进行更改。]]></string>
+    <string name="quickSetupSearchOptionsTitle">要在地址栏中使用搜索和 AI 聊天吗？</string>
+    <string name="quickSetupBottomSheetDone">完成</string>
+    <string name="quickSetupInputScreenSearchOnly">仅搜索</string>
+    <string name="quickSetupInputScreenSearchAndDuckAi">搜索和 Duck.ai</string>
+    <string name="quickSetupRemoveHomeScreenWidgetTitle">如何移除主屏幕小组件</string>
+    <string name="quickSetupRemoveHomeScreenWidgetStep1">前往主屏幕</string>
+    <string name="quickSetupRemoveHomeScreenWidgetStep2">触摸并按住小组件</string>
+    <string name="quickSetupRemoveHomeScreenWidgetStep3">点按或拖动即可移除</string>
+
+    <!-- Appearance settings -->
+    <string name="settingsAddressBarPositionTitle">地址栏</string>
+    <string name="settingsAddressBarPositionHeaderTitle">地址栏位置</string>
+    <string name="settingsAddressBarPositionTop">顶部</string>
+    <string name="settingsAddressBarPositionBottom">底部</string>
+    <string name="settingsAddressBarPositionSplit">分栏</string>
+
+    <!-- Show on App Launch Option -->
+    <string name="showOnAppLaunchOptionTitle">应用启动时显示</string>
+    <string name="showOnAppLaunchOptionLastUsedTab">上次使用的标签页</string>
+    <string name="showOnAppLaunchOptionOpenNewTab">新标签页</string>
+    <string name="showOnAppLaunchOptionSpecificPage">指定页面</string>
+
+    <!-- Privacy Dashboard -->
+    <string name="brokenSiteSubmittedReportMessage">谢谢！您的报告有助于让 DuckDuckGo 变得更好，惠及每一个人！</string>
+
+    <!--    Default Browser Bottom Sheet Dialog -->
+    <string name="defaultBrowserBottomSheetDialogTitle">让 DuckDuckGo 保护您更多的在线活动</string>
+    <string name="defaultBrowserBottomSheetDialogSubTitle">切换默认浏览器，让链接在 DuckDuckGo 中打开。</string>
+    <string name="defaultBrowserBottomSheetDialogGhostButton" instruction="This text appears on a button">暂不切换</string>
+
+    <!-- Default Browser message -->
+    <string name="newTabPageDefaultBrowserMessageHeading">DuckDuckGo 不是您的默认浏览器。获得更多保护。</string>
+    <string name="newTabPageDefaultBrowserMessagePrimaryCta" instruction="This text appears on a button">设为默认</string>
+    <string name="newTabPageDefaultBrowserMessageSecondaryCta" instruction="This text appears on a button">不再询问</string>
+
+    <!-- Threat protection -->
+    <string name="maliciousSiteTitle">警告：此网站可能存在安全风险</string>
+    <string name="maliciousSiteMalwareHeadline"><![CDATA[DuckDuckGo 已拦截此页面，因为它可能正在分发旨在入侵您的设备或窃取您个人信息的恶意软件。\n<a href="">了解更多</a>]]></string>
+    <string name="maliciousSitePhishingHeadline"><![CDATA[此网站可能在冒充合法网站，诱骗您提供个人信息，例如密码或信用卡号。\n<a href="">了解更多</a>]]></string>
+    <string name="maliciousSiteScamHeadline"><![CDATA[DuckDuckGo 已拦截此页面，因为它可能试图通过欺骗或操纵手段让您转账、购买假冒商品或在虚假借口下安装恶意软件。\n<a href="">了解更多</a>]]></string>
+    <string name="maliciousSiteLeaveCTA">离开此网站</string>
+    <string name="maliciousSiteAdvancedCTA">高级</string>
+    <string name="maliciousSiteExpandedHeadline"><![CDATA[如果您认为此网站是安全的，可以<a href="">报告错误</a>。您仍可自行承担风险访问该网站。]]></string>
+    <string name="maliciousSiteExpandedCTA"><![CDATA[<u>接受风险并访问网站</u>]]></string>
+    <string name="maliciousSiteReportErrorTitle">报告被错误标记为恶意的网站</string>
+    <string name="maliciousSiteLearnMoreTitle">了解更多</string>
+    <string name="maliciousSiteSettingTitle">网站安全警告</string>
+    <string name="maliciousSiteToggleHint">在访问被标记为钓鱼或恶意软件的网站时提醒我</string>
+    <string name="maliciousSiteSettingLearnMore"><annotation type="learn_more_link">了解更多</annotation></string>
+    <string name="maliciousSiteSettingDisabled">停用此功能可能会使您的信息面临风险。</string>
+    <string name="threatProtectionTitle">威胁防护</string>
+    <string name="threatProtectionDescription">DuckDuckGo 的增强防护可在保障连接安全的同时阻止常见威胁。</string>
+    <string name="smarterEncryptionTitle">更智能的加密</string>
+    <string name="smarterEncryptionDescription"><![CDATA[尽可能自动将链接升级为 HTTPS。<br><a href="">了解更多</a>]]></string>
+    <string name="scamBlockerTitle">诈骗拦截</string>
+    <string name="scamBlockerDescription">对被标记为诈骗、钓鱼和恶意软件的网站发出警告。</string>
+    <string name="threatProtectionLearnMoreTitle">了解更多</string>
+
+    <!-- Experiment: Improve prompts for "homescreen widget" -->
+    <string name="experimentHomeScreenWidgetBottomSheetDialogTitle">试试我们的主屏幕小组件！</string>
+    <string name="experimentHomeScreenWidgetBottomSheetDialogSubTitle">添加我们的搜索小组件到主屏幕，快速轻松地进行搜索。</string>
+    <string name="experimentHomeScreenWidgetBottomSheetDialogGhostButton">暂不添加</string>
+
+    <!-- Change under remote feature flag: Widget as a Protection -->
+    <string name="settingsAddHomeWidgetTitle">主屏幕小组件</string>
+
+    <!-- Section in main app settings -->
+    <string name="settingsHeadingCompleteSetup">完成设置</string>
+
+    <!--TabSwitcher Trackers Animation-->
+    <string name="trackerBlockedInTheLast7days" instruction="Placeholder is 1 tracker blocked" >&lt;b&gt;过去 7 天已拦截 %1$s 个追踪器&lt;/b&gt;</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogTitle" instruction="A title for a dialog that shows when a user clicks a tile that shows them their current blocked tracker count">要隐藏追踪器数量吗？</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogBody" instruction="A message for a dialog that shows when a user clicks a tile that shows them their current blocked tracker count">您可以在“设置 &gt; 外观”中重新开启。</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogPositiveButton">隐藏</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogNegativeButton">保留</string>
+
+    <!-- Trackers blocked animation-->
+    <string name="settingsTrackersBlockedAnimationHeaderTitle">追踪器拦截动画</string>
+    <string name="showTrackerCountInAddressBar">在地址栏中显示</string>
+    <string name="showWeeklyTrackerCountInTabSwitcher">在标签页管理器中显示</string>
+
+    <!-- Widgets -->
+    <string name="searchOnlyWidgetLabel" instruction="Label for the search-only widget">仅搜索</string>
+    <string name="searchOnlyWidgetDescription" instruction="Description for the search-only widget">使用 DuckDuckGo 快速发起私密搜索。</string>
+    <string name="searchWidgetDescription" instruction="Description for the search widget, which may include Duck.ai and voice search">使用 DuckDuckGo 私密搜索或向 Duck.ai 提问。如果已启用，还可以使用语音搜索和 Duck.ai。</string>
+    <string name="searchAndFavoritesWidgetDescription" instruction="Description for the search and favorites widget">一键私密搜索或访问您喜欢的网站。如果已启用，还可以使用语音搜索和 Duck.ai。</string>
+    <string name="duckAiOnlyPinShortcutLabel" instruction="Label for the Duck.ai pinned shortcut. Should be Duck.ai in all languages">Duck.ai</string>
+
+    <!-- Sync Restore (onboarding) -->
+    <string name="syncRestoreDialogTitle">让我们从上次中断的地方继续</string>
+    <string name="syncRestoreDialogDescription">要从之前的 DuckDuckGo 同步中恢复您的书签、密码等内容吗？</string>
+    <string name="syncRestoreDialogPrimaryCta">恢复我的内容</string>
+    <string name="syncRestoreDialogSecondaryCta">跳过</string>
+
+    <!-- Sync Restore (brand-design onboarding) -->
+    <string name="syncRestoreDialogBrandDesignTitle">让我们从上次在 DuckDuckGo 中断的地方继续。</string>
+    <string name="syncRestoreDialogBrandDesignBody1">您保存的书签、密码等内容已就绪。</string>
+
+    <!-- PDF download tooltip -->
+    <string name="pdfDownloadTooltipText">下载 PDF</string>
+
+    <!-- Sharing options -->
+    <string name="copyLinkText">复制链接文本</string>
+    <string name="linkTextCopied">链接文本已复制</string>
+    <string name="linkTextCopyFailed">无法复制链接文本</string>
+
+    <string name="preOnboardingWelcomeDialogTitle">你好。</string>
+    <string name="preOnboardingWelcomeDialogBody1">准备好使用一款更快、让您掌控一切的浏览器了吗？</string>
+    <string name="preOnboardingWelcomeDialogBody2">AI 始终是可选的，隐私保护始终开启。</string>
+
+    <string name="onboardingStepIndicatorText" instruction="a counter above our instructions in onboarding that tells a user what step they are on, for example, 1 of 5">第 %1$d 步，共 %2$d 步</string>
+    <string name="onboardingSearchDaxDialogOption1Quoted" instruction="translate 'duck' too.">用英语怎么说“鸭子”</string>
+    <string name="onboardingSearchDaxDialogOption1EnglishQuoted" instruction="translate 'duck' too. Don't add question mark">用西班牙语怎么说“鸭子”</string>
+
+    <string name="onboardingDuckAiFireButtonDaxDialogTitle">这就是 Duck.ai！</string>
+    <string name="onboardingDuckAiFireButtonDaxDialogDescription"><![CDATA[私密 AI 聊天，随时可用<b>火焰按钮</b>删除。试试吧！ 🔥]]></string>
+    <string name="onboardingDuckAiEndCtaTitle">你能行！</string>
+    <string name="onboardingDuckAiEndCtaDescription"><![CDATA[使用地址栏进行搜索和访问网站，或切换到 Duck.ai 进行私密 AI 聊天。<br/><br/>在任何看到聊天图标的地方都可以使用 Duck.ai]]></string>
+    <string name="onboardingDuckAiEndCtaButton">击掌！</string>
+
+    <!-- Input Mode Demo Onboarding step -->
+    <string name="preOnboardingInputModeDemoTitle">准备好开始了吗？&lt;br/&gt;试试搜索或 AI 聊天！</string>
+    <string name="preOnboardingInputModeDemoSearchHint">私密搜索</string>
+    <string name="preOnboardingInputModeDemoChatHint">私密提问</string>
+    <string name="preOnboardingInputModeDemoChatSuggestion1">像给 10 岁孩子讲一样解释股市</string>
+    <string name="preOnboardingInputModeDemoChatSuggestion2">规划在伦敦度过完美的一天</string>
+    <string name="preOnboardingInputModeDemoChatSuggestion3">给我个惊喜！</string>
+    <string name="preOnboardingInputModeDemoChatSuggestion3Prompt">科学、自然和历史领域中 10 个迷人的事实有哪些？</string>
+
+    <!-- Custom AI onboarding flow -->
+    <!-- Pre-onboarding: initial screens -->
+    <string name="preOnboardingWelcomeDialogBodyCustomAi">准备好免费私密地与 ChatGPT、Claude 等 AI 聊天了吗？这一切都在一款积极保护您的浏览器中。</string>
+    <string name="preOnboardingDaxDialog3ButtonCustomAi">开始 AI 聊天</string>
+    <!-- Pre-onboarding: AI comparison chart screen. -->
+    <string name="preOnboardingDaxDialogAiTitle">AI 防护已激活！</string>
+    <string name="preOnboardingAiComparisonChartPopularAis">热门 AI</string>
+    <string name="preOnboardingAiComparisonChartItem1">所有聊天均已匿名化</string>
+    <string name="preOnboardingAiComparisonChartItem2">无需账号即可使用所有 AI 功能</string>
+    <string name="preOnboardingAiComparisonChartItem3">绝不会用您的聊天记录训练 AI</string>
+    <string name="preOnboardingAiComparisonChartItem4">在一个地方使用 ChatGPT、Claude 等 AI</string>
+    <string name="preOnboardingAiComparisonChartButton">试试 Duck.ai！</string>
+    <!-- Pre-onboarding: input demo screen -->
+    <string name="preOnboardingInputModeDemoTitleCustomAi">现在，试试私密 AI 聊天！</string>
+    <!-- Pre-onboarding: browser comparison screen -->
+    <string name="preOnboardingDaxDialog2TitleCustomAi">要将 DuckDuckGo 设为默认浏览器吗？</string>
+
+    <!-- Pre-onboarding: widget prompt -->
+    <string name="preOnboardingWidgetPromptTitle">试试我们的主屏幕小组件。</string>
+    <string name="preOnboardingWidgetPromptBody">将我们的搜索小组件添加到主屏幕，快速轻松地进行搜索。</string>
+    <string name="preOnboardingWidgetPromptPrimaryCta">添加小组件</string>
+    <string name="preOnboardingWidgetPromptSecondaryCta">跳过</string>
+
+    <!-- Pre-onboarding: import passwords -->
+    <string name="preOnboardingImportPasswordsTitle">从 Google 导入密码</string>
+    <string name="preOnboardingImportPasswordsBody">Google 可能会要求您登录或输入密码以确认。</string>
+    <string name="preOnboardingImportPasswordsPrimaryCta">从 Google 导入</string>
+    <string name="preOnboardingImportCompleteTitle">导入完成</string>
+    <string name="preOnboardingImportCompleteCta">继续</string>
+    <string name="preOnboardingImportCompleteParsingTitle">正在导入密码</string>
+    <string name="preOnboardingImportCompleteParsingBody">只需片刻。</string>
+    <string name="preOnboardingImportCompleteFailedTitle">导入失败</string>
+    <string name="preOnboardingImportCompleteFailed">密码导入失败</string>
+    <string name="preOnboardingImportCompleteImported" instruction="Placeholder is the number of passwords that were imported.">已导入的密码：%1$s</string>
+    <string name="preOnboardingImportCompleteSkipped" instruction="Placeholder is the number of passwords that were not imported.">已跳过（重复或无效）：%1$s</string>
+    <string name="preOnboardingImportErrorTitle">出现问题</string>
+    <string name="preOnboardingImportErrorBody">请重试。</string>
+    <string name="preOnboardingImportErrorRetry">重试</string>
+
+    <!-- Pre-onboarding: add to home screen -->
+
+    <!-- In-context onboarding. -->
+    <string name="onboardingEndCustomAiFlowDaxDialogDescription"><![CDATA[开始与 Duck.ai 进行私密 AI 聊天，或切换到搜索以获得受保护的浏览体验。<br/><br/>在任何看到聊天图标的地方都可以使用 Duck.ai]]></string>
+    <string name="onboardingPrivacyProCustomAiFlowDaxDialogDescription">我们还提供付费订阅，包含来自 GPT 和 Claude 的高级 AI 模型（聊天限额更高）、安全的 VPN 等。</string>
+
+    <string name="input_screen_user_pref_without_ai_updated">仅搜索</string>
+    <string name="input_screen_user_pref_with_ai_updated">在\n搜索与 Duck.ai 之间切换</string>
+
+    <!-- New Address Bar Picker -->
+    <string name="newAddressBarPickerConfirm">确认</string>
+
+    <!-- App feedback -->
+    <string name="thanksForTheFeedback">感谢您的反馈！</string>
+
+    <!-- Fire mode -->
+    <string name="openInFireTab">在火焰标签页中打开</string>
+    <string name="openInBackgroundTab">在后台打开</string>
+    <string name="browserModeToggleFireDescription">切换到火焰模式标签页</string>
+    <string name="browserModeToggleRegularDescription">切换到常规标签页</string>
+    <string name="browserModeToggleTabCountInfinite">∞</string>
+    <string name="fireTabMenuItem">火焰标签页</string>
+    <string name="fireTabNewTabPageTitle">火焰标签页</string>
+    <string name="fireTabsEmptyStateTitle">火焰标签页</string>
+    <string name="fireTabsFeatureNoHistory">浏览时不保存本地历史记录</string>
+    <string name="fireTabsFeatureDifferentAccount">使用其他账号登录网站</string>
+    <string name="fireTabsFeatureTroubleshoot">排查网站问题</string>
+    <string name="fireTabsExplainer">火焰标签页与其他浏览器数据相互隔离。关闭全部火焰标签页后，其数据即被清除。它们提供与其他标签页相同的追踪防护。</string>
+    <string name="fireTabsNewTabButton">新建火焰标签页</string>
+    <string name="fireTabsPromoTabSwitcherText"><![CDATA[<b>新功能！</b> 试试火焰标签页，浏览时不保存本地历史记录。]]></string>
+    <string name="singleTabFireDialogTitleFireMode">要删除火焰标签页及其数据吗？</string>
+
+    <string name="downloadsCannotOpenFileErrorMessage">无法打开文件。请检查是否有兼容的应用。</string>
+
+    <!-- Error pages -->
+    <string name="webViewErrorTitle" instruction="Title shown on the error pages">DuckDuckGo 无法加载此页面</string>
+    <string name="webViewErrorNoConnection" instruction="Message shown when the page fails to load because the device has no internet connection">网络连接似乎已断开。</string>
+    <string name="webViewErrorBadUrl" instruction="Message shown when the hostname of the website could not be resolved">找不到指定主机名的服务器。</string>
+    <string name="webViewErrorSslProtocol" instruction="Message shown when the website's SSL certificate is invalid. Placeholder is the website's address"><![CDATA[此服务器的证书无效。您可能正在连接到冒充 <b>%1$s</b> 的服务器，这可能会使您的机密信息面临风险。]]></string>
+    <string name="webViewErrorRedirectSuggestionMessage" instruction="Shown when a domain fails to load, offering a link to the www. version of the address. Placeholder is a tappable link to the suggested address.">您是不是要找 <annotation type="redirect_link">^1</annotation>？</string>
+    <string name="webViewErrorTimeout" instruction="Message shown when the website is taking too long to load">此页面加载时间过长。</string>
+
+    <!-- Google Ads (AdMob) test screen, duckduckgo-android fork only -->
+    <string name="googleAdsTestSettingsTitle">谷歌广告测试</string>
+    <string name="googleAdsTestSettingsSubtitle">试用全部 AdMob 广告格式</string>
+    <string name="googleAdsTestTitle">谷歌广告测试</string>
+    <string name="googleAdsTestDescription">使用谷歌测试广告试用每种 AdMob 广告格式。</string>
+    <string name="googleAdsTestShowBanner">显示横幅广告</string>
+    <string name="googleAdsTestShowInterstitial">显示插屏广告</string>
+    <string name="googleAdsTestShowRewarded">显示激励视频广告</string>
+    <string name="googleAdsTestShowRewardedInterstitial">显示激励插屏广告</string>
+    <string name="googleAdsTestShowNative">显示原生广告</string>
+    <string name="googleAdsTestShowAppOpen">显示开屏广告</string>
+    <string name="googleAdsTestFormatBanner">横幅广告</string>
+    <string name="googleAdsTestFormatInterstitial">插屏广告</string>
+    <string name="googleAdsTestFormatRewarded">激励视频广告</string>
+    <string name="googleAdsTestFormatRewardedInterstitial">激励插屏广告</string>
+    <string name="googleAdsTestFormatNative">原生广告</string>
+    <string name="googleAdsTestFormatAppOpen">开屏广告</string>
+    <string name="googleAdsTestStatusIdle">尚未加载广告。</string>
+    <string name="googleAdsTestStatusLoading" instruction="Placeholder is the ad format name, e.g. Banner">正在加载%1$s…</string>
+    <string name="googleAdsTestStatusLoaded" instruction="Placeholder is the ad format name, e.g. Banner">%1$s已加载。</string>
+    <string name="googleAdsTestStatusFailed" instruction="Placeholder is the ad format name, e.g. Banner">%1$s加载失败。</string>
+    <string name="googleAdsTestStatusRewarded" instruction="First placeholder is the reward type, second is the reward amount">已获得奖励：%1$s × %2$d</string>
+</resources>
