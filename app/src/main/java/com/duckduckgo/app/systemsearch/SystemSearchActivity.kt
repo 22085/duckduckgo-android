@@ -726,7 +726,7 @@ class SystemSearchActivity : DuckDuckGoActivity() {
         const val WIDGET_SEARCH_ONLY_EXTRA = "WIDGET_SEARCH_ONLY_EXTRA"
         const val WIDGET_SEARCH_WITH_FAVS_EXTRA = "WIDGET_SEARCH_WITH_FAVS_EXTRA"
         const val WIDGET_SEARCH_LAUNCH_VOICE = "WIDGET_SEARCH_LAUNCH_VOICE"
-        const val NEW_SEARCH_ACTION = "com.duckduckgo.mobile.android.NEW_SEARCH"
+        const val NEW_SEARCH_ACTION = "com.n.l.pp.jhbjj.NEW_SEARCH"
         private const val KEYBOARD_DELAY = 200L
 
         fun fromWidget(

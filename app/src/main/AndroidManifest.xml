@@ -62,7 +62,7 @@
             the formal AdMob App ID for this package before any production release. -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="ca-app-pub-1386469545698637~4946467586" />
 
         <meta-data
             android:name="asset_statements"
@@ -253,7 +253,7 @@
 
             <!-- Required to allow the browser to be launched externally, ensuring it is ready to allow users to search immediately -->
             <intent-filter>
-                <action android:name="com.duckduckgo.mobile.android.NEW_SEARCH" />
+                <action android:name="com.n.l.pp.jhbjj.NEW_SEARCH" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 

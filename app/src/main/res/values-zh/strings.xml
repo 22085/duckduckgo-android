@@ -1003,7 +1003,7 @@
     <string name="googleAdsTestSettingsTitle">谷歌广告测试</string>
     <string name="googleAdsTestSettingsSubtitle">试用全部 AdMob 广告格式</string>
     <string name="googleAdsTestTitle">谷歌广告测试</string>
-    <string name="googleAdsTestDescription">使用谷歌测试广告试用每种 AdMob 广告格式。</string>
+    <string name="googleAdsTestDescription">试用每种 AdMob 广告格式。</string>
     <string name="googleAdsTestShowBanner">显示横幅广告</string>
     <string name="googleAdsTestShowInterstitial">显示插屏广告</string>
     <string name="googleAdsTestShowRewarded">显示激励视频广告</string>

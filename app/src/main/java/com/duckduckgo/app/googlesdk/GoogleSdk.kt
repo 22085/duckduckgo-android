@@ -42,7 +42,7 @@ import logcat.logcat
 /**
  * Google Ads (AdMob) only for the duckduckgo-android fork.
  *
- * All six AdMob formats are supported, on Google test IDs only: banner,
+ * All six AdMob formats are supported, on the fork's formal AdMob IDs: banner,
  * interstitial, rewarded, rewarded interstitial, native, and app open.
  * Everything here is fail-safe: AdMob initialization failure logs and skips
  * instead of crashing startup, and every load reports failure through its
@@ -50,26 +50,26 @@ import logcat.logcat
  */
 object GoogleSdk {
 
-    /** Google test App ID. Replace with the formal AdMob App ID before a production release. */
-    const val ADMOB_APP_ID = "ca-app-pub-3940256099942544~3347511713"
+    /** Formal AdMob App ID for the duckduckgo-android fork. */
+    const val ADMOB_APP_ID = "ca-app-pub-1386469545698637~4946467586"
 
-    /** Google test banner unit ID. */
-    const val TEST_BANNER_AD_UNIT_ID = "ca-app-pub-3940256099942544/6300978111"
+    /** Formal banner unit ID. */
+    const val BANNER_AD_UNIT_ID = "ca-app-pub-1386469545698637/1935105522"
 
-    /** Google test interstitial unit ID. */
-    const val TEST_INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
+    /** Formal interstitial unit ID. */
+    const val INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-1386469545698637/9622023856"
 
-    /** Google test rewarded unit ID. */
-    const val TEST_REWARDED_AD_UNIT_ID = "ca-app-pub-3940256099942544/5224354917"
+    /** Formal rewarded unit ID. */
+    const val REWARDED_AD_UNIT_ID = "ca-app-pub-1386469545698637/6398103873"
 
-    /** Google test rewarded interstitial unit ID. */
-    const val TEST_REWARDED_INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-3940256099942544/5354046379"
+    /** Formal rewarded interstitial unit ID. */
+    const val REWARDED_INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-1386469545698637/2937196007"
 
-    /** Google test native unit ID. */
-    const val TEST_NATIVE_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110"
+    /** Formal native unit ID. */
+    const val NATIVE_AD_UNIT_ID = "ca-app-pub-1386469545698637/3771940532"
 
-    /** Google test app open unit ID. */
-    const val TEST_APP_OPEN_AD_UNIT_ID = "ca-app-pub-3940256099942544/9257395921"
+    /** Formal app open unit ID. */
+    const val APP_OPEN_AD_UNIT_ID = "ca-app-pub-1386469545698637/3731402926"
 
     fun initialize(context: Context) {
         try {
@@ -81,11 +81,11 @@ object GoogleSdk {
     }
 
     /** Loads a test banner into [parent]. Returns the AdView, or null if loading failed. */
-    fun loadTestBanner(activity: Activity, parent: ViewGroup): AdView? {
+    fun loadBanner(activity: Activity, parent: ViewGroup): AdView? {
         return try {
             val adView = AdView(activity).apply {
                 setAdSize(AdSize.BANNER)
-                adUnitId = TEST_BANNER_AD_UNIT_ID
+                adUnitId = BANNER_AD_UNIT_ID
             }
             parent.addView(adView)
             adView.loadAd(AdRequest.Builder().build())
@@ -97,11 +97,11 @@ object GoogleSdk {
     }
 
     /** Loads a test interstitial. [onLoaded] receives the ad, or null if loading failed. */
-    fun loadTestInterstitial(activity: Activity, onLoaded: (InterstitialAd?) -> Unit) {
+    fun loadInterstitial(activity: Activity, onLoaded: (InterstitialAd?) -> Unit) {
         try {
             InterstitialAd.load(
                 activity,
-                TEST_INTERSTITIAL_AD_UNIT_ID,
+                INTERSTITIAL_AD_UNIT_ID,
                 AdRequest.Builder().build(),
                 object : InterstitialAdLoadCallback() {
                     override fun onAdLoaded(ad: InterstitialAd) {
@@ -121,11 +121,11 @@ object GoogleSdk {
     }
 
     /** Loads a test rewarded ad. [onLoaded] receives the ad, or null if loading failed. */
-    fun loadTestRewarded(activity: Activity, onLoaded: (RewardedAd?) -> Unit) {
+    fun loadRewarded(activity: Activity, onLoaded: (RewardedAd?) -> Unit) {
         try {
             RewardedAd.load(
                 activity,
-                TEST_REWARDED_AD_UNIT_ID,
+                REWARDED_AD_UNIT_ID,
                 AdRequest.Builder().build(),
                 object : RewardedAdLoadCallback() {
                     override fun onAdLoaded(ad: RewardedAd) {
@@ -156,11 +156,11 @@ object GoogleSdk {
     }
 
     /** Loads a test rewarded interstitial ad. [onLoaded] receives the ad, or null if loading failed. */
-    fun loadTestRewardedInterstitial(activity: Activity, onLoaded: (RewardedInterstitialAd?) -> Unit) {
+    fun loadRewardedInterstitial(activity: Activity, onLoaded: (RewardedInterstitialAd?) -> Unit) {
         try {
             RewardedInterstitialAd.load(
                 activity,
-                TEST_REWARDED_INTERSTITIAL_AD_UNIT_ID,
+                REWARDED_INTERSTITIAL_AD_UNIT_ID,
                 AdRequest.Builder().build(),
                 object : RewardedInterstitialAdLoadCallback() {
                     override fun onAdLoaded(ad: RewardedInterstitialAd) {
@@ -191,9 +191,9 @@ object GoogleSdk {
     }
 
     /** Loads a test native ad. [onLoaded] receives the ad, or null if loading failed. */
-    fun loadTestNative(activity: Activity, onLoaded: (NativeAd?) -> Unit) {
+    fun loadNative(activity: Activity, onLoaded: (NativeAd?) -> Unit) {
         try {
-            AdLoader.Builder(activity, TEST_NATIVE_AD_UNIT_ID)
+            AdLoader.Builder(activity, NATIVE_AD_UNIT_ID)
                 .forNativeAd { ad -> onLoaded(ad) }
                 .withNativeAdOptions(NativeAdOptions.Builder().build())
                 .withAdListener(object : AdListener() {
@@ -230,13 +230,13 @@ object GoogleSdk {
     }
 
     /** Loads a test app open ad. [onLoaded] receives the ad, or null if loading failed. */
-    fun loadTestAppOpen(activity: Activity, onLoaded: (AppOpenAd?) -> Unit) {
+    fun loadAppOpen(activity: Activity, onLoaded: (AppOpenAd?) -> Unit) {
         try {
             // play-services-ads 25.x has no orientation parameter on load();
             // the 4-argument overload is the only one.
             AppOpenAd.load(
                 activity,
-                TEST_APP_OPEN_AD_UNIT_ID,
+                APP_OPEN_AD_UNIT_ID,
                 AdRequest.Builder().build(),
                 object : AppOpenAd.AppOpenAdLoadCallback() {
                     override fun onAdLoaded(ad: AppOpenAd) {

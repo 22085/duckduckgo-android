@@ -30,7 +30,7 @@ import com.google.android.gms.ads.nativead.NativeAd
 
 /**
  * Test screen for all six AdMob formats, reachable from Settings.
- * Every format runs on Google test IDs only; nothing here is wired into
+ * Every format runs on the fork's formal AdMob IDs; nothing here is wired into
  * the browser UI.
  */
 @InjectWith(ActivityScope::class)
@@ -61,7 +61,7 @@ class GoogleAdsTestActivity : DuckDuckGoActivity() {
         bannerAdView?.destroy()
         bannerAdView = null
         binding.googleAdsTestBannerContainer.removeAllViews()
-        val adView = GoogleSdk.loadTestBanner(this, binding.googleAdsTestBannerContainer)
+        val adView = GoogleSdk.loadBanner(this, binding.googleAdsTestBannerContainer)
         if (adView == null) {
             setStatus(getString(R.string.googleAdsTestStatusFailed, getString(R.string.googleAdsTestFormatBanner)))
         } else {
@@ -72,7 +72,7 @@ class GoogleAdsTestActivity : DuckDuckGoActivity() {
 
     private fun loadInterstitial() {
         setStatus(getString(R.string.googleAdsTestStatusLoading, getString(R.string.googleAdsTestFormatInterstitial)))
-        GoogleSdk.loadTestInterstitial(this) { ad ->
+        GoogleSdk.loadInterstitial(this) { ad ->
             if (ad == null) {
                 setStatus(getString(R.string.googleAdsTestStatusFailed, getString(R.string.googleAdsTestFormatInterstitial)))
             } else {
@@ -84,7 +84,7 @@ class GoogleAdsTestActivity : DuckDuckGoActivity() {
 
     private fun loadRewarded() {
         setStatus(getString(R.string.googleAdsTestStatusLoading, getString(R.string.googleAdsTestFormatRewarded)))
-        GoogleSdk.loadTestRewarded(this) { ad ->
+        GoogleSdk.loadRewarded(this) { ad ->
             if (ad == null) {
                 setStatus(getString(R.string.googleAdsTestStatusFailed, getString(R.string.googleAdsTestFormatRewarded)))
             } else {
@@ -98,7 +98,7 @@ class GoogleAdsTestActivity : DuckDuckGoActivity() {
 
     private fun loadRewardedInterstitial() {
         setStatus(getString(R.string.googleAdsTestStatusLoading, getString(R.string.googleAdsTestFormatRewardedInterstitial)))
-        GoogleSdk.loadTestRewardedInterstitial(this) { ad ->
+        GoogleSdk.loadRewardedInterstitial(this) { ad ->
             if (ad == null) {
                 setStatus(getString(R.string.googleAdsTestStatusFailed, getString(R.string.googleAdsTestFormatRewardedInterstitial)))
             } else {
@@ -112,7 +112,7 @@ class GoogleAdsTestActivity : DuckDuckGoActivity() {
 
     private fun loadNative() {
         setStatus(getString(R.string.googleAdsTestStatusLoading, getString(R.string.googleAdsTestFormatNative)))
-        GoogleSdk.loadTestNative(this) { ad ->
+        GoogleSdk.loadNative(this) { ad ->
             if (ad == null) {
                 setStatus(getString(R.string.googleAdsTestStatusFailed, getString(R.string.googleAdsTestFormatNative)))
             } else {
@@ -134,7 +134,7 @@ class GoogleAdsTestActivity : DuckDuckGoActivity() {
 
     private fun loadAppOpen() {
         setStatus(getString(R.string.googleAdsTestStatusLoading, getString(R.string.googleAdsTestFormatAppOpen)))
-        GoogleSdk.loadTestAppOpen(this) { ad ->
+        GoogleSdk.loadAppOpen(this) { ad ->
             if (ad == null) {
                 setStatus(getString(R.string.googleAdsTestStatusFailed, getString(R.string.googleAdsTestFormatAppOpen)))
             } else {

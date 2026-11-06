@@ -1010,7 +1010,7 @@
     <string name="googleAdsTestSettingsTitle">Google Ads test</string>
     <string name="googleAdsTestSettingsSubtitle">Try all AdMob formats</string>
     <string name="googleAdsTestTitle">Google Ads test</string>
-    <string name="googleAdsTestDescription">Try each AdMob format with Google test ads.</string>
+    <string name="googleAdsTestDescription">Try each AdMob format.</string>
     <string name="googleAdsTestShowBanner">Show banner</string>
     <string name="googleAdsTestShowInterstitial">Show interstitial</string>
     <string name="googleAdsTestShowRewarded">Show rewarded</string>
