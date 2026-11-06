@@ -1028,4 +1028,8 @@
     <string name="googleAdsTestStatusLoaded" instruction="Placeholder is the ad format name, e.g. Banner">%1$s loaded.</string>
     <string name="googleAdsTestStatusFailed" instruction="Placeholder is the ad format name, e.g. Banner">%1$s failed to load.</string>
     <string name="googleAdsTestStatusRewarded" instruction="First placeholder is the reward type, second is the reward amount">Reward earned: %1$s × %2$d</string>
+
+    <!-- Ads bar shown at the bottom of every page (duckduckgo-android fork only) -->
+    <string name="adsBarShowRewarded">Watch rewarded ad</string>
+    <string name="adsBarShowRewardedInterstitial">Watch rewarded interstitial</string>
 </resources>

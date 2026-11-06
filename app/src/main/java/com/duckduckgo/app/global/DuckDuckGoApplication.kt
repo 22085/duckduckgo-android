@@ -24,6 +24,7 @@ import com.duckduckgo.app.browser.BuildConfig
 import com.duckduckgo.app.di.AppComponent
 import com.duckduckgo.app.di.AppComponentFactory
 import com.duckduckgo.app.di.AppCoroutineScope
+import com.duckduckgo.app.googlesdk.AdsManager
 import com.duckduckgo.app.googlesdk.GoogleSdk
 import com.duckduckgo.app.lifecycle.MainProcessLifecycleObserver
 import com.duckduckgo.app.lifecycle.PirProcessLifecycleObserver
@@ -96,6 +97,9 @@ open class DuckDuckGoApplication : HasInjector, MultiProcessApplication() {
         // Google SDKs (duckduckgo-android fork). Fail-safe: GoogleSdk never throws,
         // so an unconfigured SDK cannot break startup.
         GoogleSdk.initialize(this)
+        // All six AdMob formats on every page (duckduckgo-android fork).
+        // Fail-safe: AdsManager swallows its own failures.
+        AdsManager.install(this)
 
         // Deprecated, we need to move all these into AppLifecycleEventObserver
         ProcessLifecycleOwner.get().lifecycle.apply {

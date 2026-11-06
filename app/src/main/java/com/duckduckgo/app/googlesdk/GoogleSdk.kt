@@ -74,7 +74,7 @@ object GoogleSdk {
     fun initialize(context: Context) {
         try {
             MobileAds.initialize(context)
-            logcat { "GoogleSdk: AdMob initialized (test App ID)" }
+            logcat { "GoogleSdk: AdMob initialized" }
         } catch (e: Exception) {
             logcat { "GoogleSdk: AdMob initialization failed, ads disabled: ${e.message}" }
         }
