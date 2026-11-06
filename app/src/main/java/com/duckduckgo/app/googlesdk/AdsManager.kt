@@ -32,6 +32,7 @@ import android.widget.TextView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.duckduckgo.app.browser.R
+import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.FullScreenContentCallback
@@ -40,6 +41,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import java.lang.ref.WeakReference
+import java.util.WeakHashMap
 import logcat.logcat
 
 /**
@@ -323,7 +325,7 @@ object AdsManager {
                         onDone()
                     }
 
-                    override fun onAdFailedToShowFullScreenContent(error: LoadAdError) {
+                    override fun onAdFailedToShowFullScreenContent(error: AdError) {
                         onDone()
                     }
                 }
@@ -348,7 +350,7 @@ object AdsManager {
                         onDone()
                     }
 
-                    override fun onAdFailedToShowFullScreenContent(error: LoadAdError) {
+                    override fun onAdFailedToShowFullScreenContent(error: AdError) {
                         onDone()
                     }
                 }
